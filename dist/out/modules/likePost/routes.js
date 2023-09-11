@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var controler_1 = require("./controler");
+var likePostRoutes = (0, express_1.Router)();
+likePostRoutes.route("/addLikePost").post(controler_1.createLikePostController);
+likePostRoutes.route("/getLikeUserandPost/:id/:idP").get(controler_1.getLikePostandUserController);
+likePostRoutes.route("/deleteLikeUserandPost/:id").post(controler_1.deleteLikePost);
+likePostRoutes.route("/countLikePost/:id").get(controler_1.countLikePost);
+exports.default = likePostRoutes;

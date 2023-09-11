@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var express_validation_1 = require("express-validation");
+var jwtHelper_1 = require("../../helpers/jwtHelper");
+var controler_1 = require("./controler");
+var validation_1 = require("./validation");
+var catalogueRoutes = (0, express_1.Router)();
+catalogueRoutes.get("/", controler_1.getAllCatalogueController);
+catalogueRoutes.get("/options", [(0, express_validation_1.validate)(validation_1.getByOptionsValidation)], controler_1.getOptionsCatalogueController);
+catalogueRoutes.post("/", [jwtHelper_1.validateJwtHeader, (0, express_validation_1.validate)(validation_1.createCatalogueValidation)], controler_1.addCatalogueController);
+exports.default = catalogueRoutes;

@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var postRoutes = (0, express_1.Router)();
+var controler_1 = require("./controler");
+postRoutes.get("/getPostByIdUser/:id", controler_1.getPostByIdUserController);
+postRoutes.get("/postByType/:id", controler_1.getPostByTypeController);
+postRoutes.get("/postById/:id", controler_1.getPostByIdController);
+postRoutes.get("/getPostIdUser/:id", controler_1.getPostUserandProfileController);
+postRoutes.get("/getPostUserProfile", controler_1.getPostProfileUserController);
+postRoutes.get("/getCountPost/:id", controler_1.getCountPostUserProfileController);
+postRoutes.post("/createPost", controler_1.createPostUserController);
+postRoutes.get("/deletePost/:id", controler_1.deletePostController);
+postRoutes.post("/updateProfile/:id", controler_1.updateProfileController);
+exports.default = postRoutes;
