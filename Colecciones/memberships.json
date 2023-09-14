@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "647fe59d6350b64be1fbe823"
+  },
+  "code": "BRONCE",
+  "name": "Bronce",
+  "price": 0,
+  "description": "<ul><li>Puede buscar por país, edad para conocer personas.</li><li><strong>Bono Publicidad.</strong> Ganar comisiones por publicidad hasta su nivel 1 de sus invitados.</li><li><strong>Bono Recompensa.</strong> Ganar comisiones por la compra de membresía de sus invitados hasta nivel 1.&nbsp;</li></ul>",
+  "state": true,
+  "createdAt": {
+    "$date": "2023-06-07T02:04:13.819Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-25T19:55:44.322Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647fe6d76350b64be1fbe830"
+  },
+  "code": "PLATA",
+  "name": "Plata",
+  "price": 7,
+  "description": "<ul><li>Puede buscar por país, edad para conocer personas y otras opciones más.</li><li><strong>Bono Publicidad.</strong> Ganar comisiones por publicidad hasta su nivel 3 de sus invitados.</li><li><strong>Bono Recompensa.</strong> Ganar comisiones por la compra de membresía de sus invitados hasta nivel 3.&nbsp;</li></ul>",
+  "state": true,
+  "createdAt": {
+    "$date": "2023-06-07T02:09:27.677Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-25T19:56:16.252Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647fe6e46350b64be1fbe83a"
+  },
+  "code": "ORO",
+  "name": "Oro",
+  "price": 17,
+  "description": "<ul><li>Puede buscar por país, edad para conocer personas y otras opciones más.</li><li><strong>Bono Publicidad.</strong> Ganar comisiones por publicidad hasta su nivel 5 de sus invitados.</li><li><strong>Bono Recompensa.</strong> Ganar comisiones por la compra de membresía de sus invitados hasta nivel 5.&nbsp;</li></ul>",
+  "state": true,
+  "createdAt": {
+    "$date": "2023-06-07T02:09:40.575Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-25T19:56:33.579Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "647fe6f06350b64be1fbe84a"
+  },
+  "code": "DIAMANTE",
+  "name": "Diamante",
+  "price": 27,
+  "description": "<ul><li>Puede buscar por país, edad para conocer personas y otras opciones más.</li><li><strong>Bono Publicidad.</strong> Ganar comisiones por publicidad hasta su nivel 7 de sus invitados.</li><li><strong>Bono Recompensa.</strong> Ganar comisiones por la compra de membresía de sus invitados hasta nivel 7.&nbsp;</li></ul>",
+  "state": true,
+  "createdAt": {
+    "$date": "2023-06-07T02:09:52.576Z"
+  },
+  "updatedAt": {
+    "$date": "2023-06-25T19:56:45.770Z"
+  },
+  "__v": 0
+}]

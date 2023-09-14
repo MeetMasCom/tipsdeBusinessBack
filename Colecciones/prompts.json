@@ -1,0 +1,2521 @@
+[{
+  "_id": {
+    "$oid": "64dbe7474f93567f53f6bbca"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Entrenador GPT",
+  "description": "Entrenador GPT",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T20:59:51.259Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T20:59:51.259Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe7524f93567f53f6bbcf"
+  },
+  "user_id": {
+    "$oid": "64dbe7524f93567f53f6bbcf"
+  },
+  "name": "Correo de propaganda",
+  "description": "Correo de propaganda",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:00:02.964Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-22T00:20:38.455Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe75e4f93567f53f6bbd4"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Embudo en línea",
+  "description": "Embudo en línea",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:00:14.511Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:00:14.511Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe76b4f93567f53f6bbd9"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "La comercialización del afiliado",
+  "description": "La comercialización del afiliado\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:00:27.646Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:00:27.646Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe77a4f93567f53f6bbde"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Mercadeo en facebook",
+  "description": "Mercadeo en facebook\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:00:42.600Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:00:42.600Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe7894f93567f53f6bbe3"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Comercialización de YouTube",
+  "description": "Comercialización de YouTube\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:00:57.906Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:00:57.906Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Atención al cliente",
+  "description": "Atención al cliente\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:01:16.766Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:01:16.766Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe7ab4f93567f53f6bbed"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Comercialización de SMS",
+  "description": "Comercialización de SMS\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:01:31.873Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:01:31.873Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe7b84f93567f53f6bbf2"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "SEO",
+  "description": "SEO",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:01:44.783Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:01:44.783Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe7ca4f93567f53f6bbf7"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Comercialización de podcasts",
+  "description": "Comercialización de podcasts\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:02:02.796Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:02:02.796Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe7e14f93567f53f6bbfc"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "LinkedIn",
+  "description": "LinkedIn\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:02:25.327Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:02:25.327Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe7ec4f93567f53f6bc01"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Gorjeo",
+  "description": "Gorjeo",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:02:36.682Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:02:36.682Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe7f74f93567f53f6bc06"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Medios de comunicación social",
+  "description": "Medios de comunicación social\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:02:47.781Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:02:47.781Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8024f93567f53f6bc0b"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Tik Tok",
+  "description": "Tik Tok\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:02:58.762Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:02:58.762Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe80e4f93567f53f6bc10"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Plan de negocios",
+  "description": "Plan de negocios\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:03:10.050Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:03:10.050Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe81a4f93567f53f6bc15"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Negocios en línea",
+  "description": "Negocios en línea\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:03:22.618Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:03:22.618Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8264f93567f53f6bc1a"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Desarrollador web",
+  "description": "Desarrollador web\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:03:34.171Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:03:34.171Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8314f93567f53f6bc1f"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Gestión financiera",
+  "description": "Gestión financiera\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:03:45.510Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:03:45.510Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe83b4f93567f53f6bc24"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Operaciones y Logística",
+  "description": "Operaciones y Logística\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:03:55.832Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:03:55.832Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8464f93567f53f6bc29"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Ventas",
+  "description": "Ventas",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:04:06.311Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:04:06.311Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8564f93567f53f6bc2e"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Comercialización de instagram",
+  "description": "Comercialización de instagram\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:04:22.935Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:04:22.935Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8684f93567f53f6bc33"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Seminario web",
+  "description": "Seminario web\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:04:40.300Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:04:40.300Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8724f93567f53f6bc38"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Marketing",
+  "description": "Marketing",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:04:50.196Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:04:50.196Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe87c4f93567f53f6bc3d"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Recursos humanos",
+  "description": "Recursos humanos\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:05:00.422Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:05:00.422Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe88e4f93567f53f6bc42"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir un correo electrónico frío",
+  "description": "Escribir un correo electrónico frío\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:05:18.738Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:05:18.738Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe89b4f93567f53f6bc47"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escriba un correo electrónico de incorporación",
+  "description": "Escriba un correo electrónico de incorporación\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:05:31.303Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:05:31.303Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8a64f93567f53f6bc4c"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir un correo electrónico de abandono del carrito",
+  "description": "Escribir un correo electrónico de abandono del carrito\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:05:42.196Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:05:42.196Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8b04f93567f53f6bc51"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escriba un correo electrónico de bienvenida al cliente",
+  "description": "Escriba un correo electrónico de bienvenida al cliente\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:05:52.349Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:05:52.349Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8bb4f93567f53f6bc56"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Redacción Avanzada",
+  "description": "Redacción Avanzada\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:06:03.735Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:06:03.735Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8c74f93567f53f6bc5b"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir una propuesta para el cliente",
+  "description": "Escribir una propuesta para el cliente\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:06:15.258Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:06:15.258Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8d64f93567f53f6bc60"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir una página de ventas",
+  "description": "Escribir una página de ventas\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:06:30.670Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:06:30.670Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8e14f93567f53f6bc65"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Página de destino para suscripciones",
+  "description": "Página de destino para suscripciones\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:06:41.607Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:06:41.607Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8eb4f93567f53f6bc6a"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Ordenar copia de golpe",
+  "description": "Ordenar copia de golpe\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:06:51.675Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:06:51.675Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe8f94f93567f53f6bc6f"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir una página de ventas adicionales",
+  "description": "Escribir una página de ventas adicionales\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:07:05.990Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:07:05.990Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9074f93567f53f6bc74"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir una página de agradecimiento",
+  "description": "Escribir una página de agradecimiento\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:07:19.359Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:07:19.359Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9174f93567f53f6bc79"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir un publirreportaje",
+  "description": "Escribir un publirreportaje\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:07:35.727Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:07:35.727Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9224f93567f53f6bc7e"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Recomendaciones de clientes",
+  "description": "Recomendaciones de clientes\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:07:46.335Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:07:46.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe92d4f93567f53f6bc83"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir reseñas de productos de afiliados",
+  "description": "Escribir reseñas de productos de afiliados\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:07:57.177Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:07:57.177Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe93a4f93567f53f6bc88"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir descripciones de productos de afiliados",
+  "description": "Escribir descripciones de productos de afiliados\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:08:10.771Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:08:10.771Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9444f93567f53f6bc8d"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir correos electrónicos de productos de afiliados",
+  "description": "Escribir correos electrónicos de productos de afiliados\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:08:20.807Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:08:20.807Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9504f93567f53f6bc92"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir titulares para anuncios de Facebook",
+  "description": "Escribir titulares para anuncios de Facebook\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:08:32.836Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:08:32.836Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe95c4f93567f53f6bc97"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir guiones de vídeo de anuncios de Facebook",
+  "description": "Escribir guiones de vídeo de anuncios de Facebook\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:08:44.383Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:08:44.383Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9664f93567f53f6bc9c"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir un guión de video de YouTube",
+  "description": "Escribir un guión de video de YouTube\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:08:54.759Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:08:54.759Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9704f93567f53f6bca1"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribe un título de video de YouTube",
+  "description": "Escribe un título de video de YouTube\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:09:04.695Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:09:04.695Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe97b4f93567f53f6bca6"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribe una descripción de video de YouTube",
+  "description": "Escribe una descripción de video de YouTube\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:09:15.709Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:09:15.709Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9874f93567f53f6bcab"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir un guión de anuncio de vídeo de Youtube",
+  "description": "Escribir un guión de anuncio de vídeo de Youtube\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:09:27.503Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:09:27.503Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9954f93567f53f6bcb0"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir un correo electrónico de ventas",
+  "description": "Escribir un correo electrónico de ventas\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:09:41.250Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:09:41.250Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe99f4f93567f53f6bcb5"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Construir",
+  "description": "Construir",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:09:51.400Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:09:51.400Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9aa4f93567f53f6bcba"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Lanzamiento",
+  "description": "Lanzamiento",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:10:02.181Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:10:02.181Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9b54f93567f53f6bcbf"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Optimizar",
+  "description": "Optimizar\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:10:13.537Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:10:13.537Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9bf4f93567f53f6bcc4"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escala",
+  "description": "Escala",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:10:23.832Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:10:23.832Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9cb4f93567f53f6bcc9"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Generar descripción del producto",
+  "description": "Generar descripción del producto\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:10:35.027Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:10:35.027Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9dd4f93567f53f6bcce"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir un publirreportaje",
+  "description": "Escribir un publirreportaje\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:10:53.045Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:10:53.045Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9e84f93567f53f6bcd3"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Optimice su sitio para SEO",
+  "description": "Optimice su sitio para SEO\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:11:04.974Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:11:04.974Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9f34f93567f53f6bcd8"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Crear testimonios de clientes",
+  "description": "Crear testimonios de clientes\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:11:15.783Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:11:15.783Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbe9fd4f93567f53f6bcdd"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Traducir copia del sitio web",
+  "description": "Traducir copia del sitio web\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:11:25.723Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:11:25.723Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea074f93567f53f6bce2"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Llamada a la acción",
+  "description": "Llamada a la acción\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:11:35.649Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:11:35.649Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea114f93567f53f6bce7"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "X ciencia estándar",
+  "description": "X ciencia estándar\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:11:45.323Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:11:45.323Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea1c4f93567f53f6bcec"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Publicaciones de blog",
+  "description": "Publicaciones de blog\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:11:56.186Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:11:56.186Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea264f93567f53f6bcf1"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Generar lista de palabras clave",
+  "description": "Generar lista de palabras clave\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:12:06.919Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:12:06.919Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea314f93567f53f6bcf6"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Calendario de contenido",
+  "description": "Calendario de contenido\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:12:17.829Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:12:17.829Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea3d4f93567f53f6bcfb"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Generar Ideas de Negocios",
+  "description": "Generar Ideas de Negocios\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:12:29.758Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:12:29.758Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea474f93567f53f6bd00"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Optimizar perfil de Twitter",
+  "description": "Optimizar perfil de Twitter\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:12:39.592Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:12:39.592Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea514f93567f53f6bd05"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Esenciales de LinkedIn",
+  "description": "Esenciales de LinkedIn\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:12:49.871Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:12:49.871Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea5b4f93567f53f6bd0a"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Ideas para miniaturas",
+  "description": "Ideas para miniaturas\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:12:59.460Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:12:59.460Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea654f93567f53f6bd0f"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Ideas para creativos",
+  "description": "Ideas para creativos\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:13:09.587Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:13:09.587Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea7c4f93567f53f6bd14"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Optimice su sitio para SEO",
+  "description": "Optimice su sitio para SEO\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:13:32.772Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:13:32.772Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea864f93567f53f6bd19"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Favoritos de los lectores",
+  "description": "Favoritos de los lectores\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:13:42.418Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:13:42.418Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea904f93567f53f6bd1e"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Recomendaciones de expertos",
+  "description": "Recomendaciones de expertos\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:13:52.265Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:13:52.265Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbea994f93567f53f6bd23"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Recopilación de Recursos Relevantes",
+  "description": "Recopilación de Recursos Relevantes\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:14:01.924Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:14:01.924Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbeaa34f93567f53f6bd28"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Creación de cursos",
+  "description": "Creación de cursos\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:14:11.357Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:14:11.357Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbeaad4f93567f53f6bd2d"
+  },
+  "user_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "name": "Escribir un libro",
+  "description": "Escribir un libro\n",
+  "userCourse": [
+    {
+      "item_id": "0",
+      "item_text": "Bronce"
+    },
+    {
+      "item_id": "1",
+      "item_text": "Plata"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Oro"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Diamante"
+    }
+  ],
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:14:21.038Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:14:21.038Z"
+  },
+  "__v": 0
+}]
