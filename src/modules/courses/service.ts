@@ -1,16 +1,20 @@
 import { ObjectId } from "mongoose";
-import { ERR_400 } from "../../constants/messages";
+import { ERR_400, OK_200 } from "../../constants/messages";
 import { CourseI, CourseUserI } from "../../interfaces/courses.interface";
-import { PostRepository} from "./repository";
+import { CoursesRepository} from "./repository";
 import { RecordsTransactionService } from "../recordsTransactions/service";
 import { RecordsTransactionI } from "../../interfaces/recordsTransactions";
+import { BalanceUserRepository } from "../balanceUser/repository";
+import { BalanceCompanyRepository } from "../balanceCompany/repository";
+import { UserService } from "../user/service";
+import { BalanceCompanyI } from "../../interfaces/balanceCompany";
 
 
 export class PostService {
-  private repo: PostRepository;
+  private repo: CoursesRepository;
 
   constructor() {
-    this.repo = new PostRepository();
+    this.repo = new CoursesRepository();
   }
 
    
@@ -90,32 +94,62 @@ export class PostService {
   };
 
 
-  saveBuyCourse = async (
-    params: CourseUserI
-  ): Promise<CourseUserI> => {
+  saveBuyCourse = async (data: any): Promise<string> => {
     try {
-      console.log("params",params);
-      const buyMembership = await this.repo.saveCourseUser(params);
-      const course = await this.repo.getById(params.courseId);
-        console.log("course",course);
-      const payload: RecordsTransactionI = {
-        value: parseFloat(course.price),
-        companyValue: 0,
-        referValue: 0,
-        detail: `Compra curso ${course.title}`,
-        userId: params.userId,
-        status: true,
-        typeTransaction: 'Compra curso',
-        walletId: '64815307cd63e1f5a8982369'
+      //valid balance
+      const buyMembership = await this.repo.saveCourseUser(data);
+      const balance = await new BalanceUserRepository().getAllByUserId(data.userId);
+
+      if (!balance) throw new Error("Saldo insuficiente, realice una recarga...");
+
+      const packageData = await new CoursesRepository().getById(data.courseId);
+
+      if (!packageData) throw new Error("No existe información de paquete de visitas...");
+
+      if (balance.balance < Number(packageData.price)) throw new Error("Saldo insuficiente, realice una recarga...");
+
+      //actualizar saldo usuario
+      await new BalanceUserRepository().updateBalance(balance._id!, {
+        balance: Number(balance.balance) - Number(packageData.price)
+      });
+
+      const price = Number(packageData.price) * 0.50;
+
+      //actualizar saldo empresa referidos
+      const walletE = await new BalanceCompanyRepository().getByBalanceCompany();
+
+      if (walletE.length > 0) {
+        await new BalanceCompanyRepository().update(walletE[0]._id!, {
+          balance: Number(walletE[0].balance) + Number(price),
+        });
+      } else {
+        await new BalanceCompanyRepository().save({
+          balance: Number(price)
+        });
       }
 
-      console.log("service",payload);
+
+      await new UserService().updateBalanceRefer(data.userId, price);
+
+      const payload: RecordsTransactionI = {
+        value: Number(packageData.price),
+        companyValue: price,
+        referValue: price,
+        detail: `Compra anuncio ${packageData.title}`,
+        userId: data.userId,
+        status: true,
+        typeTransaction: 'Compra anuncio',
+        walletId: ""
+      }
       await new RecordsTransactionService().save(payload);
-      return buyMembership;
+
+      return OK_200;
     } catch (error) {
       throw new Error(error as string);
     }
+  
   };
+
 
   verifyCourseUser = async (id: string, idC:string): Promise<CourseUserI[]> => {
     try {

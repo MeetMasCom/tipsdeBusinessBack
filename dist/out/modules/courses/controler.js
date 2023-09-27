@@ -251,6 +251,7 @@ var getCourseByUserStudent = function (req, resp) { return __awaiter(void 0, voi
             case 0:
                 _c.trys.push([0, 2, , 3]);
                 user = req.query.user;
+                console.log(user);
                 userService = new service_1.PostService();
                 _a = responseHelper_1.serviceResponse;
                 _b = {};

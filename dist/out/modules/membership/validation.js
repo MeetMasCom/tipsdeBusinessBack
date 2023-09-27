@@ -23,7 +23,7 @@ exports.updateMembershipValidation = {
     }),
     body: express_validation_1.Joi.object({
         name: (0, validations_1.validString)("name", 255),
-        price: (0, validations_1.validNumero)("price"),
+        price: (0, validations_1.customValidDecimal12Ent2Dec)("price"),
         description: express_validation_1.Joi.string().required(),
         state: express_validation_1.Joi.boolean().required(),
     }),

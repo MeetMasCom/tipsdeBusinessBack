@@ -201,8 +201,6 @@ var BalanceUserRepository = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 5, , 6]);
-                        console.log(id);
-                        console.log(data);
                         return [4 /*yield*/, (0, conection_1.connectionMongo)()];
                     case 1:
                         cnxMongo = _a.sent();

@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.updatePromptController = exports.getAllPromptsController = exports.getPromptsByIdController = exports.getMyPromptsController = exports.createPromptsController = void 0;
+exports.getPromptsByUserController = exports.buyPromptController = exports.updatePromptPriceController = exports.getPricePromptsController = exports.addPromptsPriceController = exports.updatePromptController = exports.getAllPromptsController = exports.getPromptsByIdController = exports.getMyPromptsController = exports.createPromptsController = void 0;
 var responseHelper_1 = require("../../helpers/responseHelper");
 var service_1 = require("./service");
 var createPromptsController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
@@ -184,3 +184,148 @@ var updatePromptController = function (req, resp) { return __awaiter(void 0, voi
     });
 }); };
 exports.updatePromptController = updatePromptController;
+var addPromptsPriceController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var payload, likeService, _a, error_6;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                payload = req.body;
+                likeService = new service_1.PromptsService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, likeService.savePrice(payload)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_6 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_6.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
+exports.addPromptsPriceController = addPromptsPriceController;
+var getPricePromptsController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var likeService, _a, error_7;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                likeService = new service_1.PromptsService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, likeService.getPricePrompts()];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_7 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_7.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
+exports.getPricePromptsController = getPricePromptsController;
+var updatePromptPriceController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var id, payload, userService, _a, error_8;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                id = req.params.id;
+                payload = req.body;
+                userService = new service_1.PromptsService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, userService.updatePricePrompt(id, payload)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_8 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_8.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
+exports.updatePromptPriceController = updatePromptPriceController;
+var buyPromptController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var payload, membershipService, _a, error_9;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                payload = req.body;
+                membershipService = new service_1.PromptsService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, membershipService.buyPromptUser(payload)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_9 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_9.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
+exports.buyPromptController = buyPromptController;
+var getPromptsByUserController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var id, likeService, _a, error_10;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                id = req.params.id;
+                likeService = new service_1.PromptsService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, likeService.getPromptsByUser(id)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_10 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_10.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
+exports.getPromptsByUserController = getPromptsByUserController;

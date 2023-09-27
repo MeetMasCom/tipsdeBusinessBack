@@ -20,7 +20,7 @@ export interface CourseUserI {
   _id?: string
   userId: string
   courseId: string
-  walletId?: string
+  //walletId?: string
   state: boolean
   createdAt?: string;
   updatedAt?: string;

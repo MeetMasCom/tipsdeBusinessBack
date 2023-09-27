@@ -38,6 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PromptsService = void 0;
 var messages_1 = require("../../constants/messages");
+var service_1 = require("../recordsTransactions/service");
 var repository_1 = require("./repository");
 var PromptsService = /** @class */ (function () {
     function PromptsService() {
@@ -117,6 +118,99 @@ var PromptsService = /** @class */ (function () {
                         error_5 = _a.sent();
                         throw new Error(error_5);
                     case 4: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.savePrice = function (params) { return __awaiter(_this, void 0, void 0, function () {
+            var error_6;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.savePrice(params)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_6 = _a.sent();
+                        throw new Error(error_6);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getPricePrompts = function () { return __awaiter(_this, void 0, void 0, function () {
+            var error_7;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getPricePrompts()];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_7 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.updatePricePrompt = function (id, payload) { return __awaiter(_this, void 0, void 0, function () {
+            var error_8;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 3, , 4]);
+                        return [4 /*yield*/, this.repo.updatePricePrompt(id, payload)];
+                    case 1:
+                        _a.sent();
+                        return [4 /*yield*/, this.repo.getPricePrompts()];
+                    case 2: return [2 /*return*/, _a.sent()];
+                    case 3:
+                        error_8 = _a.sent();
+                        throw new Error(error_8);
+                    case 4: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.buyPromptUser = function (params) { return __awaiter(_this, void 0, void 0, function () {
+            var buyPrompts, payload, error_9;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 3, , 4]);
+                        return [4 /*yield*/, this.repo.buyPromptsUser(params)];
+                    case 1:
+                        buyPrompts = _a.sent();
+                        payload = {
+                            value: params.value,
+                            companyValue: 0,
+                            referValue: 0,
+                            detail: "Compra paquete prompts ",
+                            userId: params.userId,
+                            status: true,
+                            typeTransaction: 'Compra paquete prompts',
+                            walletId: '64815307cd63e1f5a8982369'
+                        };
+                        return [4 /*yield*/, new service_1.RecordsTransactionService().save(payload)];
+                    case 2:
+                        _a.sent();
+                        return [2 /*return*/, buyPrompts];
+                    case 3:
+                        error_9 = _a.sent();
+                        throw new Error(error_9);
+                    case 4: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getPromptsByUser = function (id) { return __awaiter(_this, void 0, void 0, function () {
+            var error_10;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getPromptsByUser(id)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_10 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
                 }
             });
         }); };

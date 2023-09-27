@@ -7,7 +7,7 @@ import { RechargeI } from "../../interfaces/balanceUser";
 
 
 export class BalanceCompanyRepository {
-  async save(data: BalanceCompanyI) {
+  async save(data: any) {
     try {
       const cnxMongo = await connectionMongo();
       const balanceCompanyModel = await balanceCompanyModelMongo(cnxMongo);
@@ -59,7 +59,7 @@ export class BalanceCompanyRepository {
   }
 
 
-  async update(id: string, data: BalanceCompanyI) {
+  async update(id: string, data: any) {
     try {
       const cnxMongo = await connectionMongo();
       const balanceCompanyModel = await balanceCompanyModelMongo(cnxMongo);

@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.promptsModelMongo = exports.promptsSchema = void 0;
+exports.promptsUserModelMongo = exports.promptsUserSchema = exports.promptsPriceModelMongo = exports.promptsPriceSchema = exports.promptsModelMongo = exports.promptsSchema = void 0;
 var mongoose_1 = require("mongoose");
 exports.promptsSchema = new mongoose_1.Schema({
     _id: {
@@ -74,3 +74,58 @@ var promptsModelMongo = function (cnxMongo) { return __awaiter(void 0, void 0, v
     return [2 /*return*/, cnxMongo.model("prompts", exports.promptsSchema, "prompts")];
 }); }); };
 exports.promptsModelMongo = promptsModelMongo;
+exports.promptsPriceSchema = new mongoose_1.Schema({
+    _id: {
+        type: mongoose_1.Schema.Types.ObjectId,
+        require: true
+    },
+    price: {
+        type: Number,
+        required: true,
+    },
+    state: {
+        type: Number,
+        require: true,
+        default: 0
+    },
+}, {
+    timestamps: {
+        createdAt: "created_at",
+        updatedAt: "updated_at",
+    },
+});
+var promptsPriceModelMongo = function (cnxMongo) { return __awaiter(void 0, void 0, void 0, function () { return __generator(this, function (_a) {
+    return [2 /*return*/, cnxMongo.model("promptsPrice", exports.promptsPriceSchema, "promptsPrice")];
+}); }); };
+exports.promptsPriceModelMongo = promptsPriceModelMongo;
+exports.promptsUserSchema = new mongoose_1.Schema({
+    _id: {
+        type: mongoose_1.Schema.Types.ObjectId,
+        require: true
+    },
+    userId: {
+        type: mongoose_1.Schema.Types.ObjectId,
+        require: true
+    },
+    packageId: {
+        type: mongoose_1.Schema.Types.ObjectId,
+    },
+    price: {
+        type: Number,
+        required: true,
+    },
+    state: {
+        type: Number,
+        require: true,
+        default: 0
+    },
+}, {
+    timestamps: {
+        createdAt: "created_at",
+        updatedAt: "updated_at",
+    },
+});
+var promptsUserModelMongo = function (cnxMongo) { return __awaiter(void 0, void 0, void 0, function () { return __generator(this, function (_a) {
+    return [2 /*return*/, cnxMongo.model("promptsUser", exports.promptsUserSchema, "promptsUser")];
+}); }); };
+exports.promptsUserModelMongo = promptsUserModelMongo;

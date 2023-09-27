@@ -47,14 +47,14 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PostRepository = void 0;
+exports.CoursesRepository = void 0;
 var conection_1 = require("../../database/conection");
 var mongoose_1 = require("mongoose");
 var model_1 = require("./model");
-var PostRepository = /** @class */ (function () {
-    function PostRepository() {
+var CoursesRepository = /** @class */ (function () {
+    function CoursesRepository() {
     }
-    PostRepository.prototype.saveCourse = function (data) {
+    CoursesRepository.prototype.saveCourse = function (data) {
         return __awaiter(this, void 0, void 0, function () {
             var cnxMongo, postModel, response, error_1;
             return __generator(this, function (_a) {
@@ -82,7 +82,7 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    PostRepository.prototype.getCourseByIdUser = function (id, tipo) {
+    CoursesRepository.prototype.getCourseByIdUser = function (id, tipo) {
         return __awaiter(this, void 0, void 0, function () {
             var cnxMongo, postModel, response, error_2;
             return __generator(this, function (_a) {
@@ -118,7 +118,7 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    PostRepository.prototype.getCourseById = function (id) {
+    CoursesRepository.prototype.getCourseById = function (id) {
         return __awaiter(this, void 0, void 0, function () {
             var cnxMongo, postModel, response, error_3;
             return __generator(this, function (_a) {
@@ -149,7 +149,7 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    PostRepository.prototype.getAllCourses = function () {
+    CoursesRepository.prototype.getAllCourses = function () {
         return __awaiter(this, void 0, void 0, function () {
             var cnxMongo, postModel, response, error_4;
             return __generator(this, function (_a) {
@@ -183,7 +183,7 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    PostRepository.prototype.getAllInLive = function () {
+    CoursesRepository.prototype.getAllInLive = function () {
         return __awaiter(this, void 0, void 0, function () {
             var fecha, cnxMongo, postModel, response, error_5;
             return __generator(this, function (_a) {
@@ -220,7 +220,7 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    PostRepository.prototype.getCourseByCategoria = function (cat, tipo) {
+    CoursesRepository.prototype.getCourseByCategoria = function (cat, tipo) {
         return __awaiter(this, void 0, void 0, function () {
             var cnxMongo, postModel, response, error_6;
             return __generator(this, function (_a) {
@@ -256,7 +256,7 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    PostRepository.prototype.getCourseByUser = function (cat, tipo) {
+    CoursesRepository.prototype.getCourseByUser = function (cat, tipo) {
         return __awaiter(this, void 0, void 0, function () {
             var cnxMongo, postModel, response, error_7;
             return __generator(this, function (_a) {
@@ -292,13 +292,14 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    PostRepository.prototype.getCourseByUserStudent = function (user) {
+    CoursesRepository.prototype.getCourseByUserStudent = function (user) {
         return __awaiter(this, void 0, void 0, function () {
-            var cnxMongo, postModel, response, error_8;
+            var objectId, cnxMongo, postModel, response, error_8;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 5, , 6]);
+                        objectId = new mongoose_1.Types.ObjectId(user);
                         return [4 /*yield*/, (0, conection_1.connectionMongo)()];
                     case 1:
                         cnxMongo = _a.sent();
@@ -307,7 +308,7 @@ var PostRepository = /** @class */ (function () {
                         postModel = _a.sent();
                         return [4 /*yield*/, postModel.aggregate([
                                 {
-                                    $match: { user_id: user },
+                                    $match: { user_id: objectId },
                                 },
                                 {
                                     $lookup: {
@@ -334,7 +335,7 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    PostRepository.prototype.getTopCourses = function () {
+    CoursesRepository.prototype.getTopCourses = function () {
         return __awaiter(this, void 0, void 0, function () {
             var cnxMongo, postModel, response, error_9;
             return __generator(this, function (_a) {
@@ -365,7 +366,7 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    PostRepository.prototype.getById = function (id) {
+    CoursesRepository.prototype.getById = function (id) {
         return __awaiter(this, void 0, void 0, function () {
             var cnxMongo, membershipModel, response, error_10;
             return __generator(this, function (_a) {
@@ -393,7 +394,7 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    PostRepository.prototype.saveCourseUser = function (data) {
+    CoursesRepository.prototype.saveCourseUser = function (data) {
         return __awaiter(this, void 0, void 0, function () {
             var cnxMongo, membershipUserModel, response, error_11;
             return __generator(this, function (_a) {
@@ -421,7 +422,7 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    PostRepository.prototype.verifyCourseUser = function (id, idC) {
+    CoursesRepository.prototype.verifyCourseUser = function (id, idC) {
         return __awaiter(this, void 0, void 0, function () {
             var cnxMongo, postModel, response, error_12;
             return __generator(this, function (_a) {
@@ -435,8 +436,7 @@ var PostRepository = /** @class */ (function () {
                     case 2:
                         postModel = _a.sent();
                         return [4 /*yield*/, postModel
-                                .find({ userId: id }, { courseId: idC })
-                                .sort({ createdAt: -1 })
+                                .find({ userId: id, courseId: idC })
                                 .exec()];
                     case 3:
                         response = _a.sent();
@@ -452,7 +452,7 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    PostRepository.prototype.updateState = function (id, data) {
+    CoursesRepository.prototype.updateState = function (id, data) {
         return __awaiter(this, void 0, void 0, function () {
             var cnxMongo, adminModel, response, error_13;
             return __generator(this, function (_a) {
@@ -484,6 +484,6 @@ var PostRepository = /** @class */ (function () {
             });
         });
     };
-    return PostRepository;
+    return CoursesRepository;
 }());
-exports.PostRepository = PostRepository;
+exports.CoursesRepository = CoursesRepository;

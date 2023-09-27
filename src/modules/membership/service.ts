@@ -63,7 +63,6 @@ export class MembershipService {
       if (updateMembership !== null) {
         await this.repo.deleteMembershipUser(updateMembership._id!);
       }
-
       const buyMembership = await this.repo.saveMembershipUser(params);
       const membership = await this.repo.getById(params.membershipId);
       const descuento = params.descuento /100;

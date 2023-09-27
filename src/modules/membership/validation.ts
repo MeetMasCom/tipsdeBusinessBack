@@ -1,5 +1,5 @@
 import { Joi } from "express-validation";
-import { validNumero, validString } from "../../constants/validations";
+import { validNumero, validString,customValidDecimal12Ent2Dec } from "../../constants/validations";
 
 export const getMembershipValidation = {
   params: Joi.object({
@@ -23,7 +23,7 @@ export const updateMembershipValidation = {
   }),
   body: Joi.object({
     name: validString("name", 255),
-    price: validNumero("price"),
+    price: customValidDecimal12Ent2Dec("price"),
     description: Joi.string().required(),
     state: Joi.boolean().required(),
   }),

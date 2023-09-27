@@ -40,6 +40,9 @@ exports.PostService = void 0;
 var messages_1 = require("../../constants/messages");
 var repository_1 = require("./repository");
 var service_1 = require("../recordsTransactions/service");
+var repository_2 = require("../balanceUser/repository");
+var repository_3 = require("../balanceCompany/repository");
+var service_2 = require("../user/service");
 var PostService = /** @class */ (function () {
     function PostService() {
         var _this = this;
@@ -178,39 +181,72 @@ var PostService = /** @class */ (function () {
                 }
             });
         }); };
-        this.saveBuyCourse = function (params) { return __awaiter(_this, void 0, void 0, function () {
-            var buyMembership, course, payload, error_10;
+        this.saveBuyCourse = function (data) { return __awaiter(_this, void 0, void 0, function () {
+            var buyMembership, balance, packageData, price, walletE, payload, error_10;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 4, , 5]);
-                        console.log("params", params);
-                        return [4 /*yield*/, this.repo.saveCourseUser(params)];
+                        _a.trys.push([0, 12, , 13]);
+                        return [4 /*yield*/, this.repo.saveCourseUser(data)];
                     case 1:
                         buyMembership = _a.sent();
-                        return [4 /*yield*/, this.repo.getById(params.courseId)];
+                        return [4 /*yield*/, new repository_2.BalanceUserRepository().getAllByUserId(data.userId)];
                     case 2:
-                        course = _a.sent();
-                        console.log("course", course);
-                        payload = {
-                            value: parseFloat(course.price),
-                            companyValue: 0,
-                            referValue: 0,
-                            detail: "Compra curso ".concat(course.title),
-                            userId: params.userId,
-                            status: true,
-                            typeTransaction: 'Compra curso',
-                            walletId: '64815307cd63e1f5a8982369'
-                        };
-                        console.log("service", payload);
-                        return [4 /*yield*/, new service_1.RecordsTransactionService().save(payload)];
+                        balance = _a.sent();
+                        if (!balance)
+                            throw new Error("Saldo insuficiente, realice una recarga...");
+                        return [4 /*yield*/, new repository_1.CoursesRepository().getById(data.courseId)];
                     case 3:
-                        _a.sent();
-                        return [2 /*return*/, buyMembership];
+                        packageData = _a.sent();
+                        if (!packageData)
+                            throw new Error("No existe información de paquete de visitas...");
+                        if (balance.balance < Number(packageData.price))
+                            throw new Error("Saldo insuficiente, realice una recarga...");
+                        //actualizar saldo usuario
+                        return [4 /*yield*/, new repository_2.BalanceUserRepository().updateBalance(balance._id, {
+                                balance: Number(balance.balance) - Number(packageData.price)
+                            })];
                     case 4:
+                        //actualizar saldo usuario
+                        _a.sent();
+                        price = Number(packageData.price) * 0.50;
+                        return [4 /*yield*/, new repository_3.BalanceCompanyRepository().getByBalanceCompany()];
+                    case 5:
+                        walletE = _a.sent();
+                        if (!(walletE.length > 0)) return [3 /*break*/, 7];
+                        return [4 /*yield*/, new repository_3.BalanceCompanyRepository().update(walletE[0]._id, {
+                                balance: Number(walletE[0].balance) + Number(price),
+                            })];
+                    case 6:
+                        _a.sent();
+                        return [3 /*break*/, 9];
+                    case 7: return [4 /*yield*/, new repository_3.BalanceCompanyRepository().save({
+                            balance: Number(price)
+                        })];
+                    case 8:
+                        _a.sent();
+                        _a.label = 9;
+                    case 9: return [4 /*yield*/, new service_2.UserService().updateBalanceRefer(data.userId, price)];
+                    case 10:
+                        _a.sent();
+                        payload = {
+                            value: Number(packageData.price),
+                            companyValue: price,
+                            referValue: price,
+                            detail: "Compra anuncio ".concat(packageData.title),
+                            userId: data.userId,
+                            status: true,
+                            typeTransaction: 'Compra anuncio',
+                            walletId: ""
+                        };
+                        return [4 /*yield*/, new service_1.RecordsTransactionService().save(payload)];
+                    case 11:
+                        _a.sent();
+                        return [2 /*return*/, messages_1.OK_200];
+                    case 12:
                         error_10 = _a.sent();
                         throw new Error(error_10);
-                    case 5: return [2 /*return*/];
+                    case 13: return [2 /*return*/];
                 }
             });
         }); };
@@ -244,7 +280,7 @@ var PostService = /** @class */ (function () {
                 }
             });
         }); };
-        this.repo = new repository_1.PostRepository();
+        this.repo = new repository_1.CoursesRepository();
     }
     return PostService;
 }());

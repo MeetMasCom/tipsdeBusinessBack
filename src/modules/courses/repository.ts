@@ -6,7 +6,7 @@ import { UserI } from "../../interfaces/user.interface";
 import { userModelMongo } from "../user/model";
 import { count } from "console";
 
-export class PostRepository {
+export class CoursesRepository {
   async saveCourse(data: CourseI) {
     try {
       const cnxMongo = await connectionMongo();
@@ -142,11 +142,12 @@ export class PostRepository {
 
   async getCourseByUserStudent(user: string) {
     try {
+      const objectId = new Types.ObjectId(user);
       const cnxMongo = await connectionMongo();
       const postModel = await courseModelMongo(cnxMongo);
       const response = await postModel.aggregate([
         {
-          $match: { user_id: user },
+          $match: { user_id: objectId },
         },
         {
           $lookup: {
@@ -214,8 +215,7 @@ export class PostRepository {
       const cnxMongo = await connectionMongo();
       const postModel = await courseUserModelMongo(cnxMongo);
       const response = await postModel
-        .find({userId: id },{courseId:idC})
-        .sort({ createdAt: -1 })
+        .find({userId: id ,courseId:idC})
         .exec();
       await cnxMongo.close();
       return response as unknown as CourseUserI[];

@@ -71,8 +71,6 @@ export class BalanceUserRepository {
 
   async update(id: string, data: BalanceUserI) {
     try {
-      console.log(id);
-      console.log(data);
       const cnxMongo = await connectionMongo();
       const balanceUserModel = await balanceUserModelMongo(cnxMongo);
 

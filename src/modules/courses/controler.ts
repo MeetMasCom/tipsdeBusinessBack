@@ -145,6 +145,7 @@ export const getCourseByUserController = async (req: Request, resp: Response) =>
 export const getCourseByUserStudent = async (req: Request, resp: Response) => {
   try {
     const user = req.query.user as string;
+    console.log(user);
     const userService = new PostService();
     return serviceResponse({
       data: await userService.getCourseByUserStudent(user),

@@ -203,6 +203,153 @@ var PromptsRepository = /** @class */ (function () {
             });
         });
     };
+    PromptsRepository.prototype.savePrice = function (data) {
+        return __awaiter(this, void 0, void 0, function () {
+            var cnxMongo, likeModel, response, error_6;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 5, , 6]);
+                        return [4 /*yield*/, (0, conection_1.connectionMongo)()];
+                    case 1:
+                        cnxMongo = _a.sent();
+                        return [4 /*yield*/, (0, model_1.promptsPriceModelMongo)(cnxMongo)];
+                    case 2:
+                        likeModel = _a.sent();
+                        return [4 /*yield*/, likeModel.create(__assign({ _id: new mongoose_1.Types.ObjectId() }, data))];
+                    case 3:
+                        response = _a.sent();
+                        return [4 /*yield*/, cnxMongo.close()];
+                    case 4:
+                        _a.sent();
+                        return [2 /*return*/, response];
+                    case 5:
+                        error_6 = _a.sent();
+                        throw new Error(error_6);
+                    case 6: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    PromptsRepository.prototype.getPricePrompts = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var cnxMongo, likeModel, response, error_7;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 5, , 6]);
+                        return [4 /*yield*/, (0, conection_1.connectionMongo)()];
+                    case 1:
+                        cnxMongo = _a.sent();
+                        return [4 /*yield*/, (0, model_1.promptsPriceModelMongo)(cnxMongo)];
+                    case 2:
+                        likeModel = _a.sent();
+                        return [4 /*yield*/, likeModel.find()
+                                .exec()];
+                    case 3:
+                        response = _a.sent();
+                        return [4 /*yield*/, cnxMongo.close()];
+                    case 4:
+                        _a.sent();
+                        return [2 /*return*/, response];
+                    case 5:
+                        error_7 = _a.sent();
+                        throw new Error(error_7);
+                    case 6: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    PromptsRepository.prototype.updatePricePrompt = function (id, data) {
+        return __awaiter(this, void 0, void 0, function () {
+            var cnxMongo, userModel, response, error_8;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 5, , 6]);
+                        return [4 /*yield*/, (0, conection_1.connectionMongo)()];
+                    case 1:
+                        cnxMongo = _a.sent();
+                        return [4 /*yield*/, (0, model_1.promptsPriceModelMongo)(cnxMongo)];
+                    case 2:
+                        userModel = _a.sent();
+                        return [4 /*yield*/, userModel
+                                .updateOne({ _id: id }, { $set: __assign({}, data) })
+                                .exec()];
+                    case 3:
+                        response = _a.sent();
+                        if (response.modifiedCount == 0)
+                            throw new Error("No se pudo actualizar la información del prompt");
+                        return [4 /*yield*/, cnxMongo.close()];
+                    case 4:
+                        _a.sent();
+                        return [2 /*return*/, response.upsertedId];
+                    case 5:
+                        error_8 = _a.sent();
+                        throw new Error(error_8);
+                    case 6: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    PromptsRepository.prototype.buyPromptsUser = function (data) {
+        return __awaiter(this, void 0, void 0, function () {
+            var cnxMongo, membershipUserModel, response, error_9;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 5, , 6]);
+                        return [4 /*yield*/, (0, conection_1.connectionMongo)()];
+                    case 1:
+                        cnxMongo = _a.sent();
+                        return [4 /*yield*/, (0, model_1.promptsUserModelMongo)(cnxMongo)];
+                    case 2:
+                        membershipUserModel = _a.sent();
+                        return [4 /*yield*/, membershipUserModel.create(__assign({ _id: new mongoose_1.Types.ObjectId() }, data))];
+                    case 3:
+                        response = _a.sent();
+                        return [4 /*yield*/, cnxMongo.close()];
+                    case 4:
+                        _a.sent();
+                        return [2 /*return*/, response];
+                    case 5:
+                        error_9 = _a.sent();
+                        throw new Error(error_9);
+                    case 6: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    PromptsRepository.prototype.getPromptsByUser = function (id) {
+        return __awaiter(this, void 0, void 0, function () {
+            var objectId, cnxMongo, likeModel, response, error_10;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 5, , 6]);
+                        objectId = new mongoose_1.Types.ObjectId(id);
+                        return [4 /*yield*/, (0, conection_1.connectionMongo)()];
+                    case 1:
+                        cnxMongo = _a.sent();
+                        return [4 /*yield*/, (0, model_1.promptsUserModelMongo)(cnxMongo)];
+                    case 2:
+                        likeModel = _a.sent();
+                        return [4 /*yield*/, likeModel.find({ userId: objectId })
+                                .exec()];
+                    case 3:
+                        response = _a.sent();
+                        return [4 /*yield*/, cnxMongo.close()];
+                    case 4:
+                        _a.sent();
+                        return [2 /*return*/, response];
+                    case 5:
+                        error_10 = _a.sent();
+                        throw new Error(error_10);
+                    case 6: return [2 /*return*/];
+                }
+            });
+        });
+    };
     return PromptsRepository;
 }());
 exports.PromptsRepository = PromptsRepository;

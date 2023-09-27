@@ -89,42 +89,48 @@ export class StudentRepository {
       const objectId = new Types.ObjectId(user);
       const cnxMongo = await connectionMongo();
       const postModel = await studentModelMongo(cnxMongo);
-      const response = await postModel.aggregate([
-        
+      // const response = await postModel.aggregate([        
+      //   {
+      //     $lookup: {
+      //       from: "course",
+      //       localField: "course_id",
+      //       foreignField: "_id",
+      //       as: "course",
+      //     },
+      //   },{
+      //     $match: { user_id: objectId },
+      //   },
+      // ])        
+      //   .sort({ createdAt: -1 })
+      //   .exec();
+       const response=await postModel.distinct("course_id", { user_id:objectId}).exec();
+       console.log("response",response);
+
+
+       const response1=await postModel.aggregate([
         {
-          $lookup: {
-            from: "course",
-            localField: "course_id",
-            foreignField: "_id",
-            as: "course",
-          },
+          $match: { course_id: { $in: response } }
         },
         {
           $lookup: {
-            from: "user",
+            from: "users",
             localField: "user_id",
             foreignField: "_id",
-            as: "user",
-          },
-        },{
-          $match: { user_id: objectId },
-        },
-      ])        
-        .sort({ createdAt: -1 })
-        .exec();
-
+            as: "user"
+          }
+        }
+      ]).exec();
+      console.log("response1",response1);
         const result = [];
-        for (var i = 0; i < response.length; i++) {
+        for (var i = 0; i < response1.length; i++) {
             result.push({
-                id_curso: response[i].course[0]._id,
-                title: response[i].course[0].title,
-                description: response[i].course[0].description,
+                id_curso: response1[i].course_id,
                 user: response[i].user,
             })
         }
       await cnxMongo.close();
-      return response as unknown as StudentI[];
-      //return result;
+      //return response1 as unknown as StudentI[];
+      return result;
     } catch (error) {
       throw new Error(error as string);
     }

@@ -56,8 +56,7 @@ export const membershipUserSchema = new Schema<any>(
     },
     descuento:{
       type:Number
-    },
-    
+    },    
       tiempo:{
         type:Number,
       }

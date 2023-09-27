@@ -6,4 +6,22 @@ export interface PromptsI {
     userCourse: string[];
     estate:number
   }
-  
+
+
+  export interface PromptsPriceI {
+    id?: string;    
+    price:number;
+    estate:number
+  }
+
+  export interface PromptsUserI {
+    _id?: string
+    userId: string,
+    value:number,
+    name?: string
+    membershipId: string
+    walletId?: string  
+    state: boolean
+    createdAt?: string;
+    updatedAt?: string;
+}
