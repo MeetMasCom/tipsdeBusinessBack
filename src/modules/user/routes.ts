@@ -64,7 +64,7 @@ userRoutes.put(
 
 userRoutes.put(
   "/address/:id",
-  [validate(updateUserAddressValidation)],
+  [validateJwtHeader, validate(updateUserAddressValidation)],
   updateUserAddressController
 );
 

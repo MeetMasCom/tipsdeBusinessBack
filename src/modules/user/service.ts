@@ -114,7 +114,9 @@ export class UserService {
       if (sponsor != undefined) {
         const userId = (await this.repo.getByEmailOrUserName("", sponsor))
           ._id as string;
+    
         const level = (await this.repo.getReferUser(userId)).length + 1;
+       
         if (level < 7) {
           const refer: ReferralsI = {
             userId,
@@ -449,6 +451,7 @@ export class UserService {
       throw new Error(ERR_400);
     }
   };
+
 
   getUserGender = async (id: string): Promise<UserI[]> => {
     try {

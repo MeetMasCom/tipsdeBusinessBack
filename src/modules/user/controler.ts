@@ -73,7 +73,7 @@ export const getUserValidateController = async (
 export const createUserController = async (req: Request, resp: Response) => {
   try {
     const payload = req.body as unknown as UserI;
-    console.log(payload);
+    //console.log(payload);
     const userService = new UserService();
     return serviceResponse({
       data: await userService.save(payload),
@@ -93,7 +93,7 @@ export const createUserController = async (req: Request, resp: Response) => {
 export const loginController = async (req: Request, resp: Response) => {
   try {
     const payload = req.body as unknown as LoginUserI;
-    console.log(payload);
+    //console.log(payload);
     const userService = new UserService();
     return serviceResponse({
       data: await userService.login(payload),
@@ -556,8 +556,6 @@ export const getUsersincupo = async (
   }
 };
 
-
-
 export const getReferUserController = async (
   req: Request,
   resp: Response
@@ -579,3 +577,7 @@ export const getReferUserController = async (
     });
   }
 };
+
+
+
+
