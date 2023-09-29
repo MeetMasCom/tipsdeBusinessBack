@@ -1,0 +1,1247 @@
+[{
+  "_id": {
+    "$oid": "6439fdb2390dc46e060252cf"
+  },
+  "code": "ESTADO_CIVIL",
+  "name": "Listado de estados civil",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-15T01:28:18.085Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:28:18.085Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439fe01c8b9a28009445305"
+  },
+  "code": "SOLTERO",
+  "name": "Soltero/a",
+  "parentCatalogueId": {
+    "$oid": "6439fdb2390dc46e060252cf"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:29:37.257Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:29:37.257Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439fe0ec8b9a28009445309"
+  },
+  "code": "CASADO",
+  "name": "Casado/a",
+  "parentCatalogueId": {
+    "$oid": "6439fdb2390dc46e060252cf"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:29:50.612Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:29:50.612Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439fe2ac8b9a2800944530d"
+  },
+  "code": "DIVORCIADO",
+  "name": "Divorciado/a",
+  "parentCatalogueId": {
+    "$oid": "6439fdb2390dc46e060252cf"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:30:18.571Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:30:18.571Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439fe39c8b9a28009445311"
+  },
+  "code": "VIUDO",
+  "name": "Viudo/a",
+  "parentCatalogueId": {
+    "$oid": "6439fdb2390dc46e060252cf"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:30:33.181Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:30:33.181Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439feacc8b9a28009445315"
+  },
+  "code": "BEBIDA",
+  "name": "Opciones de bebidas",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-15T01:32:28.254Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:32:28.254Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439fec9c8b9a28009445319"
+  },
+  "code": "BEBIDA_YES",
+  "name": "Si",
+  "parentCatalogueId": {
+    "$oid": "6439feacc8b9a28009445315"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:32:57.258Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:32:57.258Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439fed6c8b9a2800944531d"
+  },
+  "code": "BEBIDA_YES_S",
+  "name": "Si Socialmente",
+  "parentCatalogueId": {
+    "$oid": "6439feacc8b9a28009445315"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:33:10.769Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:33:10.769Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439fee2c8b9a28009445321"
+  },
+  "code": "BEBIDA_NO",
+  "name": "No",
+  "parentCatalogueId": {
+    "$oid": "6439feacc8b9a28009445315"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:33:22.436Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:33:22.436Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439fef3c8b9a28009445325"
+  },
+  "code": "FUMA",
+  "name": "Opciones fuma",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-15T01:33:39.854Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:33:39.854Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439ff1ac8b9a28009445329"
+  },
+  "code": "FUMA_YES",
+  "name": "Si",
+  "parentCatalogueId": {
+    "$oid": "6439fef3c8b9a28009445325"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:34:18.634Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:34:18.634Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439ff25c8b9a2800944532d"
+  },
+  "code": "FUMA_NO",
+  "name": "No",
+  "parentCatalogueId": {
+    "$oid": "6439fef3c8b9a28009445325"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:34:29.750Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:34:29.750Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439ff32c8b9a28009445331"
+  },
+  "code": "FUMA_YES_S",
+  "name": "Si Socialmente",
+  "parentCatalogueId": {
+    "$oid": "6439fef3c8b9a28009445325"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:34:42.053Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:34:42.053Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439ff85c8b9a28009445335"
+  },
+  "code": "HIJOS",
+  "name": "Opciones Hijos",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-15T01:36:05.627Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:36:05.627Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439ffa0c8b9a28009445339"
+  },
+  "code": "HIJOS_SI",
+  "name": "Si",
+  "parentCatalogueId": {
+    "$oid": "6439ff85c8b9a28009445335"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:36:32.954Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:36:32.954Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439ffb3c8b9a2800944533d"
+  },
+  "code": "HIJOS_NO",
+  "name": "No",
+  "parentCatalogueId": {
+    "$oid": "6439ff85c8b9a28009445335"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:36:51.062Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:36:51.062Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439ffc4c8b9a28009445341"
+  },
+  "code": "HIJOS_MAS",
+  "name": "Quiero tener mas hijos",
+  "parentCatalogueId": {
+    "$oid": "6439ff85c8b9a28009445335"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:37:08.966Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:37:08.966Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6439fff9c8b9a28009445345"
+  },
+  "code": "HIJOS_MAS_UNO",
+  "name": "Mas de uno",
+  "parentCatalogueId": {
+    "$oid": "6439ff85c8b9a28009445335"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:38:01.543Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:38:01.543Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0044c8b9a28009445349"
+  },
+  "code": "ESTUDIOS",
+  "name": "Opciones de estudio",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-15T01:39:16.468Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:39:16.468Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0058c8b9a2800944534d"
+  },
+  "code": "PRIMARIA",
+  "name": "Primaria",
+  "parentCatalogueId": {
+    "$oid": "643a0044c8b9a28009445349"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:39:36.824Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:39:36.824Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0068c8b9a28009445351"
+  },
+  "code": "SECUNDARIA",
+  "name": "Secundaria",
+  "parentCatalogueId": {
+    "$oid": "643a0044c8b9a28009445349"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:39:52.344Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:39:52.344Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a009dc8b9a28009445355"
+  },
+  "code": "UNIVERSIDAD_MEDIO",
+  "name": "Universidad sin terminar",
+  "parentCatalogueId": {
+    "$oid": "643a0044c8b9a28009445349"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:40:45.170Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:40:45.170Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a00a9c8b9a28009445359"
+  },
+  "code": "UNIVERSIDAD_COMPLETA",
+  "name": "Universidad Completa",
+  "parentCatalogueId": {
+    "$oid": "643a0044c8b9a28009445349"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:40:57.183Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:40:57.183Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a00b9c8b9a2800944535d"
+  },
+  "code": "DOCTORADO",
+  "name": "Doctorado",
+  "parentCatalogueId": {
+    "$oid": "643a0044c8b9a28009445349"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:41:13.434Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:41:13.434Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a00c4c8b9a28009445361"
+  },
+  "code": "PHD",
+  "name": "Phd",
+  "parentCatalogueId": {
+    "$oid": "643a0044c8b9a28009445349"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:41:24.139Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:41:24.139Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0158c8b9a28009445365"
+  },
+  "code": "TIPO_CUERPO",
+  "name": "Opciones tipo cuerpo",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-15T01:43:52.181Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:43:52.181Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0174c8b9a28009445369"
+  },
+  "code": "DELGADO",
+  "name": "Delgado",
+  "parentCatalogueId": {
+    "$oid": "643a0158c8b9a28009445365"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:44:20.775Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:44:20.775Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0186c8b9a2800944536d"
+  },
+  "code": "DEPORTIVO",
+  "name": "Deportivo",
+  "parentCatalogueId": {
+    "$oid": "643a0158c8b9a28009445365"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:44:38.071Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:44:38.071Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a019bc8b9a28009445371"
+  },
+  "code": "GORDITO",
+  "name": "Gordito",
+  "parentCatalogueId": {
+    "$oid": "643a0158c8b9a28009445365"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:44:59.135Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:44:59.135Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a01fec8b9a28009445375"
+  },
+  "code": "ZODIACAL",
+  "name": "Opciones signo zodiacal",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-15T01:46:38.020Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:46:38.020Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a021cc8b9a28009445379"
+  },
+  "code": "ARIES",
+  "name": "Aries",
+  "parentCatalogueId": {
+    "$oid": "643a01fec8b9a28009445375"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:47:08.445Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:47:08.445Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a022bc8b9a2800944537d"
+  },
+  "code": "TAURO",
+  "name": "Tauro",
+  "parentCatalogueId": {
+    "$oid": "643a01fec8b9a28009445375"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:47:23.495Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:47:23.495Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0248c8b9a28009445381"
+  },
+  "code": "CANCER",
+  "name": "Cancer",
+  "parentCatalogueId": {
+    "$oid": "643a01fec8b9a28009445375"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:47:52.851Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:47:52.851Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a025cc8b9a28009445385"
+  },
+  "code": "LIBRA",
+  "name": "Libra",
+  "parentCatalogueId": {
+    "$oid": "643a01fec8b9a28009445375"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:48:12.145Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:48:12.145Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0271c8b9a28009445389"
+  },
+  "code": "ACUARIO",
+  "name": "Acuario",
+  "parentCatalogueId": {
+    "$oid": "643a01fec8b9a28009445375"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:48:33.798Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:48:33.798Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a027ec8b9a2800944538d"
+  },
+  "code": "PICIS",
+  "name": "Picis",
+  "parentCatalogueId": {
+    "$oid": "643a01fec8b9a28009445375"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:48:46.565Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:48:46.565Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0293c8b9a28009445391"
+  },
+  "code": "SAGITARIO",
+  "name": "Sagitario",
+  "parentCatalogueId": {
+    "$oid": "643a01fec8b9a28009445375"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:49:07.925Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:49:07.925Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a02b9c8b9a28009445395"
+  },
+  "code": "CAPRICORNIO",
+  "name": "Capricornio",
+  "parentCatalogueId": {
+    "$oid": "643a01fec8b9a28009445375"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:49:45.676Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:49:45.676Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a02dfc8b9a28009445399"
+  },
+  "code": "GEMINIS",
+  "name": "Geminis",
+  "parentCatalogueId": {
+    "$oid": "643a01fec8b9a28009445375"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:50:23.214Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:50:23.214Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a031dc8b9a2800944539d"
+  },
+  "code": "LEO",
+  "name": "Leo",
+  "parentCatalogueId": {
+    "$oid": "643a01fec8b9a28009445375"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:51:25.326Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:51:25.326Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0326c8b9a280094453a1"
+  },
+  "code": "VIRGO",
+  "name": "Virgo",
+  "parentCatalogueId": {
+    "$oid": "643a01fec8b9a28009445375"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:51:34.201Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:51:34.201Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0349c8b9a280094453a5"
+  },
+  "code": "PROFESION",
+  "name": "Opciones de profesión",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-15T01:52:09.803Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:52:09.803Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0363c8b9a280094453a9"
+  },
+  "code": "SOFTWARE",
+  "name": "Ingeniero software",
+  "parentCatalogueId": {
+    "$oid": "643a0349c8b9a280094453a5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:52:35.718Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:52:35.718Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0379c8b9a280094453ad"
+  },
+  "code": "MEDICO",
+  "name": "Médico/a",
+  "parentCatalogueId": {
+    "$oid": "643a0349c8b9a280094453a5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:52:57.070Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:52:57.070Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0385c8b9a280094453b1"
+  },
+  "code": "DOCENTE",
+  "name": "Docente",
+  "parentCatalogueId": {
+    "$oid": "643a0349c8b9a280094453a5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:53:09.370Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:53:09.370Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a03c6c8b9a280094453b5"
+  },
+  "code": "POLITICA",
+  "name": "Opciones política",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-15T01:54:14.548Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:54:14.548Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a03e4c8b9a280094453b9"
+  },
+  "code": "COMUNISTA",
+  "name": "Comunista",
+  "parentCatalogueId": {
+    "$oid": "643a03c6c8b9a280094453b5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:54:44.850Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:54:44.850Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0402c8b9a280094453bd"
+  },
+  "code": "SOCIALISTA",
+  "name": "socialista",
+  "parentCatalogueId": {
+    "$oid": "643a03c6c8b9a280094453b5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:55:14.485Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:55:14.485Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0415c8b9a280094453c1"
+  },
+  "code": "LIBERAL",
+  "name": "Liberal",
+  "parentCatalogueId": {
+    "$oid": "643a03c6c8b9a280094453b5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:55:33.271Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:55:33.271Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0427c8b9a280094453c5"
+  },
+  "code": "CONSERVADOR",
+  "name": "Conservador",
+  "parentCatalogueId": {
+    "$oid": "643a03c6c8b9a280094453b5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:55:51.910Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:55:51.910Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0435c8b9a280094453c9"
+  },
+  "code": "MONARQUICO",
+  "name": "Monárquico",
+  "parentCatalogueId": {
+    "$oid": "643a03c6c8b9a280094453b5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:56:05.048Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:56:05.048Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0446c8b9a280094453cd"
+  },
+  "code": "INDIFERENTE",
+  "name": "Indiferente",
+  "parentCatalogueId": {
+    "$oid": "643a03c6c8b9a280094453b5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:56:22.196Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:56:22.196Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0453c8b9a280094453d1"
+  },
+  "code": "LIBERTARIO",
+  "name": "Libertario",
+  "parentCatalogueId": {
+    "$oid": "643a03c6c8b9a280094453b5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:56:35.622Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:56:35.622Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0464c8b9a280094453d5"
+  },
+  "code": "ANARQUISTA",
+  "name": "Anarquista",
+  "parentCatalogueId": {
+    "$oid": "643a03c6c8b9a280094453b5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:56:52.110Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:56:52.110Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a047cc8b9a280094453d9"
+  },
+  "code": "NACIONALISTA",
+  "name": "Nacionalista",
+  "parentCatalogueId": {
+    "$oid": "643a03c6c8b9a280094453b5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:57:16.403Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:57:16.403Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a048cc8b9a280094453dd"
+  },
+  "code": "RELIGIOSO",
+  "name": "Religioso",
+  "parentCatalogueId": {
+    "$oid": "643a03c6c8b9a280094453b5"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T01:57:32.329Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T01:57:32.329Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a0ff4801e0fcfeaf893c7"
+  },
+  "code": "GENERO",
+  "name": "Opciones género",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-15T02:46:12.354Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T02:46:12.354Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a100b801e0fcfeaf893cb"
+  },
+  "code": "MASCULINO",
+  "name": "Masculino",
+  "parentCatalogueId": {
+    "$oid": "643a0ff4801e0fcfeaf893c7"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T02:46:35.259Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T02:46:35.259Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a101f801e0fcfeaf893cf"
+  },
+  "code": "FEMENINO",
+  "name": "Femenino",
+  "parentCatalogueId": {
+    "$oid": "643a0ff4801e0fcfeaf893c7"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T02:46:55.383Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T02:46:55.383Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643a1027801e0fcfeaf893d3"
+  },
+  "code": "OTRO",
+  "name": "Otro",
+  "parentCatalogueId": {
+    "$oid": "643a0ff4801e0fcfeaf893c7"
+  },
+  "createdAt": {
+    "$date": "2023-04-15T02:47:03.403Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-15T02:47:03.403Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643f38fbee229f2291348431"
+  },
+  "code": "PRACTICA_DEPORTE",
+  "name": "Practica Deporte",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643f3912ee229f2291348435"
+  },
+  "code": "PRACTICA_DEPORTE_DIARIAMENTE",
+  "name": "Diariamente",
+  "parentCatalogueId": {
+    "$oid": "643f38fbee229f2291348431"
+  },
+  "createdAt": {
+    "$date": "2023-04-19T00:42:58.729Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T00:42:58.729Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643f3925ee229f2291348439"
+  },
+  "code": "PRACTICA_DEPORTE_RARA_VEZ",
+  "name": "Rara vez",
+  "parentCatalogueId": {
+    "$oid": "643f38fbee229f2291348431"
+  },
+  "createdAt": {
+    "$date": "2023-04-19T00:43:17.065Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T00:43:17.065Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643f3930ee229f229134843d"
+  },
+  "code": "PRACTICA_DEPORTE_NUNCA",
+  "name": "Nunca",
+  "parentCatalogueId": {
+    "$oid": "643f38fbee229f2291348431"
+  },
+  "createdAt": {
+    "$date": "2023-04-19T00:43:28.421Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T00:43:28.421Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a479eb09893c26636a793a"
+  },
+  "code": "IDIOMAS",
+  "name": "Opciones de idiomas",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a47a1c09893c26636a793c"
+  },
+  "code": "DEPORTES",
+  "name": "Opciones de deportes",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a47a4909893c26636a793e"
+  },
+  "code": "ETNIAS",
+  "name": "Opciones de Etnias",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a47ae109893c26636a7940"
+  },
+  "code": "JORNADA_LABORAL",
+  "name": "Opciones de jornada laboral",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a47afb09893c26636a7942"
+  },
+  "code": "DEPENDENCIA_LABORAL",
+  "name": "Opciones de dependencia laboral",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a47cd009893c26636a7944"
+  },
+  "code": "RELIGION",
+  "name": "Opciones de religion",
+  "parentCatalogueId": null,
+  "createdAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T00:42:35.464Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a489cfc40fc45e9c643109"
+  },
+  "code": "Ingeniero Mecánico",
+  "name": "Ingeniero Mecánico",
+  "parentCatalogueId": {
+    "$oid": "643a0349c8b9a280094453a5"
+  },
+  "createdAt": {
+    "$date": "2023-07-04T21:06:23.527Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-04T21:06:23.527Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a48ec74f850b0ba5a8a522"
+  },
+  "code": "Español",
+  "name": "Español",
+  "parentCatalogueId": {
+    "$oid": "64a479eb09893c26636a793a"
+  },
+  "createdAt": {
+    "$date": "2023-07-04T21:27:35.767Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-04T21:27:35.767Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a48edd4f850b0ba5a8a593"
+  },
+  "code": "Fútbol",
+  "name": "Fútbol",
+  "parentCatalogueId": {
+    "$oid": "64a47a1c09893c26636a793c"
+  },
+  "createdAt": {
+    "$date": "2023-07-04T21:27:57.060Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-04T21:27:57.060Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a48eed4f850b0ba5a8a5b2"
+  },
+  "code": "Católica",
+  "name": "Católica",
+  "parentCatalogueId": {
+    "$oid": "64a47cd009893c26636a7944"
+  },
+  "createdAt": {
+    "$date": "2023-07-04T21:28:13.679Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-04T21:28:13.679Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a48efd4f850b0ba5a8a5c8"
+  },
+  "code": "Mestizo",
+  "name": "Mestizo",
+  "parentCatalogueId": {
+    "$oid": "64a47a4909893c26636a793e"
+  },
+  "createdAt": {
+    "$date": "2023-07-04T21:28:29.521Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-04T21:28:29.521Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a48f0e4f850b0ba5a8a5de"
+  },
+  "code": "Tiempo Completo",
+  "name": "Tiempo Completo",
+  "parentCatalogueId": {
+    "$oid": "64a47ae109893c26636a7940"
+  },
+  "createdAt": {
+    "$date": "2023-07-04T21:28:46.284Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-04T21:28:46.284Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a48f154f850b0ba5a8a5eb"
+  },
+  "code": "Medio Tiempo",
+  "name": "Medio Tiempo",
+  "parentCatalogueId": {
+    "$oid": "64a47ae109893c26636a7940"
+  },
+  "createdAt": {
+    "$date": "2023-07-04T21:28:53.394Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-04T21:28:53.394Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a48f224f850b0ba5a8a601"
+  },
+  "code": "Independiente",
+  "name": "Independiente",
+  "parentCatalogueId": {
+    "$oid": "64a47afb09893c26636a7942"
+  },
+  "createdAt": {
+    "$date": "2023-07-04T21:29:06.625Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-04T21:29:06.625Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a4a22c4f850b0ba5a8c6e4"
+  },
+  "code": "Cristiana",
+  "name": "Cristiana",
+  "parentCatalogueId": {
+    "$oid": "64a47cd009893c26636a7944"
+  },
+  "createdAt": {
+    "$date": "2023-07-04T22:50:20.281Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-04T22:50:20.281Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64a4b25e4cc34f05fb3ba5ce"
+  },
+  "code": "Inglés",
+  "name": "Inglés",
+  "parentCatalogueId": {
+    "$oid": "64a479eb09893c26636a793a"
+  },
+  "createdAt": {
+    "$date": "2023-07-04T23:59:26.162Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-04T23:59:26.162Z"
+  },
+  "__v": 0
+}]

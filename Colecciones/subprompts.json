@@ -1,0 +1,2823 @@
+[{
+  "_id": {
+    "$oid": "64dbeb566938bf0b7bd19912"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7474f93567f53f6bbca"
+  },
+  "name": "Favoritos del entrenador",
+  "description": "Favoritos del entrenador",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:17:10.394Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:17:10.394Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbeb6b6938bf0b7bd19927"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7474f93567f53f6bbca"
+  },
+  "name": "Entrenamiento digital",
+  "description": "Entrenamiento digital",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:17:31.997Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:17:31.997Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbeb806938bf0b7bd1993c"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7474f93567f53f6bbca"
+  },
+  "name": "Clase de Whatsapp",
+  "description": "Clase de Whatsapp",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:17:52.998Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:17:52.998Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbeba16938bf0b7bd19951"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7474f93567f53f6bbca"
+  },
+  "name": "Jefe de copia de 9 piezas",
+  "description": "Jefe de copia de 9 piezas",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:18:25.470Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:18:25.470Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbebaf6938bf0b7bd19966"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7474f93567f53f6bbca"
+  },
+  "name": "Fórmula SEMILLA",
+  "description": "Fórmula SEMILLA",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:18:39.305Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:18:39.305Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbebe96938bf0b7bd1997b"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7474f93567f53f6bbca"
+  },
+  "name": "Declaración de oferta de bote salvavidas",
+  "description": "Declaración de oferta de bote salvavidas",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:19:37.270Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:19:37.270Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbebf46938bf0b7bd19990"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7474f93567f53f6bbca"
+  },
+  "name": "Anuncios",
+  "description": "Anuncios",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:19:48.770Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:19:48.770Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbec8e6938bf0b7bd19ab1"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7524f93567f53f6bbcf"
+  },
+  "name": "Generar línea de asunto de correo electrónico",
+  "description": "Generar línea de asunto de correo electrónico",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:22:22.872Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:22:22.872Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbeca46938bf0b7bd19ac6"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7524f93567f53f6bbcf"
+  },
+  "name": "Escribir un correo electrónico de ventas",
+  "description": "Escribir un correo electrónico de ventas",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:22:44.886Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:22:44.886Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbecc76938bf0b7bd19adf"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7524f93567f53f6bbcf"
+  },
+  "name": "Escriba un correo electrónico de incorporación",
+  "description": "Escriba un correo electrónico de incorporación",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:23:19.031Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:23:19.031Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbece86938bf0b7bd19af4"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7524f93567f53f6bbcf"
+  },
+  "name": "Escribir un correo electrónico de abandono del carrito",
+  "description": "Escribir un correo electrónico de abandono del carrito",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:23:52.002Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:23:52.002Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbed026938bf0b7bd19b09"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7524f93567f53f6bbcf"
+  },
+  "name": "Generación de un boletín",
+  "description": "Generación de un boletín",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:24:18.123Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:24:18.123Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbed266938bf0b7bd19b1e"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7524f93567f53f6bbcf"
+  },
+  "name": "Escriba un correo electrónico de bienvenida al cliente",
+  "description": "Escriba un correo electrónico de bienvenida al cliente",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:24:54.117Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:24:54.117Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbed3c6938bf0b7bd19b33"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7524f93567f53f6bbcf"
+  },
+  "name": "Escribir un correo electrónico frío",
+  "description": "Escribir un correo electrónico frío",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:25:16.100Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:25:16.100Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbefd90ec18bac64a9267b"
+  },
+  "prompts_id": {
+    "$oid": "64dbe75e4f93567f53f6bbd4"
+  },
+  "name": "Página de destino para suscripciones",
+  "description": "Página de destino para suscripciones",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:36:25.938Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:36:25.938Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf06a0ec18bac64a92690"
+  },
+  "prompts_id": {
+    "$oid": "64dbe75e4f93567f53f6bbd4"
+  },
+  "name": "Escribir una página de ventas",
+  "description": "Escribir una página de ventas",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:38:50.170Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:38:50.170Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf0790ec18bac64a926a5"
+  },
+  "prompts_id": {
+    "$oid": "64dbe75e4f93567f53f6bbd4"
+  },
+  "name": "Ordenar copia de golpe",
+  "description": "Ordenar copia de golpe",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:39:05.030Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:39:05.030Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf0990ec18bac64a926ba"
+  },
+  "prompts_id": {
+    "$oid": "64dbe75e4f93567f53f6bbd4"
+  },
+  "name": "Escriba una copia de la página de ventas adicionales",
+  "description": "Escriba una copia de la página de ventas adicionales",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:39:37.472Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:39:37.472Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf0ac0ec18bac64a926cf"
+  },
+  "prompts_id": {
+    "$oid": "64dbe75e4f93567f53f6bbd4"
+  },
+  "name": "Escribir una página de agradecimiento",
+  "description": "Escribir una página de agradecimiento",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:39:56.309Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:39:56.309Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf0ba0ec18bac64a926e4"
+  },
+  "prompts_id": {
+    "$oid": "64dbe75e4f93567f53f6bbd4"
+  },
+  "name": "Generar ideas de productos",
+  "description": "Generar ideas de productos",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:40:10.548Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:40:10.548Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf0cf0ec18bac64a926f9"
+  },
+  "prompts_id": {
+    "$oid": "64dbe75e4f93567f53f6bbd4"
+  },
+  "name": "Generar ideas de embudo en línea",
+  "description": "Generar ideas de embudo en línea",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:40:31.643Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:40:31.643Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf0e20ec18bac64a9270e"
+  },
+  "prompts_id": {
+    "$oid": "64dbe75e4f93567f53f6bbd4"
+  },
+  "name": "Elegir un nicho",
+  "description": "Elegir un nicho",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:40:50.007Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:40:50.007Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf1180ec18bac64a92751"
+  },
+  "prompts_id": {
+    "$oid": "64dbe76b4f93567f53f6bbd9"
+  },
+  "name": "Escribir una página JV",
+  "description": "Escribir una página JV",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:41:44.646Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:41:44.646Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf1430ec18bac64a92766"
+  },
+  "prompts_id": {
+    "$oid": "64dbe76b4f93567f53f6bbd9"
+  },
+  "name": "Escribir un guión de video JV",
+  "description": "Escribir un guión de video JV",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:42:27.291Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:42:27.291Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf1590ec18bac64a9277b"
+  },
+  "prompts_id": {
+    "$oid": "64dbe76b4f93567f53f6bbd9"
+  },
+  "name": "Escribir reseñas de productos afiliados",
+  "description": "Escribir reseñas de productos afiliados",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:42:49.008Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:42:49.008Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf16c0ec18bac64a92790"
+  },
+  "prompts_id": {
+    "$oid": "64dbe76b4f93567f53f6bbd9"
+  },
+  "name": "Comparación de productos de afiliados",
+  "description": "Comparación de productos de afiliados",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:43:08.861Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:43:08.861Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf25d0ec18bac64a927a5"
+  },
+  "prompts_id": {
+    "$oid": "64dbe76b4f93567f53f6bbd9"
+  },
+  "name": "Recomendaciones de productos de afiliados",
+  "description": "Recomendaciones de productos de afiliados",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:47:09.095Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:47:09.095Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf27d0ec18bac64a927ba"
+  },
+  "prompts_id": {
+    "$oid": "64dbe76b4f93567f53f6bbd9"
+  },
+  "name": "Escribir descripciones de productos de afiliados",
+  "description": "Escribir descripciones de productos de afiliados",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:47:41.019Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:47:41.019Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf2a10ec18bac64a927cf"
+  },
+  "prompts_id": {
+    "$oid": "64dbe76b4f93567f53f6bbd9"
+  },
+  "name": "Escribir correos electrónicos de productos de afiliados",
+  "description": "Escribir correos electrónicos de productos de afiliados",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:48:17.280Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:48:17.280Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf3700ec18bac64a927f6"
+  },
+  "prompts_id": {
+    "$oid": "64dbe77a4f93567f53f6bbde"
+  },
+  "name": "Crear copia de anuncio de facebook",
+  "description": "Crear copia de anuncio de facebook",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:51:44.541Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:51:44.541Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf3810ec18bac64a9280b"
+  },
+  "prompts_id": {
+    "$oid": "64dbe77a4f93567f53f6bbde"
+  },
+  "name": "Ideas para creativos",
+  "description": "Ideas para creativos",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:52:01.901Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:52:01.901Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf39f0ec18bac64a92820"
+  },
+  "prompts_id": {
+    "$oid": "64dbe77a4f93567f53f6bbde"
+  },
+  "name": "Escribir titulares para anuncios de facebook",
+  "description": "Escribir titulares para anuncios de facebook",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:52:31.624Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:52:31.624Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf3c70ec18bac64a92835"
+  },
+  "prompts_id": {
+    "$oid": "64dbe77a4f93567f53f6bbde"
+  },
+  "name": "Escribir guiones de video de anuncios de facebook",
+  "description": "Escribir guiones de video de anuncios de facebook",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:53:11.191Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:53:11.191Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf3f90ec18bac64a9284a"
+  },
+  "prompts_id": {
+    "$oid": "64dbe77a4f93567f53f6bbde"
+  },
+  "name": "Investiga a tu cliente ideal",
+  "description": "Investiga a tu cliente ideal",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:54:01.441Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:54:01.441Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf40e0ec18bac64a9285f"
+  },
+  "prompts_id": {
+    "$oid": "64dbe77a4f93567f53f6bbde"
+  },
+  "name": "Ángulos para creativos",
+  "description": "Ángulos para creativos",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:54:22.578Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:54:22.578Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dbf42d0ec18bac64a928aa"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7894f93567f53f6bbe3"
+  },
+  "name": "Ideas para miniaturas",
+  "description": "Ideas para miniaturas",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T21:54:53.005Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T21:54:53.005Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc03c50ec18bac64a9290d"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7894f93567f53f6bbe3"
+  },
+  "name": "Escribir un guión de video de YouTube",
+  "description": "Escribir un guión de video de YouTube",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:01:25.291Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:01:25.291Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc03d50ec18bac64a92922"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7894f93567f53f6bbe3"
+  },
+  "name": "Escribir un título de video de YouTube",
+  "description": "Escribir un título de video de YouTube",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:01:41.961Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:01:41.961Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc03ee0ec18bac64a92937"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7894f93567f53f6bbe3"
+  },
+  "name": "Escribe una descripción de video de YouTube",
+  "description": "Escribe una descripción de video de YouTube",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:02:06.325Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:02:06.325Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc04050ec18bac64a9294c"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7894f93567f53f6bbe3"
+  },
+  "name": "Escribe un guión de anuncio de video de YouTube",
+  "description": "Escribe un guión de anuncio de video de YouTube",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:02:29.233Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:02:29.233Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc0f0e0ec18bac64a92973"
+  },
+  "prompts_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "name": "Soporte telefónico",
+  "description": "Soporte telefónico",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:49:34.790Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:49:34.790Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc0f210ec18bac64a92988"
+  },
+  "prompts_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "name": "Chat de soporte",
+  "description": "Chat de soporte",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:49:53.166Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:49:53.166Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc0f360ec18bac64a9299d"
+  },
+  "prompts_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "name": "Soporte de correo electrónico",
+  "description": "Soporte de correo electrónico",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:50:14.346Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:50:14.346Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc0f4c0ec18bac64a929b2"
+  },
+  "prompts_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "name": "Gestión de cuentas de clientes",
+  "description": "Gestión de cuentas de clientes",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:50:36.647Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:50:36.647Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc0f5d0ec18bac64a929c7"
+  },
+  "prompts_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "name": "Administrar pedidos",
+  "description": "Administrar pedidos",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:50:53.374Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:50:53.374Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc0f6a0ec18bac64a929dc"
+  },
+  "prompts_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "name": "Base de conocimientos",
+  "description": "Base de conocimientos",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:51:06.354Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:51:06.354Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc0f7b0ec18bac64a929f1"
+  },
+  "prompts_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "name": "Bot conversacional",
+  "description": "Bot conversacional",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:51:23.960Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:51:23.960Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc0f920ec18bac64a92a06"
+  },
+  "prompts_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "name": "Preguntas frecuentes de los clientes",
+  "description": "Preguntas frecuentes de los clientes",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:51:46.456Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:51:46.456Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc0fb30ec18bac64a92a1b"
+  },
+  "prompts_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "name": "Respuesta de correo electrónico del cliente",
+  "description": "Respuesta de correo electrónico del cliente",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:52:19.959Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:52:19.959Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc0fc50ec18bac64a92a30"
+  },
+  "prompts_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "name": "Respuesta al comentario del cliente",
+  "description": "Respuesta al comentario del cliente",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:52:37.159Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:52:37.159Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc0fe30ec18bac64a92a45"
+  },
+  "prompts_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "name": "Retención de clientes",
+  "description": "Retención de clientes",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:53:07.503Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:53:07.503Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc0ff30ec18bac64a92a5a"
+  },
+  "prompts_id": {
+    "$oid": "64dbe79c4f93567f53f6bbe8"
+  },
+  "name": "Encuesta al consumidor",
+  "description": "Encuesta al consumidor",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:53:23.827Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:53:23.827Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc101e0ec18bac64a92a81"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7ab4f93567f53f6bbed"
+  },
+  "name": "SMS para promociones",
+  "description": "SMS para promociones",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:54:06.004Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:54:06.004Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc10320ec18bac64a92a96"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7ab4f93567f53f6bbed"
+  },
+  "name": "SMS para generación de prospectos",
+  "description": "SMS para generación de prospectos",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:54:26.263Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:54:26.263Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc10460ec18bac64a92aab"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7ab4f93567f53f6bbed"
+  },
+  "name": "SMS de seguimiento",
+  "description": "SMS de seguimiento",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:54:46.387Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:54:46.387Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc105f0ec18bac64a92ad2"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7b84f93567f53f6bbf2"
+  },
+  "name": "Generar lista de palabras clave",
+  "description": "Generar lista de palabras clave",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:55:11.109Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:55:11.109Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc106d0ec18bac64a92ae7"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7b84f93567f53f6bbf2"
+  },
+  "name": "Publicaciones de blog",
+  "description": "Publicaciones de blog",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:55:25.561Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:55:25.561Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc107d0ec18bac64a92afc"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7b84f93567f53f6bbf2"
+  },
+  "name": "Optimización SEO",
+  "description": "Optimización SEO",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:55:41.169Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:55:41.169Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc108b0ec18bac64a92b11"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7b84f93567f53f6bbf2"
+  },
+  "name": "Calendario de contenido",
+  "description": "Calendario de contenido",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:55:55.815Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:55:55.815Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc10b50ec18bac64a92b38"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7ca4f93567f53f6bbf7"
+  },
+  "name": "Invitación de invitado de podcast",
+  "description": "Invitación de invitado de podcast",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:56:37.179Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:56:37.179Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc10c40ec18bac64a92b4d"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7ca4f93567f53f6bbf7"
+  },
+  "name": "Entrevista de podcast",
+  "description": "Entrevista de podcast",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:56:52.970Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:56:52.970Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc10d90ec18bac64a92b62"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7ca4f93567f53f6bbf7"
+  },
+  "name": "Guión de podcast",
+  "description": "Guión de podcast",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:57:13.451Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:57:13.451Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc11390ec18bac64a92b89"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7e14f93567f53f6bbfc"
+  },
+  "name": "Publicar para grupos de Linkedln",
+  "description": "Publicar para grupos de Linkedln",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:58:49.231Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:58:49.231Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc11480ec18bac64a92b9e"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7e14f93567f53f6bbfc"
+  },
+  "name": "Perfil de Linkedln",
+  "description": "Perfil de Linkedln",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:59:04.939Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:59:04.939Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc115f0ec18bac64a92bb3"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7e14f93567f53f6bbfc"
+  },
+  "name": "Ideas para publicaciones de Linkedln",
+  "description": "Ideas para publicaciones de Linkedln",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:59:27.280Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:59:27.280Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc116d0ec18bac64a92bc8"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7e14f93567f53f6bbfc"
+  },
+  "name": "Anuncios para Linkedln",
+  "description": "Anuncios para Linkedln",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-15T23:59:41.011Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T23:59:41.011Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc11880ec18bac64a92bdd"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7e14f93567f53f6bbfc"
+  },
+  "name": "Generar hashtags para Linkedln",
+  "description": "Generar hashtags para Linkedln",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:00:08.793Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:00:08.793Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc11a10ec18bac64a92bf2"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7e14f93567f53f6bbfc"
+  },
+  "name": "Esenciales de Linkedln",
+  "description": "Esenciales de Linkedln",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:00:33.012Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:00:33.012Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc11f40ec18bac64a92c47"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7ec4f93567f53f6bc01"
+  },
+  "name": "Anuncios de Twitter",
+  "description": "Anuncios de Twitter",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:01:56.661Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:01:56.661Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc12010ec18bac64a92c5c"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7ec4f93567f53f6bc01"
+  },
+  "name": "Tendencias de Twitter",
+  "description": "Tendencias de Twitter",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:02:09.727Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:02:09.727Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc12100ec18bac64a92c71"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7ec4f93567f53f6bc01"
+  },
+  "name": "Tuits virales",
+  "description": "Tuits virales",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:02:24.208Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:02:24.208Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc121d0ec18bac64a92c86"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7ec4f93567f53f6bc01"
+  },
+  "name": "Hilos de Twitter",
+  "description": "Hilos de Twitter",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:02:37.954Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:02:37.954Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc12300ec18bac64a92c9b"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7ec4f93567f53f6bc01"
+  },
+  "name": "Optimizar perfil de Twitter",
+  "description": "Optimizar perfil de Twitter",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:02:56.995Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:02:56.995Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc12640ec18bac64a92cc2"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7f74f93567f53f6bc06"
+  },
+  "name": "Administarr contenido social",
+  "description": "Administarr contenido social",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:03:48.862Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:03:48.862Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc12790ec18bac64a92cd7"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7f74f93567f53f6bc06"
+  },
+  "name": "Titulares para publicaciones en redes sociales",
+  "description": "Titulares para publicaciones en redes sociales",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:04:09.898Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:04:09.898Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc128c0ec18bac64a92cec"
+  },
+  "prompts_id": {
+    "$oid": "64dbe7f74f93567f53f6bc06"
+  },
+  "name": "Tableros de humor de Pinterest",
+  "description": "Tableros de humor de Pinterest",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:04:28.818Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:04:28.818Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc12ae0ec18bac64a92d13"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8024f93567f53f6bc0b"
+  },
+  "name": "Ideas de contenido de TikTok",
+  "description": "Ideas de contenido de TikTok",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:05:02.850Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:05:02.850Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc12c10ec18bac64a92d28"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8024f93567f53f6bc0b"
+  },
+  "name": "Guiones de anuncios de TikTok",
+  "description": "Guiones de anuncios de TikTok",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:05:21.855Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:05:21.855Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc12d40ec18bac64a92d3d"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8024f93567f53f6bc0b"
+  },
+  "name": "Hashtags de TikTok",
+  "description": "Hashtags de TikTok",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:05:40.943Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:05:40.943Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc12f30ec18bac64a92d64"
+  },
+  "prompts_id": {
+    "$oid": "64dbe80e4f93567f53f6bc10"
+  },
+  "name": "Escribir una propuesta para el cliente",
+  "description": "Escribir una propuesta para el cliente",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:06:11.252Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:06:11.252Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc13060ec18bac64a92d79"
+  },
+  "prompts_id": {
+    "$oid": "64dbe80e4f93567f53f6bc10"
+  },
+  "name": "Investigue a sus competidores",
+  "description": "Investigue a sus competidores",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:06:30.979Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:06:30.979Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc13130ec18bac64a92d8e"
+  },
+  "prompts_id": {
+    "$oid": "64dbe80e4f93567f53f6bc10"
+  },
+  "name": "Crear un plan de negocios",
+  "description": "Crear un plan de negocios",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:06:43.691Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:06:43.691Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc131f0ec18bac64a92da3"
+  },
+  "prompts_id": {
+    "$oid": "64dbe80e4f93567f53f6bc10"
+  },
+  "name": "Visión de la empresa",
+  "description": "Visión de la empresa",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:06:55.970Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:06:55.970Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc13350ec18bac64a92db8"
+  },
+  "prompts_id": {
+    "$oid": "64dbe80e4f93567f53f6bc10"
+  },
+  "name": "Generar Ideas de Negocios",
+  "description": "Generar Ideas de Negocios",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:07:17.724Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:07:17.724Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc13480ec18bac64a92dcd"
+  },
+  "prompts_id": {
+    "$oid": "64dbe80e4f93567f53f6bc10"
+  },
+  "name": "Invensores de Lanzamiento",
+  "description": "Invensores de Lanzamiento",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:07:36.097Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:07:36.097Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc13560ec18bac64a92de2"
+  },
+  "prompts_id": {
+    "$oid": "64dbe80e4f93567f53f6bc10"
+  },
+  "name": "Contratación",
+  "description": "Contratación",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:07:50.672Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:07:50.672Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc138a0ec18bac64a92e09"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8464f93567f53f6bc29"
+  },
+  "name": "Soporte de ventas",
+  "description": "Soporte de ventas",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:08:42.339Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:08:42.339Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc139c0ec18bac64a92e1e"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8464f93567f53f6bc29"
+  },
+  "name": "Reporte de ventas",
+  "description": "Reporte de ventas",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:09:00.339Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:09:00.339Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc13b40ec18bac64a92e33"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8464f93567f53f6bc29"
+  },
+  "name": "Operaciones de venta",
+  "description": "Operaciones de venta",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:09:24.829Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:09:24.829Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc13cc0ec18bac64a92e48"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8464f93567f53f6bc29"
+  },
+  "name": "Incentivos de ventas",
+  "description": "Incentivos de ventas",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:09:48.807Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:09:48.807Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc13dc0ec18bac64a92e5d"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8464f93567f53f6bc29"
+  },
+  "name": "Generación líder",
+  "description": "Generación líder",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:10:04.676Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:10:04.676Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc13eb0ec18bac64a92e72"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8464f93567f53f6bc29"
+  },
+  "name": "Alcance del cliente",
+  "description": "Alcance del cliente",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:10:19.086Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:10:19.086Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc13fc0ec18bac64a92e87"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8464f93567f53f6bc29"
+  },
+  "name": "Información del producto",
+  "description": "Información del producto",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:10:36.445Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:10:36.445Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc140a0ec18bac64a92e9c"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8464f93567f53f6bc29"
+  },
+  "name": "Desarrollo de propuestas",
+  "description": "Desarrollo de propuestas",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:10:50.760Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:10:50.760Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc141a0ec18bac64a92eb1"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8464f93567f53f6bc29"
+  },
+  "name": "Crianza de plomo",
+  "description": "Crianza de plomo",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:11:06.841Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:11:06.841Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc143f0ec18bac64a92ed8"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8564f93567f53f6bc2e"
+  },
+  "name": "Tableros de humor de Instagram",
+  "description": "Tableros de humor de Instagram",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:11:43.764Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:11:43.764Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc14530ec18bac64a92eed"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8564f93567f53f6bc2e"
+  },
+  "name": "Hashtag de Instagram",
+  "description": "Hashtag de Instagram",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:12:03.929Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:12:03.929Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc14730ec18bac64a92f14"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8684f93567f53f6bc33"
+  },
+  "name": "Seminarios web para afiliados",
+  "description": "Seminarios web para afiliados",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:12:35.524Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:12:35.524Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc148d0ec18bac64a92f29"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8684f93567f53f6bc33"
+  },
+  "name": "Seminarios web para la generación de leads",
+  "description": "Seminarios web para la generación de leads",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:13:01.125Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:13:01.125Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc149f0ec18bac64a92f3e"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8684f93567f53f6bc33"
+  },
+  "name": "Temas para el seminario web",
+  "description": "Temas para el seminario web",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:13:19.697Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:13:19.697Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc14d10ec18bac64a92f65"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8724f93567f53f6bc38"
+  },
+  "name": "Anuncios de marketing",
+  "description": "Anuncios de marketing",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:14:09.990Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:14:09.990Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc14e20ec18bac64a92f7a"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8724f93567f53f6bc38"
+  },
+  "name": "Investigación de mercado",
+  "description": "Investigación de mercado",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:14:26.052Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:14:26.052Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc14f00ec18bac64a92f8f"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8724f93567f53f6bc38"
+  },
+  "name": "Mercadeo de contenidos",
+  "description": "Mercadeo de contenidos",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:14:40.810Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:14:40.810Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc15000ec18bac64a92fa4"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8724f93567f53f6bc38"
+  },
+  "name": "Compromiso con el cliente",
+  "description": "Compromiso con el cliente",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:14:56.680Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:14:56.680Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc15140ec18bac64a92fb9"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8724f93567f53f6bc38"
+  },
+  "name": "Gestión de correo electrónico",
+  "description": "Gestión de correo electrónico",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:15:16.747Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:15:16.747Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc15280ec18bac64a92fce"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8724f93567f53f6bc38"
+  },
+  "name": "Socios de mercadeo",
+  "description": "Socios de mercadeo",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:15:36.837Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:15:36.837Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc15400ec18bac64a92fe3"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8724f93567f53f6bc38"
+  },
+  "name": "Información del Producto",
+  "description": "Información del Producto",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:16:00.147Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:16:00.147Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc154d0ec18bac64a92ff8"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8724f93567f53f6bc38"
+  },
+  "name": "Promociones",
+  "description": "Promociones",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:16:13.402Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:16:13.402Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc15740ec18bac64a9302b"
+  },
+  "prompts_id": {
+    "$oid": "64dbe87c4f93567f53f6bc3d"
+  },
+  "name": "Recursos humanos",
+  "description": "Recursos humanos",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:16:52.754Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:16:52.754Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc15830ec18bac64a93040"
+  },
+  "prompts_id": {
+    "$oid": "64dbe87c4f93567f53f6bc3d"
+  },
+  "name": "Reclutamiento",
+  "description": "Reclutamiento",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:17:07.352Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:17:07.352Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc15a20ec18bac64a93055"
+  },
+  "prompts_id": {
+    "$oid": "64dbe87c4f93567f53f6bc3d"
+  },
+  "name": "Entrenamiento y desarrollo",
+  "description": "Entrenamiento y desarrollo",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:17:38.506Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:17:38.506Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc15b40ec18bac64a9306a"
+  },
+  "prompts_id": {
+    "$oid": "64dbe87c4f93567f53f6bc3d"
+  },
+  "name": "Compensación y beneficios",
+  "description": "Compensación y beneficios",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:17:56.769Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:17:56.769Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc15c80ec18bac64a9307f"
+  },
+  "prompts_id": {
+    "$oid": "64dbe87c4f93567f53f6bc3d"
+  },
+  "name": "Relaciones laborales",
+  "description": "Relaciones laborales",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:18:16.263Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:18:16.263Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64dc15d80ec18bac64a93094"
+  },
+  "prompts_id": {
+    "$oid": "64dbe87c4f93567f53f6bc3d"
+  },
+  "name": "Gestión del rendimiento",
+  "description": "Gestión del rendimiento",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-16T00:18:32.669Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-16T00:18:32.669Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64df8c60285a165ae0ce0c12"
+  },
+  "prompts_id": {
+    "$oid": "64dbe81a4f93567f53f6bc15"
+  },
+  "name": "Negocios en línea",
+  "description": "Negocios en línea",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-18T15:21:04.634Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-18T15:21:04.634Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64df9205285a165ae0ce152c"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8264f93567f53f6bc1a"
+  },
+  "name": "Desarrollador web",
+  "description": "Desarrollador web",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-18T15:45:09.068Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-18T15:45:09.068Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64df9276285a165ae0ce1625"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8314f93567f53f6bc1f"
+  },
+  "name": "Gestión financiera",
+  "description": "Gestión financiera\n",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-18T15:47:02.237Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-18T15:47:02.237Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64df9725285a165ae0ce1e97"
+  },
+  "prompts_id": {
+    "$oid": "64dbe83b4f93567f53f6bc24"
+  },
+  "name": "Operaciones y Logística",
+  "description": "Operaciones y Logística",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-18T16:07:01.470Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-18T16:07:01.470Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efca1a2d6eef5e5d0969c2"
+  },
+  "prompts_id": {
+    "$oid": "64dbe88e4f93567f53f6bc42"
+  },
+  "name": "Escribir un correo electrónico frío",
+  "description": "Escribir un correo electrónico frío",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-30T23:00:42.613Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-30T23:00:42.613Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efcb152d6eef5e5d096aa2"
+  },
+  "prompts_id": {
+    "$oid": "64dbe89b4f93567f53f6bc47"
+  },
+  "name": "Escriba un correo electrónico de incorporación",
+  "description": "Escriba un correo electrónico de incorporación",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-30T23:04:53.521Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-30T23:04:53.521Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efcbb22d6eef5e5d096b6f"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8a64f93567f53f6bc4c"
+  },
+  "name": "Escribir un correo electrónico de abandono del carrito",
+  "description": "Escribir un correo electrónico de abandono del carrito",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-30T23:07:30.401Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-30T23:07:30.401Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efcc2f2d6eef5e5d096c40"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8b04f93567f53f6bc51"
+  },
+  "name": "Escriba un correo electrónico de bienvenida al cliente",
+  "description": "Escriba un correo electrónico de bienvenida al cliente",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-30T23:09:35.769Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-30T23:09:35.769Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efccb22d6eef5e5d096d1c"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8bb4f93567f53f6bc56"
+  },
+  "name": "Redacción Avanzada",
+  "description": "Redacción Avanzada",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-30T23:11:46.257Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-30T23:11:46.257Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efd2602d6eef5e5d09764b"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8c74f93567f53f6bc5b"
+  },
+  "name": "Escribir una propuesta para el cliente",
+  "description": "Escribir una propuesta para el cliente",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-30T23:36:00.179Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-30T23:36:00.179Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe2762d6eef5e5d09770b"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8d64f93567f53f6bc60"
+  },
+  "name": "Escribir una página de ventas",
+  "description": "Escribir una página de ventas",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T00:44:38.160Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T00:44:38.160Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe3092d6eef5e5d09774e"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8e14f93567f53f6bc65"
+  },
+  "name": "Página de destino para suscripciones",
+  "description": "Página de destino para suscripciones",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T00:47:05.516Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T00:47:05.516Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe4662d6eef5e5d097816"
+  },
+  "prompts_id": {
+    "$oid": "64dbeaad4f93567f53f6bd2d"
+  },
+  "name": "Escribir un libro",
+  "description": "Escribir un libro",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T00:52:54.985Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T00:52:54.985Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe4892d6eef5e5d09784d"
+  },
+  "prompts_id": {
+    "$oid": "64dbeaa34f93567f53f6bd28"
+  },
+  "name": "Creación de cursos",
+  "description": "Creación de cursos",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T00:53:29.822Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T00:53:29.822Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe4b72d6eef5e5d097895"
+  },
+  "prompts_id": {
+    "$oid": "64dbea994f93567f53f6bd23"
+  },
+  "name": "Recopilación de Recursos Relevantes",
+  "description": "Recopilación de Recursos Relevantes",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T00:54:15.187Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T00:54:15.187Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe5142d6eef5e5d097944"
+  },
+  "prompts_id": {
+    "$oid": "64dbea904f93567f53f6bd1e"
+  },
+  "name": "Recomendaciones de expertos",
+  "description": "Recomendaciones de expertos",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T00:55:48.360Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T00:55:48.360Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe5812d6eef5e5d0979eb"
+  },
+  "prompts_id": {
+    "$oid": "64dbea864f93567f53f6bd19"
+  },
+  "name": "Favoritos de los lectores",
+  "description": "Favoritos de los lectores",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T00:57:37.739Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T00:57:37.739Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe5df2d6eef5e5d097a9e"
+  },
+  "prompts_id": {
+    "$oid": "64dbea7c4f93567f53f6bd14"
+  },
+  "name": "Optimice su sitio para SEO",
+  "description": "Optimice su sitio para SEO",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T00:59:11.209Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T00:59:11.209Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe6562d6eef5e5d097b89"
+  },
+  "prompts_id": {
+    "$oid": "64dbea654f93567f53f6bd0f"
+  },
+  "name": "Ideas para creativos",
+  "description": "Ideas para creativos\n",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T01:01:10.025Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T01:01:10.025Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe6d62d6eef5e5d097c65"
+  },
+  "prompts_id": {
+    "$oid": "64dbea5b4f93567f53f6bd0a"
+  },
+  "name": "Ideas para miniaturas",
+  "description": "Ideas para miniaturas",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T01:03:18.069Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T01:03:18.069Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe74b2d6eef5e5d097d23"
+  },
+  "prompts_id": {
+    "$oid": "64dbea514f93567f53f6bd05"
+  },
+  "name": "Esenciales de LinkedIn",
+  "description": "Esenciales de LinkedIn",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T01:05:15.663Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T01:05:15.663Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe7882d6eef5e5d097d96"
+  },
+  "prompts_id": {
+    "$oid": "64dbea474f93567f53f6bd00"
+  },
+  "name": "Optimizar perfil de Twitter",
+  "description": "Optimizar perfil de Twitter",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T01:06:16.889Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T01:06:16.889Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe7cd2d6eef5e5d097e0b"
+  },
+  "prompts_id": {
+    "$oid": "64dbea3d4f93567f53f6bcfb"
+  },
+  "name": "Generar Ideas de Negocios",
+  "description": "Generar Ideas de Negocios",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T01:07:25.513Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T01:07:25.513Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe8752d6eef5e5d097f07"
+  },
+  "prompts_id": {
+    "$oid": "64dbea314f93567f53f6bcf6"
+  },
+  "name": "Calendario de contenido",
+  "description": "Calendario de contenido",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T01:10:13.128Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T01:10:13.128Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe8f32d6eef5e5d097fd4"
+  },
+  "prompts_id": {
+    "$oid": "64dbea264f93567f53f6bcf1"
+  },
+  "name": "Generar lista de palabras clave",
+  "description": "Generar lista de palabras clave",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T01:12:19.110Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T01:12:19.110Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe9312d6eef5e5d09802b"
+  },
+  "prompts_id": {
+    "$oid": "64dbea1c4f93567f53f6bcec"
+  },
+  "name": "Publicaciones de blog",
+  "description": "Publicaciones de blog",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T01:13:21.984Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T01:13:21.984Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe9b62d6eef5e5d098107"
+  },
+  "prompts_id": {
+    "$oid": "64dbea114f93567f53f6bce7"
+  },
+  "name": "X ciencia estándar",
+  "description": "X ciencia estándar",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T01:15:34.987Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T01:15:34.987Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efe9ce2d6eef5e5d09812f"
+  },
+  "prompts_id": {
+    "$oid": "64dbea074f93567f53f6bce2"
+  },
+  "name": "Llamada a la acción",
+  "description": "Llamada a la acción",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T01:15:58.385Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T01:15:58.385Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64efeb3c2d6eef5e5d098211"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9fd4f93567f53f6bcdd"
+  },
+  "name": "Traducir copia del sitio web",
+  "description": "Traducir copia del sitio web",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T01:22:04.936Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T01:22:04.936Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f10c14782127ff4cf0fda9"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9f34f93567f53f6bcd8"
+  },
+  "name": "Crear testimonios de clientes",
+  "description": "Crear testimonios de clientes",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T21:54:28.937Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T21:54:28.937Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f10c59782127ff4cf0fe00"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9e84f93567f53f6bcd3"
+  },
+  "name": "Optimice su sitio para SEO",
+  "description": "Optimice su sitio para SEO",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T21:55:37.815Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T21:55:37.815Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f10cdb782127ff4cf0fee5"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9dd4f93567f53f6bcce"
+  },
+  "name": "Escribir un publirreportaje",
+  "description": "Escribir un publirreportaje",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T21:57:47.478Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T21:57:47.478Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f10d39782127ff4cf0ff87"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9cb4f93567f53f6bcc9"
+  },
+  "name": "Generar descripción del producto",
+  "description": "Generar descripción del producto\n",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T21:59:21.576Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T21:59:21.576Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f10dbc782127ff4cf10063"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9bf4f93567f53f6bcc4"
+  },
+  "name": "Escala",
+  "description": "Escala",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:01:32.616Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:01:32.616Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f10de4782127ff4cf100a9"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9b54f93567f53f6bcbf"
+  },
+  "name": "Optimizar",
+  "description": "Optimizar",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:02:12.015Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:02:12.015Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f10e12782127ff4cf100fc"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9aa4f93567f53f6bcba"
+  },
+  "name": "Lanzamiento",
+  "description": "Lanzamiento",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:02:58.382Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:02:58.382Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f10e36782127ff4cf1012b"
+  },
+  "prompts_id": {
+    "$oid": "64dbe99f4f93567f53f6bcb5"
+  },
+  "name": "Construir",
+  "description": "Construir",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:03:34.355Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:03:34.355Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f10e77782127ff4cf1019e"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9954f93567f53f6bcb0"
+  },
+  "name": "Escribir un correo electrónico de ventas",
+  "description": "Escribir un correo electrónico de ventas",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:04:39.906Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:04:39.906Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f10f05782127ff4cf1027c"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9874f93567f53f6bcab"
+  },
+  "name": "Escribir un guión de anuncio de vídeo de Youtube",
+  "description": "Escribir un guión de anuncio de vídeo de Youtube",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:07:01.089Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:07:01.089Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f10f8f782127ff4cf1031f"
+  },
+  "prompts_id": {
+    "$oid": "64dbe97b4f93567f53f6bca6"
+  },
+  "name": "Escribe una descripción de video de YouTube",
+  "description": "Escribe una descripción de video de YouTube",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:09:19.465Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:09:19.465Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f11004782127ff4cf103ec"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9704f93567f53f6bca1"
+  },
+  "name": "Escribe un título de video de YouTube",
+  "description": "Escribe un título de video de YouTube\n",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:11:16.439Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:11:16.439Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f1102a782127ff4cf10432"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9664f93567f53f6bc9c"
+  },
+  "name": "Escribir un guión de video de YouTube",
+  "description": "Escribir un guión de video de YouTube",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:11:54.679Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:11:54.679Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f1104e782127ff4cf10469"
+  },
+  "prompts_id": {
+    "$oid": "64dbe95c4f93567f53f6bc97"
+  },
+  "name": "Escribir guiones de vídeo de anuncios de Facebook",
+  "description": "Escribir guiones de vídeo de anuncios de Facebook",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:12:30.932Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:12:30.932Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f110de782127ff4cf10556"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9504f93567f53f6bc92"
+  },
+  "name": "Escribir titulares para anuncios de Facebook",
+  "description": "Escribir titulares para anuncios de Facebook",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:14:54.872Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:14:54.872Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f11188782127ff4cf1063f"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9444f93567f53f6bc8d"
+  },
+  "name": "Escribir correos electrónicos de productos de afiliados",
+  "description": "Escribir correos electrónicos de productos de afiliados",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:17:44.509Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:17:44.509Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f11202782127ff4cf1071b"
+  },
+  "prompts_id": {
+    "$oid": "64dbe93a4f93567f53f6bc88"
+  },
+  "name": "Escribir descripciones de productos de afiliados",
+  "description": "Escribir descripciones de productos de afiliados",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:19:46.219Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:19:46.219Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f11288782127ff4cf10806"
+  },
+  "prompts_id": {
+    "$oid": "64dbe92d4f93567f53f6bc83"
+  },
+  "name": "Escribir reseñas de productos de afiliados",
+  "description": "Escribir reseñas de productos de afiliados",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:22:00.678Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:22:00.678Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f112bf782127ff4cf1085d"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9224f93567f53f6bc7e"
+  },
+  "name": "Recomendaciones de clientes",
+  "description": "Recomendaciones de clientes",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:22:55.265Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:22:55.265Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f112f7782127ff4cf108c1"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9174f93567f53f6bc79"
+  },
+  "name": "Escribir un publirreportaje",
+  "description": "Escribir un publirreportaje",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:23:51.217Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:23:51.217Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f11349782127ff4cf10961"
+  },
+  "prompts_id": {
+    "$oid": "64dbe9074f93567f53f6bc74"
+  },
+  "name": "Escribir una página de agradecimiento",
+  "description": "Escribir una página de agradecimiento",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:25:13.901Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:25:13.901Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f113b4782127ff4cf10a1f"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8f94f93567f53f6bc6f"
+  },
+  "name": "Escribir una página de ventas adicionales",
+  "description": "Escribir una página de ventas adicionales",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:27:00.889Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:27:00.889Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f114a0782127ff4cf10b17"
+  },
+  "prompts_id": {
+    "$oid": "64dbe8eb4f93567f53f6bc6a"
+  },
+  "name": "Solicitar copia funcional",
+  "description": "Solicitar copia funcional",
+  "state": 0,
+  "created_at": {
+    "$date": "2023-08-31T22:30:56.607Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-31T22:30:56.607Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "64dbe6e84f93567f53f6bbb5"
+  },
+  "userName": "tipsbusiness77admin",
+  "email": "jorgechuto@gmail.com",
+  "password": "$2b$10$4H56mJYPmI6m54qyGZalTOlrFzeu9GADjbvkepQRzxsp3iFw1RjrW",
+  "state": 0,
+  "rol": [
+    {
+      "item_id": "1",
+      "item_text": "Soporte Sistemas"
+    },
+    {
+      "item_id": "2",
+      "item_text": "Soporte Ventas"
+    },
+    {
+      "item_id": "3",
+      "item_text": "Soporte Anuncios"
+    }
+  ],
+  "created_at": {
+    "$date": "2023-08-15T20:58:16.763Z"
+  },
+  "updated_at": {
+    "$date": "2023-08-15T20:58:16.763Z"
+  },
+  "__v": 0
+}]

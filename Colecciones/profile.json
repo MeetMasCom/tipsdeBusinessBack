@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "646bf6aec29b09413fcb3869"
+  },
+  "name": "Viajeros",
+  "description": "Perfil para postear viajes",
+  "state": 0
+},{
+  "_id": {
+    "$oid": "646bf6d9c29b09413fcb386b"
+  },
+  "name": "Profesionales",
+  "description": "perfil para postear asuntos profesionales",
+  "state": 0
+},{
+  "_id": {
+    "$oid": "646bf6ecc29b09413fcb386d"
+  },
+  "name": "Negociantes",
+  "description": "perfil para postear asuntos de negocioss",
+  "state": 0
+},{
+  "_id": {
+    "$oid": "646bf6fdc29b09413fcb386f"
+  },
+  "name": "Estudiantes",
+  "description": "perfil para postear asuntos estudiantiles",
+  "state": 0
+},{
+  "_id": {
+    "$oid": "646bf70ec29b09413fcb3871"
+  },
+  "name": "Idiomas",
+  "description": "perfil para postear idiomas",
+  "state": 0
+},{
+  "_id": {
+    "$oid": "646c1e9ec29b09413fcb3887"
+  },
+  "name": "Personal",
+  "description": "perfil personal",
+  "state": 0
+}]
