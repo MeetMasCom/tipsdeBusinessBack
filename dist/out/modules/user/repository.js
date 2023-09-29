@@ -604,8 +604,10 @@ var UserRepository = /** @class */ (function () {
                         return [4 /*yield*/, referralsModel.find({ userId: userId }).exec()];
                     case 3:
                         response = _a.sent();
+                        //console.log(response);
                         return [4 /*yield*/, cnxMongo.close()];
                     case 4:
+                        //console.log(response);
                         _a.sent();
                         return [2 /*return*/, response];
                     case 5:

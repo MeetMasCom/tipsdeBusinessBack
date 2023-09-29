@@ -350,6 +350,7 @@ export class UserRepository {
       const cnxMongo = await connectionMongo();
       const referralsModel = await referralsModelMongo(cnxMongo);
       const response = await referralsModel.find({ userId }).exec();
+      //console.log(response);
       await cnxMongo.close();
       return response as ReferralsI[];
     } catch (error) {

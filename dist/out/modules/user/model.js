@@ -75,21 +75,6 @@ exports.userSchema = new mongoose_1.Schema({
         type: Number,
         require: true,
     },
-    typeUser: {
-        type: Number,
-        require: true,
-        default: 0,
-    },
-    teacher: {
-        type: Number,
-        require: true,
-        default: 0,
-    },
-    colaborador: {
-        type: Number,
-        require: true,
-        default: 0,
-    },
     sponsorCode: {
         type: String,
         require: true,
@@ -228,15 +213,11 @@ exports.userSchema = new mongoose_1.Schema({
         type: String,
         require: false,
     },
-    city: {
-        type: String,
-        require: false,
-    },
     profile: {
         type: (Array),
-        require: false,
+        require: true,
     },
-    rsociales: {
+    rsocials: {
         type: (Array),
         require: false,
     },
@@ -263,10 +244,6 @@ exports.userSchema = new mongoose_1.Schema({
     socialAgreements: {
         type: Boolean,
         required: false
-    },
-    cupo: {
-        type: Number,
-        default: 0,
     }
 }, {
     timestamps: {

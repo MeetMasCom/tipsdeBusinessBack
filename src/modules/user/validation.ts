@@ -3,6 +3,7 @@ import {
   validFechaDesde,
   validNumero,
   validString,
+  validStringEmpty,
 } from "../../constants/validations";
 
 export const getUserValidation = {
@@ -26,6 +27,7 @@ export const createUserValidation = {
     password: validString("password", 255),
     terms: Joi.boolean().required(),
     gender: validString("gender", 255),
+    sponsor: validStringEmpty("sponsor", 255)
     //preferences: validString("preferences", 255),
   }),
 };

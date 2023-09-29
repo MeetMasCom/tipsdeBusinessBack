@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getUsersincupo = exports.getCupoLimiteController = exports.updateCupoController = exports.updateAgreementsController = exports.getVerifyTeacher = exports.updateTypeUserController = exports.getUserActiveController = exports.getUserOnlineController = exports.searchUsersController = exports.updateSocialsNController = exports.getAllUserGenderController = exports.getAllUserController = exports.getByIdUserController = exports.resetPasswordController = exports.recoverPasswordController = exports.recoverUsernameController = exports.logoutController = exports.updateUserMatchController = exports.updateUserAddressController = exports.updateUserBasicController = exports.otpController = exports.loginController = exports.createUserController = exports.getUserValidateController = exports.getCountUserController = exports.getUserController = void 0;
+exports.getReferUserController = exports.getUsersincupo = exports.getCupoLimiteController = exports.updateCupoController = exports.updateAgreementsController = exports.getVerifyTeacher = exports.updateTypeUserController = exports.getUserActiveController = exports.getUserOnlineController = exports.searchUsersController = exports.updateSocialsNController = exports.getAllUserGenderController = exports.getAllUserController = exports.getByIdUserController = exports.resetPasswordController = exports.recoverPasswordController = exports.recoverUsernameController = exports.logoutController = exports.updateUserMatchController = exports.updateUserAddressController = exports.updateUserBasicController = exports.otpController = exports.loginController = exports.createUserController = exports.getUserValidateController = exports.getCountUserController = exports.getUserController = void 0;
 var responseHelper_1 = require("../../helpers/responseHelper");
 var service_1 = require("./service");
 var getUserController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
@@ -133,6 +133,7 @@ var createUserController = function (req, resp) { return __awaiter(void 0, void 
             case 0:
                 _c.trys.push([0, 2, , 3]);
                 payload = req.body;
+                console.log(payload);
                 userService = new service_1.UserService();
                 _a = responseHelper_1.serviceResponse;
                 _b = {};
@@ -162,6 +163,7 @@ var loginController = function (req, resp) { return __awaiter(void 0, void 0, vo
             case 0:
                 _c.trys.push([0, 2, , 3]);
                 payload = req.body;
+                console.log(payload);
                 userService = new service_1.UserService();
                 _a = responseHelper_1.serviceResponse;
                 _b = {};
@@ -796,3 +798,32 @@ var getUsersincupo = function (req, resp) { return __awaiter(void 0, void 0, voi
     });
 }); };
 exports.getUsersincupo = getUsersincupo;
+var getReferUserController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var id, userService, _a, error_27;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                id = req.params.id;
+                userService = new service_1.UserService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, userService.getReferUser(id)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_27 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_27.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
+exports.getReferUserController = getReferUserController;

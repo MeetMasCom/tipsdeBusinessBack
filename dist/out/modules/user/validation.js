@@ -22,6 +22,7 @@ exports.createUserValidation = {
         password: (0, validations_1.validString)("password", 255),
         terms: express_validation_1.Joi.boolean().required(),
         gender: (0, validations_1.validString)("gender", 255),
+        sponsor: (0, validations_1.validStringEmpty)("sponsor", 255)
         //preferences: validString("preferences", 255),
     }),
 };

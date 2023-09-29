@@ -1,7 +1,6 @@
 import { Connection, Schema } from "mongoose";
 import { ReferralsI, UserI, UserOtpI } from "../../interfaces/user.interface";
 
-
 export const userSchema = new Schema<any>(
   {
     _id: { type: Schema.Types.ObjectId, require: true },
@@ -39,21 +38,6 @@ export const userSchema = new Schema<any>(
     type: {
       type: Number,
       require: true,
-    },
-    typeUser: {
-      type: Number,
-      require: true,
-      default:0,
-    },
-    teacher: {
-      type: Number,
-      require: true,
-      default:0,
-    },
-    colaborador: {
-      type: Number,
-      require: true,
-      default:0,
     },
     sponsorCode: {
       type: String,
@@ -193,15 +177,11 @@ export const userSchema = new Schema<any>(
       type: String,
       require: false,
     },
-    city: {
-      type: String,
-      require: false,
-    },
     profile: {
       type: Array<string>,
-      require: false,
+      require: true,
     },
-    rsociales: {
+    rsocials: {
       type: Array<string>,
       require: false,
     },
@@ -228,10 +208,6 @@ export const userSchema = new Schema<any>(
     socialAgreements: {
       type: Boolean,
       required: false
-    }
-    ,cupo:{
-      type:Number,
-      default:0,
     }
   },
   {

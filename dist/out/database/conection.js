@@ -45,8 +45,8 @@ var connectionMongo = function () { return __awaiter(void 0, void 0, void 0, fun
         try {
             conectionOptions = {
                 dbName: enviroment_1.MONGO_DB_DATABASE,
-                //user: MONGO_DB_USERNAME,
-                //pass: MONGO_DB_PASSWORD,
+                user: enviroment_1.MONGO_DB_USERNAME,
+                pass: enviroment_1.MONGO_DB_PASSWORD,
             };
             return [2 /*return*/, (0, mongoose_1.createConnection)("mongodb://".concat(enviroment_1.MONGO_DB_HOST, ":").concat(enviroment_1.MONGO_DB_PORT), conectionOptions)];
         }

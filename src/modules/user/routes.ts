@@ -27,7 +27,8 @@ updateAgreementsController,
 updateCupoController,
 getCupoLimiteController,
 getAllUserController,
-getUsersincupo
+getUsersincupo,
+getReferUserController
 } from "./controler";
 import {
   createUserValidation,
@@ -63,7 +64,7 @@ userRoutes.put(
 
 userRoutes.put(
   "/address/:id",
-  [validateJwtHeader, validate(updateUserAddressValidation)],
+  [validate(updateUserAddressValidation)],
   updateUserAddressController
 );
 
@@ -111,5 +112,8 @@ userRoutes.get("/getCupoLimite", getCupoLimiteController);
 userRoutes.route("/getVerifyTeacher").get(getVerifyTeacher);
 userRoutes.get("/getAllUser", getAllUserController);
 userRoutes.get("/getUserSinCupon", getUsersincupo);
+
+
+userRoutes.get("/refers/:id",  getReferUserController);
 
 export default userRoutes;
