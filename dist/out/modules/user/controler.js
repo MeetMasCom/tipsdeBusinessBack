@@ -133,7 +133,6 @@ var createUserController = function (req, resp) { return __awaiter(void 0, void 
             case 0:
                 _c.trys.push([0, 2, , 3]);
                 payload = req.body;
-                console.log(payload);
                 userService = new service_1.UserService();
                 _a = responseHelper_1.serviceResponse;
                 _b = {};
@@ -163,7 +162,6 @@ var loginController = function (req, resp) { return __awaiter(void 0, void 0, vo
             case 0:
                 _c.trys.push([0, 2, , 3]);
                 payload = req.body;
-                console.log(payload);
                 userService = new service_1.UserService();
                 _a = responseHelper_1.serviceResponse;
                 _b = {};
