@@ -76,7 +76,8 @@ var getAllUsersMessaguesController = function (req, resp) { return __awaiter(voi
         switch (_c.label) {
             case 0:
                 _c.trys.push([0, 2, , 3]);
-                userId = req.query.id;
+                userId = req.query.userId;
+                console.log(userId);
                 chatService = new service_1.ChatService();
                 _a = responseHelper_1.serviceResponse;
                 _b = {};

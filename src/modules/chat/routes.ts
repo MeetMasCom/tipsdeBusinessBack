@@ -4,9 +4,9 @@ import { getAllUsersMessaguesController, getMessaguesController, saveMessaguesCo
 
 const chatRoutes = Router();
 
-chatRoutes.get("/messages", [validateJwtHeader], getMessaguesController);
-chatRoutes.get("/messages/users", [validateJwtHeader], getAllUsersMessaguesController);
-chatRoutes.post("/messages", [validateJwtHeader], saveMessaguesController);
+chatRoutes.get("/messages",  getMessaguesController);
+chatRoutes.get("/messages/users", getAllUsersMessaguesController);
+chatRoutes.post("/messages",  saveMessaguesController);
 
 export default chatRoutes;
 

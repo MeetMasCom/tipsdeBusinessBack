@@ -705,14 +705,42 @@ var UserRepository = /** @class */ (function () {
             });
         });
     };
+    // async getAllUserSearch(body: SearchUsers) {
+    //   try {
+    //     const genero = new Types.ObjectId(body.preferences);
+    //     const cnxMongo = await connectionMongo();
+    //     const userModel = await userModelMongo(cnxMongo);
+    //     const response = await userModel
+    //       .find({
+    //         country: body.country,  
+    //         //gender:body.preferences,       
+    //         age: {
+    //           $gt: body.age && body.age[0],
+    //           $lt: body.age && body.age[1],
+    //         },
+    //         civil_status: body.stateCivil !== "" ? body.stateCivil : undefined,
+    //         height: body.heigth !== null ? body.heigth : undefined,
+    //         eyeColor: body.eyeColor !== "" ? body.eyeColor : undefined,
+    //         body: body.bodyType !== "" ? body.bodyType : undefined,
+    //         drink: body.drink !== "" ? body.drink : undefined,
+    //         smoke: body.smoke !== "" ? body.smoke : undefined,
+    //         childs: body.childrens !== "" ? body.childrens : undefined
+    //       })
+    //       .exec();
+    //     await cnxMongo.close();
+    //     return response as UserI[];
+    //   } catch (error) {
+    //     throw new Error(error as string);
+    //   }
+    // }
     UserRepository.prototype.getAllUserSearch = function (body) {
         return __awaiter(this, void 0, void 0, function () {
-            var genero, cnxMongo, userModel, response, error_18;
+            var cnxMongo, userModel, response, error_18;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 5, , 6]);
-                        genero = new mongoose_1.Types.ObjectId(body.preferences);
+                        console.log("repositorio", body);
                         return [4 /*yield*/, (0, conection_1.connectionMongo)()];
                     case 1:
                         cnxMongo = _a.sent();
@@ -721,19 +749,11 @@ var UserRepository = /** @class */ (function () {
                         userModel = _a.sent();
                         return [4 /*yield*/, userModel
                                 .find({
-                                country: body.country,
-                                //gender:body.preferences,       
-                                age: {
-                                    $gt: body.age && body.age[0],
-                                    $lt: body.age && body.age[1],
-                                },
-                                civil_status: body.stateCivil !== "" ? body.stateCivil : undefined,
-                                height: body.heigth !== null ? body.heigth : undefined,
-                                eyeColor: body.eyeColor !== "" ? body.eyeColor : undefined,
-                                body: body.bodyType !== "" ? body.bodyType : undefined,
-                                drink: body.drink !== "" ? body.drink : undefined,
-                                smoke: body.smoke !== "" ? body.smoke : undefined,
-                                childs: body.childrens !== "" ? body.childrens : undefined
+                                $or: [
+                                    { userName: { $regex: body.userName, $options: 'i' } },
+                                    { firstname: { $regex: body.firstname, $options: 'i' } },
+                                    { lastname: { $regex: body.lastname, $options: 'i' } }
+                                ]
                             })
                                 .exec()];
                     case 3:
@@ -741,6 +761,7 @@ var UserRepository = /** @class */ (function () {
                         return [4 /*yield*/, cnxMongo.close()];
                     case 4:
                         _a.sent();
+                        console.log("respuesta", response);
                         return [2 /*return*/, response];
                     case 5:
                         error_18 = _a.sent();

@@ -417,30 +417,53 @@ export class UserRepository {
   }
 
 
+  // async getAllUserSearch(body: SearchUsers) {
+  //   try {
+      
+  //     const genero = new Types.ObjectId(body.preferences);
+  //     const cnxMongo = await connectionMongo();
+  //     const userModel = await userModelMongo(cnxMongo);
+  //     const response = await userModel
+  //       .find({
+  //         country: body.country,  
+  //         //gender:body.preferences,       
+  //         age: {
+  //           $gt: body.age && body.age[0],
+  //           $lt: body.age && body.age[1],
+  //         },
+  //         civil_status: body.stateCivil !== "" ? body.stateCivil : undefined,
+  //         height: body.heigth !== null ? body.heigth : undefined,
+  //         eyeColor: body.eyeColor !== "" ? body.eyeColor : undefined,
+  //         body: body.bodyType !== "" ? body.bodyType : undefined,
+  //         drink: body.drink !== "" ? body.drink : undefined,
+  //         smoke: body.smoke !== "" ? body.smoke : undefined,
+  //         childs: body.childrens !== "" ? body.childrens : undefined
+  //       })
+  //       .exec();
+  //     await cnxMongo.close();
+  //     return response as UserI[];
+  //   } catch (error) {
+  //     throw new Error(error as string);
+  //   }
+  // }
+
+  
   async getAllUserSearch(body: SearchUsers) {
     try {
-      
-      const genero = new Types.ObjectId(body.preferences);
+    console.log("repositorio",body);
       const cnxMongo = await connectionMongo();
       const userModel = await userModelMongo(cnxMongo);
       const response = await userModel
-        .find({
-          country: body.country,  
-          //gender:body.preferences,       
-          age: {
-            $gt: body.age && body.age[0],
-            $lt: body.age && body.age[1],
-          },
-          civil_status: body.stateCivil !== "" ? body.stateCivil : undefined,
-          height: body.heigth !== null ? body.heigth : undefined,
-          eyeColor: body.eyeColor !== "" ? body.eyeColor : undefined,
-          body: body.bodyType !== "" ? body.bodyType : undefined,
-          drink: body.drink !== "" ? body.drink : undefined,
-          smoke: body.smoke !== "" ? body.smoke : undefined,
-          childs: body.childrens !== "" ? body.childrens : undefined
-        })
+      .find({
+        $or: [
+          { userName: { $regex: body.userName, $options: 'i' } },
+          { firstname: { $regex: body.firstname, $options: 'i' } },
+          { lastname: { $regex: body.lastname, $options: 'i' } }
+        ]
+      })
         .exec();
       await cnxMongo.close();
+      console.log("respuesta",response);
       return response as UserI[];
     } catch (error) {
       throw new Error(error as string);

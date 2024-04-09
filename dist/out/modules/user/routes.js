@@ -31,4 +31,5 @@ userRoutes.route("/getVerifyTeacher").get(controler_1.getVerifyTeacher);
 userRoutes.get("/getAllUser", controler_1.getAllUserController);
 userRoutes.get("/getUserSinCupon", controler_1.getUsersincupo);
 userRoutes.get("/refers/:id", controler_1.getReferUserController);
+userRoutes.post("/searchUsers", controler_1.searchUsersController);
 exports.default = userRoutes;
