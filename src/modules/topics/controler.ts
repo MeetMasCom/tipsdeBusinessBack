@@ -10,11 +10,10 @@ import { UserI } from "../../interfaces/user.interface";
 export const createTopicController = async (req: Request, resp: Response) => {
   try {
 
-    const { module_id,title } = req.body;
-    const newTopic={module_id,title,video: req.file?.path} as TopicI;
+    const payload = req.body as TopicI;
     const userService = new TopicService();
     return serviceResponse({
-      data: await userService.saveTopic(newTopic),
+      data: await userService.saveTopic(payload),
       res: resp,
       req: req,
     });
