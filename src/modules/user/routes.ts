@@ -116,4 +116,6 @@ userRoutes.get("/getUserSinCupon", getUsersincupo);
 
 userRoutes.get("/refers/:id",  getReferUserController);
 
+userRoutes.post("/searchUsers", searchUsersController);
+
 export default userRoutes;

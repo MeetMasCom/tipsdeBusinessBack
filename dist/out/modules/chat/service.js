@@ -43,8 +43,6 @@ exports.ChatService = void 0;
 var moment_1 = __importDefault(require("moment"));
 var messages_1 = require("../../constants/messages");
 var repository_1 = require("./repository");
-var repository_2 = require("../user/repository");
-var repository_3 = require("../like/repository");
 var ChatService = /** @class */ (function () {
     function ChatService() {
         var _this = this;
@@ -101,37 +99,27 @@ var ChatService = /** @class */ (function () {
             });
         }); };
         this.getAllUsersMessagues = function (userId) { return __awaiter(_this, void 0, void 0, function () {
-            var data, users_1, error_2;
-            var _this = this;
+            var data, users, error_2;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 3, , 4]);
-                        return [4 /*yield*/, new repository_3.LikeRepository().getAllUserLike(userId)];
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, new repository_1.ChatRepository().getAllUserMessages(userId)];
                     case 1:
                         data = _a.sent();
-                        users_1 = [];
-                        return [4 /*yield*/, Promise.all(data.map(function (like) { return __awaiter(_this, void 0, void 0, function () {
-                                var user;
-                                return __generator(this, function (_a) {
-                                    switch (_a.label) {
-                                        case 0: return [4 /*yield*/, new repository_2.UserRepository().getById(like.user_id)];
-                                        case 1:
-                                            user = _a.sent();
-                                            if (user) {
-                                                users_1.push(user);
-                                            }
-                                            return [2 /*return*/];
-                                    }
-                                });
-                            }); }))];
+                        users = [];
+                        // await Promise.all(data.map(async (like) => {
+                        //     const user = await new UserRepository().getById(like.user_id!);
+                        //     if (user) {
+                        //         users.push(user)
+                        //     }
+                        // }));
+                        //const user = await new UserRepository().getById(userId);  
+                        return [2 /*return*/, data];
                     case 2:
-                        _a.sent();
-                        return [2 /*return*/, users_1];
-                    case 3:
                         error_2 = _a.sent();
                         throw new Error(error_2);
-                    case 4: return [2 /*return*/];
+                    case 3: return [2 /*return*/];
                 }
             });
         }); };
