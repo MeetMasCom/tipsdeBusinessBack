@@ -85,6 +85,7 @@ var routes_37 = __importDefault(require("./modules/questions/routes"));
 var routes_38 = __importDefault(require("./modules/colaboradores/routes"));
 var routes_39 = __importDefault(require("./modules/cupon/routes"));
 var routes_40 = __importDefault(require("./modules/cuponUser/routes"));
+var routes_41 = __importDefault(require("./modules/audiolibro/routes"));
 var path_1 = __importDefault(require("path"));
 var MainServer = /** @class */ (function () {
     function MainServer() {
@@ -129,6 +130,7 @@ var MainServer = /** @class */ (function () {
             colaborador: "/api/colaborador",
             cupon: "/api/cupon",
             cuponUser: "/api/cuponUser",
+            audiolibro: "/api/audiolibro",
         };
         this.app = (0, express_1.default)();
         this.middlewares();
@@ -177,6 +179,7 @@ var MainServer = /** @class */ (function () {
         this.app.use(this.apiPaths.colaborador, routes_38.default);
         this.app.use(this.apiPaths.cupon, routes_39.default);
         this.app.use(this.apiPaths.cuponUser, routes_40.default);
+        this.app.use(this.apiPaths.audiolibro, routes_41.default);
         this.app.get("/api", function (req, res) {
             return res.json({
                 data: "Welcome, but there is nothing to see here.",
