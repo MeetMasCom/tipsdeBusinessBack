@@ -13,7 +13,6 @@ tipsRoutes.get("/getTipsByIdUser/:id", getTipsByIdUserController);
 tipsRoutes.get("/getTipsById/:id", getTipsByIdController);
 tipsRoutes.get("/getAllTips", getAllTipsController);
 tipsRoutes.post('/createTips',createTipsController);
-tipsRoutes.route('/updateTips/:id')
-    .post(upload.single('video'),updateTipsController);
+tipsRoutes.route("/updateTips/:id").post(updateTipsController);
 
 export default tipsRoutes;

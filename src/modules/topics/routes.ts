@@ -4,7 +4,7 @@ const topicRoutes = Router();
 
 import upload from "../../libs/multer";
 import {
-    createTopicController, getTopicByIdController, getTopicByIdModuleController
+    createTopicController, getTopicByIdController, getTopicByIdModuleController, updateTopicController
 
 } from "./controler";
 
@@ -13,5 +13,6 @@ import {
 topicRoutes.get("/getTopicByIdModule/:id", getTopicByIdModuleController);
 topicRoutes.get("/getTopicById/:id", getTopicByIdController);
 topicRoutes.post('/createTopic',createTopicController);
+topicRoutes.route("/updateTopic/:id").post(updateTopicController);
 
 export default topicRoutes;

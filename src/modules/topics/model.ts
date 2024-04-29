@@ -16,6 +16,10 @@ export const topicSchema = new Schema<any>(
       type: String,
       required: true,
     },
+    description:{
+      type:String,
+      required:false
+    }
     
   },
   {

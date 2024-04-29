@@ -314,7 +314,6 @@ var ModuleRepository = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 5, , 6]);
-                        console.log(data);
                         return [4 /*yield*/, (0, conection_1.connectionMongo)()];
                     case 1:
                         cnxMongo = _a.sent();
@@ -331,6 +330,38 @@ var ModuleRepository = /** @class */ (function () {
                     case 5:
                         error_8 = _a.sent();
                         throw new Error(error_8);
+                    case 6: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    ModuleRepository.prototype.updateModule = function (id, data) {
+        return __awaiter(this, void 0, void 0, function () {
+            var cnxMongo, adminModel, response, error_9;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 5, , 6]);
+                        return [4 /*yield*/, (0, conection_1.connectionMongo)()];
+                    case 1:
+                        cnxMongo = _a.sent();
+                        return [4 /*yield*/, (0, model_1.moduleModelMongo)(cnxMongo)];
+                    case 2:
+                        adminModel = _a.sent();
+                        return [4 /*yield*/, adminModel
+                                .updateOne({ _id: id }, { $set: data })
+                                .exec()];
+                    case 3:
+                        response = _a.sent();
+                        if (response.modifiedCount == 0)
+                            throw new Error("No se pudo cambiar el estado");
+                        return [4 /*yield*/, cnxMongo.close()];
+                    case 4:
+                        _a.sent();
+                        return [2 /*return*/, response.upsertedId];
+                    case 5:
+                        error_9 = _a.sent();
+                        throw new Error(error_9);
                     case 6: return [2 /*return*/];
                 }
             });

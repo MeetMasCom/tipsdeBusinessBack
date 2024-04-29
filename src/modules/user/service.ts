@@ -114,9 +114,7 @@ export class UserService {
       if (sponsor != undefined) {
         const userId = (await this.repo.getByEmailOrUserName("", sponsor))
           ._id as string;
-    
         const level = (await this.repo.getReferUser(userId)).length + 1;
-       
         if (level < 7) {
           const refer: ReferralsI = {
             userId,

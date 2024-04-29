@@ -69,17 +69,19 @@ var createTipsController = function (req, resp) { return __awaiter(void 0, void 
 }); };
 exports.createTipsController = createTipsController;
 var getTipsByIdUserController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
-    var id, userService, _a, error_2;
+    var id, type, userService, _a, error_2;
     var _b;
     return __generator(this, function (_c) {
         switch (_c.label) {
             case 0:
                 _c.trys.push([0, 2, , 3]);
                 id = req.params.id;
+                type = req.query.type;
+                console.log(type);
                 userService = new service_1.TipsService();
                 _a = responseHelper_1.serviceResponse;
                 _b = {};
-                return [4 /*yield*/, userService.getTipsByIdUser(id)];
+                return [4 /*yield*/, userService.getTipsByIdUser(id, type)];
             case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
                         _b.res = resp,
                         _b.req = req,
@@ -155,26 +157,24 @@ var getAllTipsController = function (req, resp) { return __awaiter(void 0, void 
 }); };
 exports.getAllTipsController = getAllTipsController;
 var updateTipsController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
-    var _a, user_id, title, description, userCourse, imagen, dateView, newTopic, id, billeteraService, _b, error_5;
-    var _c;
-    var _d;
-    return __generator(this, function (_e) {
-        switch (_e.label) {
+    var payload, id, billeteraService, _a, error_5;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
             case 0:
-                _e.trys.push([0, 2, , 3]);
-                _a = req.body, user_id = _a.user_id, title = _a.title, description = _a.description, userCourse = _a.userCourse, imagen = _a.imagen, dateView = _a.dateView;
-                newTopic = { user_id: user_id, title: title, description: description, userCourse: userCourse, imagen: imagen, dateView: dateView, video: (_d = req.file) === null || _d === void 0 ? void 0 : _d.path };
+                _c.trys.push([0, 2, , 3]);
+                payload = req.body;
                 id = req.params.id;
                 billeteraService = new service_1.TipsService();
-                _b = responseHelper_1.serviceResponse;
-                _c = {};
-                return [4 /*yield*/, billeteraService.updateTips(id, newTopic)];
-            case 1: return [2 /*return*/, _b.apply(void 0, [(_c.data = _e.sent(),
-                        _c.res = resp,
-                        _c.req = req,
-                        _c)])];
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, billeteraService.updateTips(id, payload)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
             case 2:
-                error_5 = _e.sent();
+                error_5 = _c.sent();
                 return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
                         message: error_5.message,
                         res: resp,

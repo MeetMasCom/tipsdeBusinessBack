@@ -87,14 +87,15 @@ export const getAllAudioLibroController = async (req: Request, resp: Response) =
 
 export const updateAudioLibroController = async (req: Request, resp: Response) => {
   try {
-    const { user_id,title,description,userCourse,imagen,dateView } = req.body;
-    const newTopic={user_id,title,description,userCourse,imagen,dateView,video: req.file?.path} as AudioLibroI;
+    const payload = req.body as AudioLibroI;
+   // const newTopic={user_id,title,description,userCourse,imagen,dateView,video} as AudioLibroI;
     //const userService = new TipsService();
     //const updateBilletera = req.body as unknown as TipsI;
+    //console.log(newTopic);
     const id = req.params.id;
     const billeteraService = new AudioLibroService();
     return serviceResponse({
-      data: await billeteraService.updateAudioLibro(id, newTopic),
+      data: await billeteraService.updateAudioLibro(id, payload),
       res: resp,
       req: req,
     });

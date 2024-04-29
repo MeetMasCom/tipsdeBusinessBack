@@ -144,6 +144,38 @@ var TopicRepository = /** @class */ (function () {
             });
         });
     };
+    TopicRepository.prototype.updateTopic = function (id, data) {
+        return __awaiter(this, void 0, void 0, function () {
+            var cnxMongo, adminModel, response, error_4;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 5, , 6]);
+                        return [4 /*yield*/, (0, conection_1.connectionMongo)()];
+                    case 1:
+                        cnxMongo = _a.sent();
+                        return [4 /*yield*/, (0, model_1.topicModelMongo)(cnxMongo)];
+                    case 2:
+                        adminModel = _a.sent();
+                        return [4 /*yield*/, adminModel
+                                .updateOne({ _id: id }, { $set: data })
+                                .exec()];
+                    case 3:
+                        response = _a.sent();
+                        if (response.modifiedCount == 0)
+                            throw new Error("No se pudo modificar el tema");
+                        return [4 /*yield*/, cnxMongo.close()];
+                    case 4:
+                        _a.sent();
+                        return [2 /*return*/, response.upsertedId];
+                    case 5:
+                        error_4 = _a.sent();
+                        throw new Error(error_4);
+                    case 6: return [2 /*return*/];
+                }
+            });
+        });
+    };
     return TopicRepository;
 }());
 exports.TopicRepository = TopicRepository;

@@ -11,4 +11,5 @@ moduleRoutes.post("/createTest", controler_1.createTestController);
 moduleRoutes.get("/getTestById/:id", controler_1.getTestByIdController);
 moduleRoutes.get("/getTestByIdModule/:id", controler_1.getTestByIdModuleController);
 moduleRoutes.post("/createAnswer", controler_1.createAnswerController);
+moduleRoutes.route("/updateModule/:id").post(controler_1.updateModuleController);
 exports.default = moduleRoutes;

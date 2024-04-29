@@ -87,6 +87,21 @@ var TopicService = /** @class */ (function () {
                 }
             });
         }); };
+        this.updateTopic = function (id, payload) { return __awaiter(_this, void 0, void 0, function () {
+            var error_4;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.updateTopic(id, payload)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_4 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
         this.repo = new repository_1.TopicRepository();
     }
     return TopicService;

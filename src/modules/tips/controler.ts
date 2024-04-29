@@ -12,7 +12,7 @@ export const createTipsController = async (req: Request, resp: Response) => {
 
     const payload = req.body as TipsI;
    // const newTopic={user_id,title,description,userCourse,imagen,dateView,video} as TipsI;
-
+  
     const userService = new TipsService();
     return serviceResponse({
       data: await userService.saveTips(payload),
@@ -32,9 +32,11 @@ export const createTipsController = async (req: Request, resp: Response) => {
 export const getTipsByIdUserController = async (req: Request, resp: Response) => {
   try {
     const id = req.params.id;
+    const type =req.query.type;
+    console.log(type);
     const userService = new TipsService();
     return serviceResponse({
-      data: await userService.getTipsByIdUser(id),
+      data: await userService.getTipsByIdUser(id,type),
       res: resp,
       req: req,
     });
@@ -87,14 +89,13 @@ export const getAllTipsController = async (req: Request, resp: Response) => {
 
 export const updateTipsController = async (req: Request, resp: Response) => {
   try {
-    const { user_id,title,description,userCourse,imagen,dateView } = req.body;
-    const newTopic={user_id,title,description,userCourse,imagen,dateView,video: req.file?.path} as TipsI;
+    const payload = req.body as TipsI;
     //const userService = new TipsService();
     //const updateBilletera = req.body as unknown as TipsI;
     const id = req.params.id;
     const billeteraService = new TipsService();
     return serviceResponse({
-      data: await billeteraService.updateTips(id, newTopic),
+      data: await billeteraService.updateTips(id, payload),
       res: resp,
       req: req,
     });
