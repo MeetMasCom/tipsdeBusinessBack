@@ -3,10 +3,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var express_1 = require("express");
-var controler_1 = require("./controler");
-var roomRoutes = (0, express_1.Router)();
-var multer_1 = __importDefault(require("../../libs/multer"));
+const express_1 = require("express");
+const controler_1 = require("./controler");
+const roomRoutes = (0, express_1.Router)();
+const multer_1 = __importDefault(require("../../libs/multer"));
 //userRoutes.route("/roomRegister").post(createRoomController);
 roomRoutes.route("/getByIdHotelRoom/:id").get(controler_1.getByIdHotelRoomController);
 roomRoutes.route("/getRoomById/:id").get(controler_1.getRoomByIdController);

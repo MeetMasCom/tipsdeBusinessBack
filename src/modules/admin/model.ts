@@ -1,4 +1,4 @@
-import { Connection, Schema,model ,Document} from "mongoose";
+import mongoose, { Connection, Schema,model ,Document} from "mongoose";
 
 
 export const adminSchema = new Schema<any>(

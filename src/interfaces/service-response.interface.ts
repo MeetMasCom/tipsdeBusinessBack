@@ -4,8 +4,8 @@ export interface ServiceResponseI {
   statusCode?: number;
   data?: unknown;
   message?: string | unknown;
-  res: Response;
-  req: Request;
+  res: Response | any;
+  req: Request | any;
 }
 
 export interface ErrorLogI {

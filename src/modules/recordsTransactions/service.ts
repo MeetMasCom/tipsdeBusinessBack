@@ -19,7 +19,7 @@ export class RecordsTransactionService {
     }
   };
 
-  getByUserId = async (userId: string, walletId: string): Promise<RecordsTransactionI[]> => {
+  getByUserId = async (userId: string, walletId?: string | null): Promise<RecordsTransactionI[]> => {
     try {
       return await this.repo.getByUserId(userId, walletId);
     } catch (error) {

@@ -3,11 +3,12 @@ export interface RecordsTransactionI {
     userId: string
     value: number
     detail: string
-    walletId: string
+    walletId?: string
     typeTransaction: string
-    referValue: number
-    status: boolean
-    companyValue: number
+    referValue?: number
+    status?: boolean
+    companyValue?: number
+    stripePaymentIntent?: string;
     createdAt?: string;
     updatedAt?: string;
 }

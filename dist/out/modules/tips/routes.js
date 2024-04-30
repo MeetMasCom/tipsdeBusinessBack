@@ -3,10 +3,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var express_1 = require("express");
-var tipsRoutes = (0, express_1.Router)();
-var multer_1 = __importDefault(require("../../libs/multer"));
-var controler_1 = require("./controler");
+const express_1 = require("express");
+const tipsRoutes = (0, express_1.Router)();
+const multer_1 = __importDefault(require("../../libs/multer"));
+const controler_1 = require("./controler");
 //topicRoutes.post("/createTopic",createTopicController);
 tipsRoutes.get("/getTipsByIdUser/:id", controler_1.getTipsByIdUserController);
 tipsRoutes.get("/getTipsById/:id", controler_1.getTipsByIdController);
