@@ -1,4 +1,5 @@
 
+import { Types } from "mongoose";
 import { ERR_400, OK_200 } from "../../constants/messages";
 import EmailHelper from "../../helpers/emailHelper";
 import { BalanceUserI, RechargeI, RetreatI, ReviewRechargeI, ReviewRetreatI } from "../../interfaces/balanceUser";
@@ -84,7 +85,7 @@ export class BalanceUserService {
 
       emailHelper.reviewRecharg(
         findUser.userName,
-        recharg.hash,
+        recharg.hash ?? "",
         payload.remark,
         findUser.email,
         payload.status

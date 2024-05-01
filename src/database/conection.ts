@@ -8,6 +8,7 @@ import {
 } from "../constants/enviroment";
 
 export const connectionMongo = async () => {
+
   try {
     const conectionOptions: ConnectOptions = {
       dbName: MONGO_DB_DATABASE,
@@ -19,7 +20,7 @@ export const connectionMongo = async () => {
       conectionOptions
     );
   } catch (error) {
-    console.info(error);
+    console.log(error);
     throw error;
   }
 };

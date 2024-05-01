@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var express_1 = require("express");
-var controler_1 = require("./controler");
-var cuponRoutes = (0, express_1.Router)();
+const express_1 = require("express");
+const controler_1 = require("./controler");
+const cuponRoutes = (0, express_1.Router)();
 cuponRoutes.route("/getAllCupon").get(controler_1.getAllCuponController);
 cuponRoutes.route("/addCupon").post(controler_1.createCuponController);
 cuponRoutes.route("/getByIdCupon/:id").get(controler_1.getByIdCuponController);

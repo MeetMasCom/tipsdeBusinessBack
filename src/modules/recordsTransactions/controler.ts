@@ -23,7 +23,7 @@ export const getAllController = async (req: Request, resp: Response) => {
 
 export const getAllByUserController = async (req: Request, resp: Response) => {
   try {
-    const walletId = req.query.walletId as string;
+    const walletId = req.query.walletId as string || null;
     const userId = req.query.userId as string;
     const recordsTransactionService = new RecordsTransactionService();
     return serviceResponse({

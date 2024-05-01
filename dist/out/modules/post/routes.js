@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var express_1 = require("express");
-var postRoutes = (0, express_1.Router)();
-var controler_1 = require("./controler");
+const express_1 = require("express");
+const postRoutes = (0, express_1.Router)();
+const controler_1 = require("./controler");
 postRoutes.get("/getPostByIdUser/:id", controler_1.getPostByIdUserController);
 postRoutes.get("/postByType/:id", controler_1.getPostByTypeController);
 postRoutes.get("/postById/:id", controler_1.getPostByIdController);

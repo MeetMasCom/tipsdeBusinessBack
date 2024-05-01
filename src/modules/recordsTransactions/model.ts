@@ -32,6 +32,10 @@ export const recordsTransactionsSchema = new Schema<any>(
       type: Number,
       require: false,
     },
+    stripePaymentIntent: {
+      type: String,
+      require: false,
+    },
     status: {
       type: Boolean,
       require: false,
