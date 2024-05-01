@@ -43,6 +43,10 @@ export const userSchema = new Schema<any>(
       type: String,
       require: true,
     },
+    sponsor: {
+      type: String,
+      require: true,
+    },
     terms: {
       type: Boolean,
       required: 1,
@@ -290,7 +294,6 @@ export const referralsSchema = new Schema<any>(
     level: {
       type: Number,
       require: true,
-      unique: 1,
     },
     referralsId: {
       type: String,

@@ -90,8 +90,10 @@ export const getAllTipsController = async (req: Request, resp: Response) => {
 export const updateTipsController = async (req: Request, resp: Response) => {
   try {
     const payload = req.body as TipsI;
+   // const newTopic={user_id,title,description,userCourse,imagen,dateView,video} as AudioLibroI;
     //const userService = new TipsService();
     //const updateBilletera = req.body as unknown as TipsI;
+    //console.log(newTopic);
     const id = req.params.id;
     const billeteraService = new TipsService();
     return serviceResponse({

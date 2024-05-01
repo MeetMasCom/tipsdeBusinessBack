@@ -79,6 +79,10 @@ exports.userSchema = new mongoose_1.Schema({
         type: String,
         require: true,
     },
+    sponsor: {
+        type: String,
+        require: true,
+    },
     terms: {
         type: Boolean,
         required: 1,
@@ -317,7 +321,6 @@ exports.referralsSchema = new mongoose_1.Schema({
     level: {
         type: Number,
         require: true,
-        unique: 1,
     },
     referralsId: {
         type: String,

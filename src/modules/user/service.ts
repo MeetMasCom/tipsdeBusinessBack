@@ -102,28 +102,53 @@ export class UserService {
       params.state = [USER_STATE];
       params.type = USER_TYPE;
       params.sponsorCode = params.userName;
+      params.sponsor=params.sponsor;
 
       params.age =
         new Date().getFullYear() - new Date(params.dateBirth).getFullYear();
 
       const response = await this.repo.save(params);
 
-      const sponsor = params.sponsor;
+      let sponsor = params.sponsor;
       delete params.sponsor;
-
       if (sponsor != undefined) {
-        const userId = (await this.repo.getByEmailOrUserName("", sponsor))
-          ._id as string;
-        const level = (await this.repo.getReferUser(userId)).length + 1;
-        if (level < 7) {
+       
+        let level =1;
+        while (level <= 7) {
+          const userId = (await this.repo.getByEmailOrUserName("", sponsor))._id as string;//obtiene el id del sponsor   //s´ponsor jorge
+         
           const refer: ReferralsI = {
             userId,
             referralsId: response._id!,
             level,
           };
           await this.repo.saveReferUser(refer);
+          sponsor=(await this.repo.getById(userId)).sponsor as string;
+          if(sponsor!=undefined){
+            const idUser = (await this.repo.getByEmailOrUserName("", sponsor))._id as string;
+            
+            level=level+1;
+          }     
+          
+          else{
+            level=8;
+          }
         }
       }
+
+      // if (sponsor != undefined) {
+      //   const userId = (await this.repo.getByEmailOrUserName("", sponsor))
+      //     ._id as string;
+      //   const level = (await this.repo.getReferUser(userId)).length + 1;
+      //   if (level < 7) {
+      //     const refer: ReferralsI = {
+      //       userId,
+      //       referralsId: response._id!,
+      //       level,
+      //     };
+      //     await this.repo.saveReferUser(refer);
+      //   }
+      // }
 
       return response;
     } catch (error) {
