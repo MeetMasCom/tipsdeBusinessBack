@@ -153,11 +153,11 @@ var UserService = /** @class */ (function () {
             });
         }); };
         this.save = function (params) { return __awaiter(_this, void 0, void 0, function () {
-            var bcryptHelper, validUser, _a, response, sponsor, userId, level, refer, error_5;
+            var bcryptHelper, validUser, _a, response, sponsor, level, userId, refer, idUser, error_5;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
-                        _b.trys.push([0, 8, , 9]);
+                        _b.trys.push([0, 12, , 13]);
                         bcryptHelper = new bcryptHelper_1.BcryptHelper();
                         return [4 /*yield*/, this.repo.getByEmailOrUserName(params.email, params.userName)];
                     case 1:
@@ -171,6 +171,7 @@ var UserService = /** @class */ (function () {
                         params.state = [enviroment_1.USER_STATE];
                         params.type = enviroment_1.USER_TYPE;
                         params.sponsorCode = params.userName;
+                        params.sponsor = params.sponsor;
                         params.age =
                             new Date().getFullYear() - new Date(params.dateBirth).getFullYear();
                         return [4 /*yield*/, this.repo.save(params)];
@@ -178,15 +179,14 @@ var UserService = /** @class */ (function () {
                         response = _b.sent();
                         sponsor = params.sponsor;
                         delete params.sponsor;
-                        if (!(sponsor != undefined)) return [3 /*break*/, 7];
-                        return [4 /*yield*/, this.repo.getByEmailOrUserName("", sponsor)];
+                        if (!(sponsor != undefined)) return [3 /*break*/, 11];
+                        level = 1;
+                        _b.label = 4;
                     case 4:
-                        userId = (_b.sent())
-                            ._id;
-                        return [4 /*yield*/, this.repo.getReferUser(userId)];
+                        if (!(level <= 7)) return [3 /*break*/, 11];
+                        return [4 /*yield*/, this.repo.getByEmailOrUserName("", sponsor)];
                     case 5:
-                        level = (_b.sent()).length + 1;
-                        if (!(level < 7)) return [3 /*break*/, 7];
+                        userId = (_b.sent())._id;
                         refer = {
                             userId: userId,
                             referralsId: response._id,
@@ -195,12 +195,38 @@ var UserService = /** @class */ (function () {
                         return [4 /*yield*/, this.repo.saveReferUser(refer)];
                     case 6:
                         _b.sent();
-                        _b.label = 7;
-                    case 7: return [2 /*return*/, response];
+                        return [4 /*yield*/, this.repo.getById(userId)];
+                    case 7:
+                        sponsor = (_b.sent()).sponsor;
+                        if (!(sponsor != undefined)) return [3 /*break*/, 9];
+                        return [4 /*yield*/, this.repo.getByEmailOrUserName("", sponsor)];
                     case 8:
+                        idUser = (_b.sent())._id;
+                        level = level + 1;
+                        return [3 /*break*/, 10];
+                    case 9:
+                        level = 8;
+                        _b.label = 10;
+                    case 10: return [3 /*break*/, 4];
+                    case 11: 
+                    // if (sponsor != undefined) {
+                    //   const userId = (await this.repo.getByEmailOrUserName("", sponsor))
+                    //     ._id as string;
+                    //   const level = (await this.repo.getReferUser(userId)).length + 1;
+                    //   if (level < 7) {
+                    //     const refer: ReferralsI = {
+                    //       userId,
+                    //       referralsId: response._id!,
+                    //       level,
+                    //     };
+                    //     await this.repo.saveReferUser(refer);
+                    //   }
+                    // }
+                    return [2 /*return*/, response];
+                    case 12:
                         error_5 = _b.sent();
                         throw new Error(error_5);
-                    case 9: return [2 /*return*/];
+                    case 13: return [2 /*return*/];
                 }
             });
         }); };

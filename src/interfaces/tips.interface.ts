@@ -7,6 +7,8 @@ export interface TipsI {
     userCourse: string[];
     imagen:string;
     state:number;
+    userLink?: string[];
+    type:number
     dateView:string;
     createdAt?: string;
     updatedAt?: string;

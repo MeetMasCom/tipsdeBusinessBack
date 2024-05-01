@@ -187,7 +187,6 @@ var StudentRepository = /** @class */ (function () {
                         return [4 /*yield*/, postModel.distinct("course_id", { user_id: objectId }).exec()];
                     case 3:
                         response = _a.sent();
-                        console.log("response", response);
                         return [4 /*yield*/, postModel.aggregate([
                                 {
                                     $match: { course_id: { $in: response } }
@@ -203,7 +202,6 @@ var StudentRepository = /** @class */ (function () {
                             ]).exec()];
                     case 4:
                         response1 = _a.sent();
-                        console.log("response1", response1);
                         result = [];
                         for (i = 0; i < response1.length; i++) {
                             result.push({
@@ -215,7 +213,7 @@ var StudentRepository = /** @class */ (function () {
                     case 5:
                         _a.sent();
                         //return response1 as unknown as StudentI[];
-                        return [2 /*return*/, result];
+                        return [2 /*return*/, response1];
                     case 6:
                         error_4 = _a.sent();
                         throw new Error(error_4);
@@ -290,8 +288,6 @@ var StudentRepository = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 5, , 6]);
-                        console.log(student);
-                        console.log(cat);
                         cat1 = parseInt(cat, 10);
                         ;
                         idUser = new mongoose_1.Types.ObjectId(student);

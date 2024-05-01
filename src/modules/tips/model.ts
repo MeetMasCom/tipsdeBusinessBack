@@ -20,8 +20,13 @@ export const tipsSchema = new Schema<any>(
       type: Array<string>,
       required: true,
     },
+    userLink:{
+      type: Array<string>,
+      required: false,
+    },
     imagen:{
       type:String,
+      required:true,
     },
     state:{
       type:Number,
@@ -30,6 +35,10 @@ export const tipsSchema = new Schema<any>(
     dateView:{
       type:Date,
       required:false,
+    },
+    type:{
+      type:Number,
+      required:true
     }
     
   },

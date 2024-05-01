@@ -82,7 +82,7 @@ var TipsRepository = /** @class */ (function () {
             });
         });
     };
-    TipsRepository.prototype.getTipsByIdUser = function (id) {
+    TipsRepository.prototype.getTipsByIdUser = function (id, type) {
         return __awaiter(this, void 0, void 0, function () {
             var cnxMongo, postModel, response, error_2;
             return __generator(this, function (_a) {
@@ -96,7 +96,9 @@ var TipsRepository = /** @class */ (function () {
                     case 2:
                         postModel = _a.sent();
                         return [4 /*yield*/, postModel
-                                .find({ user_id: id })
+                                .find({
+                                $and: [{ user_id: id }, { type: type }]
+                            })
                                 .sort({ createdAt: 1 })
                                 .exec()];
                     case 3:
@@ -158,7 +160,10 @@ var TipsRepository = /** @class */ (function () {
                     case 2:
                         postModel = _a.sent();
                         return [4 /*yield*/, postModel
-                                .find({ state: 1 })
+                                .find({ $and: [
+                                    { state: 1 },
+                                    { type: 1 }
+                                ] })
                                 .sort({ createdAt: -1 })
                                 .exec()];
                     case 3:

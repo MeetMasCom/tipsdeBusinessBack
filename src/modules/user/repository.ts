@@ -332,7 +332,7 @@ export class UserRepository {
 
   async saveReferUser(data: ReferralsI) {
     try {
-      console.log(data);
+      
       const cnxMongo = await connectionMongo();
       const referralsModel = await referralsModelMongo(cnxMongo);
       const response = await referralsModel.create({

@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getTopicByIdController = exports.getTopicByIdModuleController = exports.createTopicController = void 0;
+exports.updateTopicController = exports.getTopicByIdController = exports.getTopicByIdModuleController = exports.createTopicController = void 0;
 var responseHelper_1 = require("../../helpers/responseHelper");
 var service_1 = require("./service");
 var createTopicController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
@@ -126,3 +126,33 @@ var getTopicByIdController = function (req, resp) { return __awaiter(void 0, voi
     });
 }); };
 exports.getTopicByIdController = getTopicByIdController;
+var updateTopicController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var id, payload, adminService, _a, error_4;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                id = req.params.id;
+                payload = req.body;
+                adminService = new service_1.TopicService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, adminService.updateTopic(id, payload)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_4 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_4.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
+exports.updateTopicController = updateTopicController;

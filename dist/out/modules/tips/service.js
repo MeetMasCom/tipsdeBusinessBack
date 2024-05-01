@@ -57,13 +57,13 @@ var TipsService = /** @class */ (function () {
                 }
             });
         }); };
-        this.getTipsByIdUser = function (id) { return __awaiter(_this, void 0, void 0, function () {
+        this.getTipsByIdUser = function (id, type) { return __awaiter(_this, void 0, void 0, function () {
             var error_2;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 2, , 3]);
-                        return [4 /*yield*/, this.repo.getTipsByIdUser(id)];
+                        return [4 /*yield*/, this.repo.getTipsByIdUser(id, type)];
                     case 1: return [2 /*return*/, _a.sent()];
                     case 2:
                         error_2 = _a.sent();

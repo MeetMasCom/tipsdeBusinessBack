@@ -170,3 +170,24 @@ export const createAnswerController = async (req: Request, resp: Response) => {
     });
   }
 };
+
+export const updateModuleController = async (req: Request, resp: Response) => {
+  try {
+    const id = req.params.id;
+    const payload=req.body as unknown as ModuleI;
+    const adminService = new ModuleService();
+    return serviceResponse({
+      data: await adminService.updateModule(id,payload),
+      res: resp,
+      req: req,
+    });
+  } catch (error) {
+    return serviceResponse({
+      message: (error as any).message,
+      res: resp,
+      statusCode: 400,
+      req: req,
+    });
+  }
+
+  }

@@ -13,7 +13,6 @@ audiolibroRoutes.get("/getAudioLibroByIdUser/:id", getAudioLibroByIdUserControll
 audiolibroRoutes.get("/getAudioLibroById/:id", getAudioLibroByIdController);
 audiolibroRoutes.get("/getAllAudioLibro", getAllAudioLibroController);
 audiolibroRoutes.post('/createAudioLibro',createAudioLibroController);
-audiolibroRoutes.route('/updateAudioLibro/:id')
-    .post(upload.single('video'),updateAudioLibroController);
+audiolibroRoutes.route("/updateAudioLibro/:id").post(updateAudioLibroController);
 
 export default audiolibroRoutes;
