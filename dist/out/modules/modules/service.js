@@ -78,6 +78,146 @@ class ModuleService {
                 throw new Error(messages_1.ERR_400);
             }
         });
+var messages_1 = require("../../constants/messages");
+var repository_1 = require("./repository");
+var ModuleService = /** @class */ (function () {
+    function ModuleService() {
+        var _this = this;
+        this.saveModule = function (params) { return __awaiter(_this, void 0, void 0, function () {
+            var error_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.saveModule(params)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_1 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getModuleByIdCourse = function (id) { return __awaiter(_this, void 0, void 0, function () {
+            var error_2;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getModuleByIdCourse(id)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_2 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getModuleById = function (id) { return __awaiter(_this, void 0, void 0, function () {
+            var error_3;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getModuleById(id)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_3 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getModulesAndTopic = function (id) { return __awaiter(_this, void 0, void 0, function () {
+            var error_4;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getModulesAndTopic(id)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_4 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.saveTest = function (params) { return __awaiter(_this, void 0, void 0, function () {
+            var error_5;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.saveTest(params)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_5 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getTestById = function (id) { return __awaiter(_this, void 0, void 0, function () {
+            var error_6;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getTestById(id)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_6 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getTestByIdModule = function (id) { return __awaiter(_this, void 0, void 0, function () {
+            var error_7;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getTestByIdModule(id)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_7 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.saveAnswer = function (params) { return __awaiter(_this, void 0, void 0, function () {
+            var error_8;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.saveAnswer(params)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_8 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.updateModule = function (id, payload) { return __awaiter(_this, void 0, void 0, function () {
+            var error_9;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.updateModule(id, payload)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_9 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
         this.repo = new repository_1.ModuleRepository();
     }
 }

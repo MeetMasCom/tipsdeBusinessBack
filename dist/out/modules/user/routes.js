@@ -1,5 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var express_validation_1 = require("express-validation");
+var jwtHelper_1 = require("../../helpers/jwtHelper");
+var controler_1 = require("./controler");
+var validation_1 = require("./validation");
+var userRoutes = (0, express_1.Router)();
 const express_1 = require("express");
 const express_validation_1 = require("express-validation");
 const jwtHelper_1 = require("../../helpers/jwtHelper");
@@ -11,6 +17,7 @@ userRoutes.post("/login", [(0, express_validation_1.validate)(validation_1.login
 userRoutes.post("/valid-login", [(0, express_validation_1.validate)(validation_1.otpUserValidation)], controler_1.otpController);
 userRoutes.post("/logout/:id", [(0, express_validation_1.validate)(validation_1.getUserValidation)], controler_1.logoutController);
 userRoutes.put("/basic/:id", [(0, express_validation_1.validate)(validation_1.updateUserBasicValidation)], controler_1.updateUserBasicController);
+userRoutes.put("/address/:id", [jwtHelper_1.validateJwtHeader, (0, express_validation_1.validate)(validation_1.updateUserAddressValidation)], controler_1.updateUserAddressController);
 userRoutes.put("/address/:id", [jwtHelper_1.validateJwtHeader, (0, express_validation_1.validate)(validation_1.updateUserAddressValidation)], controler_1.updateUserAddressController);
 userRoutes.put("/match/:id", [(0, express_validation_1.validate)(validation_1.updateUserMatchValidation)], controler_1.updateUserMatchController);
 userRoutes.get("/count", controler_1.getCountUserController);
@@ -31,4 +38,5 @@ userRoutes.route("/getVerifyTeacher").get(controler_1.getVerifyTeacher);
 userRoutes.get("/getAllUser", controler_1.getAllUserController);
 userRoutes.get("/getUserSinCupon", controler_1.getUsersincupo);
 userRoutes.get("/refers/:id", controler_1.getReferUserController);
+userRoutes.post("/searchUsers", controler_1.searchUsersController);
 exports.default = userRoutes;

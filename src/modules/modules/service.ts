@@ -78,6 +78,14 @@ export class ModuleService {
       throw new Error(ERR_400);
     }
   };
+
+  updateModule = async (id: string, payload: ModuleI): Promise<any> => {
+    try {
+      return await this.repo.updateModule(id,payload);
+    } catch (error) {
+      throw new Error(ERR_400);
+    }
+  };
 }
 
 

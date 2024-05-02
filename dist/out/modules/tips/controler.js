@@ -52,6 +52,36 @@ const getTipsByIdUserController = (req, resp) => __awaiter(void 0, void 0, void 
         });
     }
 });
+var getTipsByIdUserController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var id, type, userService, _a, error_2;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                id = req.params.id;
+                type = req.query.type;
+                console.log(type);
+                userService = new service_1.TipsService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, userService.getTipsByIdUser(id, type)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_2 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_2.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
 exports.getTipsByIdUserController = getTipsByIdUserController;
 const getTipsByIdController = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -116,4 +146,33 @@ const updateTipsController = (req, resp) => __awaiter(void 0, void 0, void 0, fu
         });
     }
 });
+var updateTipsController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var payload, id, billeteraService, _a, error_5;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                payload = req.body;
+                id = req.params.id;
+                billeteraService = new service_1.TipsService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, billeteraService.updateTips(id, payload)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_5 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_5.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
 exports.updateTipsController = updateTipsController;

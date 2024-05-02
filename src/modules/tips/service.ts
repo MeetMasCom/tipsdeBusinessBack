@@ -21,9 +21,9 @@ export class TipsService {
   };
 
   
-  getTipsByIdUser = async (id: string): Promise<TipsI[]> => {
+  getTipsByIdUser = async (id: string,type:any): Promise<TipsI[]> => {
     try {
-      return await this.repo.getTipsByIdUser(id);
+      return await this.repo.getTipsByIdUser(id,type);
     } catch (error) {
       throw new Error(ERR_400);
     }

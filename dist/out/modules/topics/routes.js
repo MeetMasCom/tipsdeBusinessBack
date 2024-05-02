@@ -1,15 +1,15 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const topicRoutes = (0, express_1.Router)();
 const multer_1 = __importDefault(require("../../libs/multer"));
 const controler_1 = require("./controler");
+var express_1 = require("express");
+var topicRoutes = (0, express_1.Router)();
+var controler_1 = require("./controler");
 //topicRoutes.post("/createTopic",createTopicController);
 topicRoutes.get("/getTopicByIdModule/:id", controler_1.getTopicByIdModuleController);
 topicRoutes.get("/getTopicById/:id", controler_1.getTopicByIdController);
-topicRoutes.route('/createTopic')
-    .post(multer_1.default.single('video'), controler_1.createTopicController);
+topicRoutes.post('/createTopic', controler_1.createTopicController);
+topicRoutes.route("/updateTopic/:id").post(controler_1.updateTopicController);
 exports.default = topicRoutes;

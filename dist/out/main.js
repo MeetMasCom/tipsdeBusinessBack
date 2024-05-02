@@ -12,6 +12,56 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var enviroment_1 = require("./constants/enviroment");
+var messages_1 = require("./constants/messages");
+var cors_1 = __importDefault(require("cors"));
+var express_1 = __importDefault(require("express"));
+var responseHelper_1 = require("./helpers/responseHelper");
+var errorHelper_1 = require("./helpers/errorHelper");
+var routes_1 = __importDefault(require("./modules/user/routes"));
+var routes_2 = __importDefault(require("./modules/country/routes"));
+var routes_3 = __importDefault(require("./modules/catalogue/routes"));
+var routes_4 = __importDefault(require("./modules/fad/routes"));
+var routes_5 = __importDefault(require("./modules/comment/routes"));
+var routes_6 = __importDefault(require("./modules/star/routes"));
+var routes_7 = __importDefault(require("./modules/hotel/routes"));
+var routes_8 = __importDefault(require("./modules/room/routes"));
+var routes_9 = __importDefault(require("./modules/service/routes"));
+var routes_10 = __importDefault(require("./modules/typeRoom/routes"));
+var routes_11 = __importDefault(require("./modules/billeteraE/routes"));
+var routes_12 = __importDefault(require("./modules/billeteraU/routes"));
+var routes_13 = __importDefault(require("./modules/post/routes"));
+var routes_14 = __importDefault(require("./modules/profile/routes"));
+var routes_15 = __importDefault(require("./modules/like/routes"));
+var routes_16 = __importDefault(require("./modules/courses/routes"));
+var routes_17 = __importDefault(require("./modules/package/routes"));
+var routes_18 = __importDefault(require("./modules/admin/routes"));
+var routes_19 = __importDefault(require("./modules/spam/routes"));
+var routes_20 = __importDefault(require("./modules/notification/routes"));
+var routes_21 = __importDefault(require("./modules/ads/routes"));
+var routes_22 = __importDefault(require("./modules/balanceCompany/routes"));
+var routes_23 = __importDefault(require("./modules/balanceUser/routes"));
+var routes_24 = __importDefault(require("./modules/recordsTransactions/routes"));
+var routes_25 = __importDefault(require("./modules/membership/routes"));
+var routes_26 = __importDefault(require("./modules/chat/routes"));
+var routes_27 = __importDefault(require("./modules/likePost/routes"));
+var routes_28 = __importDefault(require("./modules/feedback/routes"));
+var routes_29 = __importDefault(require("./modules/modules/routes"));
+var routes_30 = __importDefault(require("./modules/topics/routes"));
+var routes_31 = __importDefault(require("./modules/students/routes"));
+var routes_32 = __importDefault(require("./modules/subscribers/routes"));
+var routes_33 = __importDefault(require("./modules/tips/routes"));
+var routes_34 = __importDefault(require("./modules/references/routes"));
+var routes_35 = __importDefault(require("./modules/prompts/routes"));
+var routes_36 = __importDefault(require("./modules/subprompts/routes"));
+var routes_37 = __importDefault(require("./modules/questions/routes"));
+var routes_38 = __importDefault(require("./modules/colaboradores/routes"));
+var routes_39 = __importDefault(require("./modules/cupon/routes"));
+var routes_40 = __importDefault(require("./modules/cuponUser/routes"));
+var routes_41 = __importDefault(require("./modules/audiolibro/routes"));
+var path_1 = __importDefault(require("path"));
+var MainServer = /** @class */ (function () {
+    function MainServer() {
 const enviroment_1 = require("./constants/enviroment");
 const messages_1 = require("./constants/messages");
 const cors_1 = __importDefault(require("cors"));
@@ -102,6 +152,7 @@ class MainServer {
             colaborador: "/api/colaborador",
             cupon: "/api/cupon",
             cuponUser: "/api/cuponUser",
+            audiolibro: "/api/audiolibro",
         };
         this.app = (0, express_1.default)();
         this.middlewares();
@@ -150,6 +201,8 @@ class MainServer {
         this.app.use(this.apiPaths.colaborador, routes_38.default);
         this.app.use(this.apiPaths.cupon, routes_39.default);
         this.app.use(this.apiPaths.cuponUser, routes_40.default);
+        this.app.use(this.apiPaths.audiolibro, routes_41.default);
+        this.app.get("/api", function (req, res) {
         this.app.get("/api", (req, res) => {
             return res.json({
                 data: "Welcome, but there is nothing to see here.",

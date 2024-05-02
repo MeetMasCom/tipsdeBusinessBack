@@ -29,8 +29,13 @@ exports.tipsSchema = new mongoose_1.Schema({
         type: (Array),
         required: true,
     },
+    userLink: {
+        type: (Array),
+        required: false,
+    },
     imagen: {
         type: String,
+        required: true,
     },
     state: {
         type: Number,
@@ -39,6 +44,10 @@ exports.tipsSchema = new mongoose_1.Schema({
     dateView: {
         type: Date,
         required: false,
+    },
+    type: {
+        type: Number,
+        required: true
     }
 }, {
     timestamps: {

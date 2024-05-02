@@ -27,4 +27,24 @@ const connectionMongo = () => __awaiter(void 0, void 0, void 0, function* () {
         throw error;
     }
 });
+var mongoose_1 = require("mongoose");
+var enviroment_1 = require("../constants/enviroment");
+var connectionMongo = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var conectionOptions;
+    return __generator(this, function (_a) {
+        try {
+            conectionOptions = {
+                dbName: enviroment_1.MONGO_DB_DATABASE,
+                //user: MONGO_DB_USERNAME,
+                //pass: MONGO_DB_PASSWORD,
+            };
+            return [2 /*return*/, (0, mongoose_1.createConnection)("mongodb://".concat(enviroment_1.MONGO_DB_HOST, ":").concat(enviroment_1.MONGO_DB_PORT), conectionOptions)];
+        }
+        catch (error) {
+            console.info(error);
+            throw error;
+        }
+        return [2 /*return*/];
+    });
+}); };
 exports.connectionMongo = connectionMongo;

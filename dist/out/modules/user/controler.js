@@ -91,6 +91,34 @@ const createUserController = (req, resp) => __awaiter(void 0, void 0, void 0, fu
         });
     }
 });
+var createUserController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var payload, userService, _a, error_4;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                payload = req.body;
+                userService = new service_1.UserService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, userService.save(payload)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_4 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_4.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
 exports.createUserController = createUserController;
 const loginController = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -112,6 +140,34 @@ const loginController = (req, resp) => __awaiter(void 0, void 0, void 0, functio
         });
     }
 });
+var loginController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var payload, userService, _a, error_5;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                payload = req.body;
+                userService = new service_1.UserService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, userService.login(payload)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_5 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_5.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
 exports.loginController = loginController;
 const otpController = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
     try {

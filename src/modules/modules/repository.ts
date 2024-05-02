@@ -159,7 +159,6 @@ export class ModuleRepository {
 
   async saveAnswer(data: AnswerI) {
     try {
-      console.log(data);
       const cnxMongo = await connectionMongo();
       const postModel = await answerModelMongo(cnxMongo);
       const response = await postModel.create({
@@ -168,6 +167,25 @@ export class ModuleRepository {
       });
       await cnxMongo.close();
       return response as unknown as AnswerI;
+    } catch (error) {
+      throw new Error(error as string);
+    }
+  }
+
+  async updateModule(id: string, data: ModuleI) {
+    try {
+      const cnxMongo = await connectionMongo();
+      const adminModel = await moduleModelMongo(cnxMongo);
+
+      const response = await adminModel
+        .updateOne({ _id: id }, { $set: data })
+        .exec();
+
+      if (response.modifiedCount == 0)
+        throw new Error("No se pudo cambiar el estado");
+
+      await cnxMongo.close();
+      return response.upsertedId;
     } catch (error) {
       throw new Error(error as string);
     }

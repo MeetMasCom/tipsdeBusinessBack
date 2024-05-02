@@ -44,6 +44,7 @@ import questionRoutes from "./modules/questions/routes";
 import colaboradorRoutes from "./modules/colaboradores/routes"; 
 import cuponRoutes from "./modules/cupon/routes";
 import cuponUserRoutes from "./modules/cuponUser/routes";
+import audiolibroRoutes from "./modules/audiolibro/routes";
 import path from "path";
 import stripeRoutes from "./modules/stripe/routes";
 
@@ -92,6 +93,7 @@ class MainServer {
     colaborador:"/api/colaborador",
     cupon:"/api/cupon",
     cuponUser:"/api/cuponUser",
+    audiolibro:"/api/audiolibro",
     stripe:"/api/stripe",
   };
 
@@ -144,6 +146,7 @@ class MainServer {
     this.app.use(this.apiPaths.colaborador, colaboradorRoutes);
     this.app.use(this.apiPaths.cupon, cuponRoutes);
     this.app.use(this.apiPaths.cuponUser, cuponUserRoutes);
+    this.app.use(this.apiPaths.audiolibro, audiolibroRoutes);
     this.app.use(this.apiPaths.stripe, stripeRoutes);
     this.app.get("/api", (req, res) => {
       return res.json({

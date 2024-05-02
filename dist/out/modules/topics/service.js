@@ -38,6 +38,71 @@ class TopicService {
                 throw new Error(messages_1.ERR_400);
             }
         });
+var messages_1 = require("../../constants/messages");
+var repository_1 = require("./repository");
+var TopicService = /** @class */ (function () {
+    function TopicService() {
+        var _this = this;
+        this.saveTopic = function (params) { return __awaiter(_this, void 0, void 0, function () {
+            var error_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.saveTopic(params)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_1 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getTopicByIdModule = function (id) { return __awaiter(_this, void 0, void 0, function () {
+            var error_2;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getTopicByIdModule(id)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_2 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getTopicById = function (id) { return __awaiter(_this, void 0, void 0, function () {
+            var error_3;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getTopicById(id)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_3 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.updateTopic = function (id, payload) { return __awaiter(_this, void 0, void 0, function () {
+            var error_4;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.updateTopic(id, payload)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_4 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
         this.repo = new repository_1.TopicRepository();
     }
 }
