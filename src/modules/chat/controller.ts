@@ -25,7 +25,8 @@ export const getMessaguesController = async (req: Request, resp: Response) => {
 
 export const getAllUsersMessaguesController = async (req: Request, resp: Response) => {
     try {
-        const userId = req.query.id as string;
+        const userId = req.query.userId as string;
+        console.log(userId);
         const chatService = new ChatService();
         return serviceResponse({
             data: await chatService.getAllUsersMessagues(userId),

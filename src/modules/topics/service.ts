@@ -37,7 +37,13 @@ export class TopicService {
     }
   };
  
-
+  updateTopic = async (id: string, payload: TopicI): Promise<any> => {
+    try {
+      return await this.repo.updateTopic(id,payload);
+    } catch (error) {
+      throw new Error(ERR_400);
+    }
+  };
 
 }
 

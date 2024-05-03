@@ -5,8 +5,8 @@
   "main": "main.ts",
   "scripts": {
     "dev": "npx nodemon",
-    "build": "rimraf ./dist && tsc",
-    "start": "npm run build && node dist/out/main.js",
+    "build": "npx rimraf ./dist && npx tsc -p tsconfig.build.json",
+    "start": "npm run build && node dist/out/src/main.js",
     "lint": "eslint . --ext .ts"
   },
   "author": "",

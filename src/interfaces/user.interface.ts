@@ -137,15 +137,22 @@ export interface ReferralsI {
   updatedAt?: string;
 }
 
+// export interface SearchUsers {
+//   country: string;
+//   age: number[];
+//   stateCivil?: string;
+//   heigth?: number;
+//   eyeColor?: string;
+//   bodyType?: string;
+//   drink?: string;
+//   smoke?: string;
+//   childrens?: string;
+//   preferences?:string
+// }
+
+
 export interface SearchUsers {
-  country: string;
-  age: number[];
-  stateCivil?: string;
-  heigth?: number;
-  eyeColor?: string;
-  bodyType?: string;
-  drink?: string;
-  smoke?: string;
-  childrens?: string;
-  preferences?:string
+  userName: string;
+  firstname: string;
+  lastname?: string;
 }

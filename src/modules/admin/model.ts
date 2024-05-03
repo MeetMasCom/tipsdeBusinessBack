@@ -1,5 +1,4 @@
-import mongoose, { Connection, Schema,model ,Document} from "mongoose";
-
+import { Connection, Schema} from "mongoose";
 
 export const adminSchema = new Schema<any>(
     {
@@ -40,5 +39,5 @@ export const adminSchema = new Schema<any>(
   
   );
 
-  export const adminModelMongo = async (cnxMongo: Connection) =>
-    cnxMongo.model<any>("admin", adminSchema, "admin");
+export const adminModelMongo = async (cnxMongo: Connection) =>
+  cnxMongo.model<any>("admin", adminSchema, "admin");

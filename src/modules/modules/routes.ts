@@ -11,7 +11,8 @@ import {
   createTestController,
   getTestByIdController,
   createAnswerController,
-  getTestByIdModuleController
+  getTestByIdModuleController,
+  updateModuleController
 } from "./controler";
 
 moduleRoutes.post("/createModule", createModuleController);
@@ -23,5 +24,7 @@ moduleRoutes.post("/createTest", createTestController);
 moduleRoutes.get("/getTestById/:id", getTestByIdController);
 moduleRoutes.get("/getTestByIdModule/:id", getTestByIdModuleController);
 moduleRoutes.post("/createAnswer", createAnswerController);
+
+moduleRoutes.route("/updateModule/:id").post(updateModuleController);
 
 export default moduleRoutes;

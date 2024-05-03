@@ -22,12 +22,16 @@ export class TipsRepository {
     }
   }
 
-  async getTipsByIdUser(id: string) {
+  async getTipsByIdUser(id: string,type:number) {
     try {
       const cnxMongo = await connectionMongo();
       const postModel = await tipsModelMongo(cnxMongo);
       const response = await postModel
-        .find({ user_id: id })
+        .find(
+          {
+            $and:[{user_id:id},{type:type}]
+          }   
+        )
         .sort({ createdAt: 1 })
         .exec();
       await cnxMongo.close();
@@ -59,7 +63,10 @@ export class TipsRepository {
       const cnxMongo = await connectionMongo();
       const postModel = await tipsModelMongo(cnxMongo);
       const response = await postModel
-        .find({state: 1 })
+        .find({ $and: [
+          { state: 1 },
+          { type: 1 }
+    ]})
         .sort({ createdAt: -1 })
         .exec();
       await cnxMongo.close();

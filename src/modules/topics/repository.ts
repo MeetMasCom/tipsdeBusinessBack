@@ -52,5 +52,23 @@ export class TopicRepository {
     }
   }
 
- 
+  async updateTopic(id: string, data: TopicI) {
+    try {
+      const cnxMongo = await connectionMongo();
+      const adminModel = await topicModelMongo(cnxMongo);
+
+      const response = await adminModel
+        .updateOne({ _id: id }, { $set: data })
+        .exec();
+
+      if (response.modifiedCount == 0)
+        throw new Error("No se pudo modificar el tema");
+
+      await cnxMongo.close();
+      return response.upsertedId;
+    } catch (error) {
+      throw new Error(error as string);
+    }
+  }
+
 }

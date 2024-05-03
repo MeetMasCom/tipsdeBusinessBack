@@ -10,11 +10,10 @@ import { UserI } from "../../interfaces/user.interface";
 export const createTopicController = async (req: Request, resp: Response) => {
   try {
 
-    const { module_id,title } = req.body;
-    const newTopic={module_id,title,video: req.file?.path} as TopicI;
+    const payload = req.body as TopicI;
     const userService = new TopicService();
     return serviceResponse({
-      data: await userService.saveTopic(newTopic),
+      data: await userService.saveTopic(payload),
       res: resp,
       req: req,
     });
@@ -66,3 +65,23 @@ export const getTopicByIdController = async (req: Request, resp: Response) => {
   }
 }
 
+export const updateTopicController = async (req: Request, resp: Response) => {
+  try {
+    const id = req.params.id;
+    const payload=req.body as unknown as TopicI;
+    const adminService = new TopicService();
+    return serviceResponse({
+      data: await adminService.updateTopic(id,payload),
+      res: resp,
+      req: req,
+    });
+  } catch (error) {
+    return serviceResponse({
+      message: (error as any).message,
+      res: resp,
+      statusCode: 400,
+      req: req,
+    });
+  }
+
+  }

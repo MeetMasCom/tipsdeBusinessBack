@@ -58,18 +58,19 @@ export class ChatService {
 
     getAllUsersMessagues = async (userId: string): Promise<UserI[]> => {
         try {
-            const data = await new LikeRepository().getAllUserLike(userId);
+            const data = await new ChatRepository().getAllUserMessages(userId);
 
             const users: UserI[] = [];
 
-            await Promise.all(data.map(async (like) => {
-                const user = await new UserRepository().getById(like.user_id!);
-                if (user) {
-                    users.push(user)
-                }
-            }));
+            // await Promise.all(data.map(async (like) => {
+            //     const user = await new UserRepository().getById(like.user_id!);
+            //     if (user) {
+            //         users.push(user)
+            //     }
+            // }));
+            //const user = await new UserRepository().getById(userId);  
 
-            return users;
+            return data;
         } catch (error) {
             throw new Error(error as string);
         }

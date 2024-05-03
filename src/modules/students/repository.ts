@@ -97,15 +97,12 @@ export class StudentRepository {
       //       foreignField: "_id",
       //       as: "course",
       //     },
-      //   },{
-      //     $match: { user_id: objectId },
-      //   },
-      // ])        
+      //   }
+      // ])
       //   .sort({ createdAt: -1 })
       //   .exec();
        const response=await postModel.distinct("course_id", { user_id:objectId}).exec();
-       console.log("response",response);
-
+       //console.log("response",response);
 
        const response1=await postModel.aggregate([
         {
@@ -120,7 +117,7 @@ export class StudentRepository {
           }
         }
       ]).exec();
-      console.log("response1",response1);
+      //console.log("response1",response1);
         const result = [];
         for (var i = 0; i < response1.length; i++) {
             result.push({
@@ -130,7 +127,7 @@ export class StudentRepository {
         }
       await cnxMongo.close();
       //return response1 as unknown as StudentI[];
-      return result;
+      return response1;
     } catch (error) {
       throw new Error(error as string);
     }
@@ -185,8 +182,8 @@ export class StudentRepository {
 
    async getCourseByCategoria(student:string,cat: string) {
     try {
-      console.log(student);
-      console.log(cat);
+      // console.log(student);
+      // console.log(cat);
       const cat1= parseInt(cat, 10);;
       const idUser = new Types.ObjectId(student) as any;
       const cnxMongo = await connectionMongo();
