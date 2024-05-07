@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const controler_1 = require("./controler");
-const jwtHelper_1 = require("../../helpers/jwtHelper");
-const adsRoutes = (0, express_1.Router)();
+var express_1 = require("express");
+var controler_1 = require("./controler");
+var jwtHelper_1 = require("../../helpers/jwtHelper");
+var adsRoutes = (0, express_1.Router)();
 adsRoutes.post("/", jwtHelper_1.validateJwtHeader, controler_1.createAdsController);
 adsRoutes.get("/getAll", jwtHelper_1.validateJwtHeader, controler_1.getAllsAdsController);
 adsRoutes.get("/getUserAds/:id", jwtHelper_1.validateJwtHeader, controler_1.getAdsController);

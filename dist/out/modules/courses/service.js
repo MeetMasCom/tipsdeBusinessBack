@@ -8,152 +8,280 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PostService = void 0;
-const messages_1 = require("../../constants/messages");
-const repository_1 = require("./repository");
-const service_1 = require("../recordsTransactions/service");
-const repository_2 = require("../balanceUser/repository");
-const repository_3 = require("../balanceCompany/repository");
-const service_2 = require("../user/service");
-class PostService {
-    constructor() {
-        this.saveCourse = (params) => __awaiter(this, void 0, void 0, function* () {
-            try {
-                return yield this.repo.saveCourse(params);
-            }
-            catch (error) {
-                throw new Error(messages_1.ERR_400);
-            }
-        });
-        this.getCourseByIdUser = (id, tipo) => __awaiter(this, void 0, void 0, function* () {
-            try {
-                return yield this.repo.getCourseByIdUser(id, tipo);
-            }
-            catch (error) {
-                throw new Error(messages_1.ERR_400);
-            }
-        });
-        this.getCourseById = (id) => __awaiter(this, void 0, void 0, function* () {
-            try {
-                return yield this.repo.getCourseById(id);
-            }
-            catch (error) {
-                throw new Error(messages_1.ERR_400);
-            }
-        });
-        this.getAllCourses = () => __awaiter(this, void 0, void 0, function* () {
-            try {
-                return yield this.repo.getAllCourses();
-            }
-            catch (error) {
-                throw new Error(messages_1.ERR_400);
-            }
-        });
-        this.getAllInLive = () => __awaiter(this, void 0, void 0, function* () {
-            try {
-                return yield this.repo.getAllInLive();
-            }
-            catch (error) {
-                throw new Error(messages_1.ERR_400);
-            }
-        });
-        this.getCourseByCategoria = (id, tipo) => __awaiter(this, void 0, void 0, function* () {
-            try {
-                return yield this.repo.getCourseByCategoria(id, tipo);
-            }
-            catch (error) {
-                throw new Error(messages_1.ERR_400);
-            }
-        });
-        this.getCourseByUser = (id, tipo) => __awaiter(this, void 0, void 0, function* () {
-            try {
-                return yield this.repo.getCourseByUser(id, tipo);
-            }
-            catch (error) {
-                throw new Error(messages_1.ERR_400);
-            }
-        });
-        this.getCourseByUserStudent = (id) => __awaiter(this, void 0, void 0, function* () {
-            try {
-                return yield this.repo.getCourseByUserStudent(id);
-            }
-            catch (error) {
-                throw new Error(messages_1.ERR_400);
-            }
-        });
-        this.getTopCourses = () => __awaiter(this, void 0, void 0, function* () {
-            try {
-                return yield this.repo.getTopCourses();
-            }
-            catch (error) {
-                throw new Error(messages_1.ERR_400);
-            }
-        });
-        this.saveBuyCourse = (data) => __awaiter(this, void 0, void 0, function* () {
-            try {
-                //valid balance
-                const buyMembership = yield this.repo.saveCourseUser(data);
-                const balance = yield new repository_2.BalanceUserRepository().getAllByUserId(data.userId);
-                if (!balance)
-                    throw new Error("Saldo insuficiente, realice una recarga...");
-                const packageData = yield new repository_1.CoursesRepository().getById(data.courseId);
-                if (!packageData)
-                    throw new Error("No existe información de paquete de visitas...");
-                if (balance.balance < Number(packageData.price))
-                    throw new Error("Saldo insuficiente, realice una recarga...");
-                //actualizar saldo usuario
-                yield new repository_2.BalanceUserRepository().updateBalance(balance._id, {
-                    balance: Number(balance.balance) - Number(packageData.price)
-                });
-                const price = Number(packageData.price) * 0.50;
-                //actualizar saldo empresa referidos
-                const walletE = yield new repository_3.BalanceCompanyRepository().getByBalanceCompany();
-                if (walletE.length > 0) {
-                    yield new repository_3.BalanceCompanyRepository().update(walletE[0]._id, {
-                        balance: Number(walletE[0].balance) + Number(price),
-                    });
+var messages_1 = require("../../constants/messages");
+var repository_1 = require("./repository");
+var service_1 = require("../recordsTransactions/service");
+var repository_2 = require("../balanceUser/repository");
+var repository_3 = require("../balanceCompany/repository");
+var service_2 = require("../user/service");
+var PostService = /** @class */ (function () {
+    function PostService() {
+        var _this = this;
+        this.saveCourse = function (params) { return __awaiter(_this, void 0, void 0, function () {
+            var error_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.saveCourse(params)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_1 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
                 }
-                else {
-                    yield new repository_3.BalanceCompanyRepository().save({
-                        balance: Number(price)
-                    });
+            });
+        }); };
+        this.getCourseByIdUser = function (id, tipo) { return __awaiter(_this, void 0, void 0, function () {
+            var error_2;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getCourseByIdUser(id, tipo)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_2 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
                 }
-                yield new service_2.UserService().updateBalanceRefer(data.userId, price);
-                const payload = {
-                    value: Number(packageData.price),
-                    companyValue: price,
-                    referValue: price,
-                    detail: `Compra anuncio ${packageData.title}`,
-                    userId: data.userId,
-                    status: true,
-                    typeTransaction: 'Compra anuncio',
-                    walletId: ""
-                };
-                yield new service_1.RecordsTransactionService().save(payload);
-                return messages_1.OK_200;
-            }
-            catch (error) {
-                throw new Error(error);
-            }
-        });
-        this.verifyCourseUser = (id, idC) => __awaiter(this, void 0, void 0, function* () {
-            try {
-                return yield this.repo.verifyCourseUser(id, idC);
-            }
-            catch (error) {
-                throw new Error(messages_1.ERR_400);
-            }
-        });
-        this.updateState = (id, payload) => __awaiter(this, void 0, void 0, function* () {
-            try {
-                return yield this.repo.updateState(id, payload);
-            }
-            catch (error) {
-                throw new Error(messages_1.ERR_400);
-            }
-        });
+            });
+        }); };
+        this.getCourseById = function (id) { return __awaiter(_this, void 0, void 0, function () {
+            var error_3;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getCourseById(id)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_3 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getAllCourses = function () { return __awaiter(_this, void 0, void 0, function () {
+            var error_4;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getAllCourses()];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_4 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getAllInLive = function () { return __awaiter(_this, void 0, void 0, function () {
+            var error_5;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getAllInLive()];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_5 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getCourseByCategoria = function (id, tipo) { return __awaiter(_this, void 0, void 0, function () {
+            var error_6;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getCourseByCategoria(id, tipo)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_6 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getCourseByUser = function (id, tipo) { return __awaiter(_this, void 0, void 0, function () {
+            var error_7;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getCourseByUser(id, tipo)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_7 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getCourseByUserStudent = function (id) { return __awaiter(_this, void 0, void 0, function () {
+            var error_8;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getCourseByUserStudent(id)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_8 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.getTopCourses = function () { return __awaiter(_this, void 0, void 0, function () {
+            var error_9;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.getTopCourses()];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_9 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.saveBuyCourse = function (data) { return __awaiter(_this, void 0, void 0, function () {
+            var buyMembership, balance, packageData, price, walletE, payload, error_10;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 12, , 13]);
+                        return [4 /*yield*/, this.repo.saveCourseUser(data)];
+                    case 1:
+                        buyMembership = _a.sent();
+                        return [4 /*yield*/, new repository_2.BalanceUserRepository().getAllByUserId(data.userId)];
+                    case 2:
+                        balance = _a.sent();
+                        if (!balance)
+                            throw new Error("Saldo insuficiente, realice una recarga...");
+                        return [4 /*yield*/, new repository_1.CoursesRepository().getById(data.courseId)];
+                    case 3:
+                        packageData = _a.sent();
+                        if (!packageData)
+                            throw new Error("No existe información de paquete de visitas...");
+                        if (balance.balance < Number(packageData.price))
+                            throw new Error("Saldo insuficiente, realice una recarga...");
+                        //actualizar saldo usuario
+                        return [4 /*yield*/, new repository_2.BalanceUserRepository().updateBalance(balance._id, {
+                                balance: Number(balance.balance) - Number(packageData.price)
+                            })];
+                    case 4:
+                        //actualizar saldo usuario
+                        _a.sent();
+                        price = Number(packageData.price) * 0.50;
+                        return [4 /*yield*/, new repository_3.BalanceCompanyRepository().getByBalanceCompany()];
+                    case 5:
+                        walletE = _a.sent();
+                        if (!(walletE.length > 0)) return [3 /*break*/, 7];
+                        return [4 /*yield*/, new repository_3.BalanceCompanyRepository().update(walletE[0]._id, {
+                                balance: Number(walletE[0].balance) + Number(price),
+                            })];
+                    case 6:
+                        _a.sent();
+                        return [3 /*break*/, 9];
+                    case 7: return [4 /*yield*/, new repository_3.BalanceCompanyRepository().save({
+                            balance: Number(price)
+                        })];
+                    case 8:
+                        _a.sent();
+                        _a.label = 9;
+                    case 9: return [4 /*yield*/, new service_2.UserService().updateBalanceRefer(data.userId, price)];
+                    case 10:
+                        _a.sent();
+                        payload = {
+                            value: Number(packageData.price),
+                            companyValue: price,
+                            referValue: price,
+                            detail: "Compra anuncio ".concat(packageData.title),
+                            userId: data.userId,
+                            status: true,
+                            typeTransaction: 'Compra anuncio',
+                            walletId: ""
+                        };
+                        return [4 /*yield*/, new service_1.RecordsTransactionService().save(payload)];
+                    case 11:
+                        _a.sent();
+                        return [2 /*return*/, messages_1.OK_200];
+                    case 12:
+                        error_10 = _a.sent();
+                        throw new Error(error_10);
+                    case 13: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.verifyCourseUser = function (id, idC) { return __awaiter(_this, void 0, void 0, function () {
+            var error_11;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.verifyCourseUser(id, idC)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_11 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
+        this.updateState = function (id, payload) { return __awaiter(_this, void 0, void 0, function () {
+            var error_12;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, this.repo.updateState(id, payload)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        error_12 = _a.sent();
+                        throw new Error(messages_1.ERR_400);
+                    case 3: return [2 /*return*/];
+                }
+            });
+        }); };
         this.repo = new repository_1.CoursesRepository();
     }
-}
+    return PostService;
+}());
 exports.PostService = PostService;

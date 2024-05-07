@@ -7,7 +7,7 @@ import { getRecordsTransactionsValidation } from "./validation";
 const recordsTransactionsRoutes = Router();
 
 recordsTransactionsRoutes.get("/", [validateJwtHeader], getAllController);
-recordsTransactionsRoutes.get("/detail", getAllByUserController);
+recordsTransactionsRoutes.get("/detail", [validateJwtHeader, validate(getRecordsTransactionsValidation)], getAllByUserController);
 
 
 export default recordsTransactionsRoutes;

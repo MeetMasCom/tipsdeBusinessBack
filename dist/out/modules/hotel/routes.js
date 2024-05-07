@@ -3,11 +3,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const controler_1 = require("./controler");
-const controler_2 = require("../user/controler");
-const hotelRoutes = (0, express_1.Router)();
-const multer_1 = __importDefault(require("../../libs/multer"));
+var express_1 = require("express");
+var controler_1 = require("./controler");
+var controler_2 = require("../user/controler");
+var hotelRoutes = (0, express_1.Router)();
+var multer_1 = __importDefault(require("../../libs/multer"));
 hotelRoutes.get("/", controler_1.getAllHotelController);
 hotelRoutes.get("/getByIdHotel/:id", controler_1.getByIdHotelController);
 hotelRoutes.get("/getByIdUserHotel/:id", controler_1.getByIdUserHotelController);

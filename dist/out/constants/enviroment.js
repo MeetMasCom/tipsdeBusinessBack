@@ -24,7 +24,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TIME_JWT = exports.KEY_JWT = exports.TIME_EXPIRE = exports.EMISOR_EMAIL = exports.PASS_EMAIL = exports.USER_EMAIL = exports.PORT_EMAIL = exports.HOST_EMAIL = exports.USER_STATE = exports.USER_TYPE = exports.SALT_ROUNDS = exports.MONGO_DB_PASSWORD = exports.MONGO_DB_USERNAME = exports.MONGO_DB_DATABASE = exports.MONGO_DB_PORT = exports.MONGO_DB_HOST = exports.PORT = exports.HOST = void 0;
-const dotenv = __importStar(require("dotenv"));
+var dotenv = __importStar(require("dotenv"));
 dotenv.config();
 exports.HOST = process.env.HOST || "0.0.0.0";
 exports.PORT = process.env.PORT || "8000";

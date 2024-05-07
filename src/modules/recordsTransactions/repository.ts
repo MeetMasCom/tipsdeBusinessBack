@@ -31,17 +31,11 @@ export class RecordsTransactionRepository {
     }
   }
 
-  async getByUserId(userId: string, walletId?: string | null) {
+  async getByUserId(userId: string, walletId: string) {
     try {
       const cnxMongo = await connectionMongo();
       const recordsTransactionsModel = await recordsTransactionsModelMongo(cnxMongo);
-      let response:any;
-
-      if(walletId)
-        response = await recordsTransactionsModel.find({ userId, walletId }).exec();
-      else
-        response = await recordsTransactionsModel.find({ userId }).exec();
-
+      const response = await recordsTransactionsModel.find({ userId, walletId }).exec();
       await cnxMongo.close();
       return response as RecordsTransactionI[];
     } catch (error) {
@@ -54,18 +48,6 @@ export class RecordsTransactionRepository {
       const cnxMongo = await connectionMongo();
       const recordsTransactionsModel = await recordsTransactionsModelMongo(cnxMongo);
       const response = await recordsTransactionsModel.findOne({ _id: id }).exec();
-      await cnxMongo.close();
-      return response as RecordsTransactionI;
-    } catch (error) {
-      throw new Error(error as string);
-    }
-  }
-
-  async getByStripePaymentIntent(id: string) {
-    try {
-      const cnxMongo = await connectionMongo();
-      const recordsTransactionsModel = await recordsTransactionsModelMongo(cnxMongo);
-      const response = await recordsTransactionsModel.findOne({ stripePaymentIntent: id }).exec();
       await cnxMongo.close();
       return response as RecordsTransactionI;
     } catch (error) {

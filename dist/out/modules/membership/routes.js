@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const controler_1 = require("./controler");
-const express_validation_1 = require("express-validation");
-const validation_1 = require("./validation");
-const membershipRoutes = (0, express_1.Router)();
+var express_1 = require("express");
+var controler_1 = require("./controler");
+var express_validation_1 = require("express-validation");
+var validation_1 = require("./validation");
+var membershipRoutes = (0, express_1.Router)();
 membershipRoutes.get("/", controler_1.getMembershipController);
 membershipRoutes.post("/", [(0, express_validation_1.validate)(validation_1.createMembershipValidation)], controler_1.createMembershipController);
 membershipRoutes.post("/membership-user", [(0, express_validation_1.validate)(validation_1.createMembershipUserValidation)], controler_1.createMembershipUserController);
