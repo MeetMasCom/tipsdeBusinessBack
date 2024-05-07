@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const controler_1 = require("./controler");
+const express_validation_1 = require("express-validation");
+const validation_1 = require("./validation");
+const balanceUserRoutes = (0, express_1.Router)();
+balanceUserRoutes.get("/user/:id", [(0, express_validation_1.validate)(validation_1.getBalanceUserValidation)], controler_1.getBalanceUserController);
+balanceUserRoutes.post("/recharge", [(0, express_validation_1.validate)(validation_1.rechargeValidation)], controler_1.rechargeController);
+balanceUserRoutes.post("/review-recharge", [(0, express_validation_1.validate)(validation_1.reviewRechargeValidation)], controler_1.reviewRechargeController);
+balanceUserRoutes.get("/retreatAll", controler_1.getAllRetreatController);
+balanceUserRoutes.post("/retreat", controler_1.retreatController);
+balanceUserRoutes.get("/retreat/:id", controler_1.getAllRetreatUserController);
+balanceUserRoutes.post("/review-retreat", controler_1.reviewRetreatController);
+balanceUserRoutes.get("/:id", [(0, express_validation_1.validate)(validation_1.getBalanceUserValidation)], controler_1.getAllController);
+balanceUserRoutes.post("/updateBalance/:id", controler_1.updateBalance);
+exports.default = balanceUserRoutes;

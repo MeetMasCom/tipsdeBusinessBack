@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const controler_1 = require("./controler");
+const billeteraURoutes = (0, express_1.Router)();
+billeteraURoutes.get("/", controler_1.getAllBilleterasUserController);
+billeteraURoutes.get("/getByIdBilleteraU/:id", controler_1.getByIdBilleteraUserController);
+billeteraURoutes.get("/getByIdUserBilleteraU/:id", controler_1.getByIdUserBilleteraUserController);
+billeteraURoutes.put("/updateBilleteraU/:id", controler_1.updateBilleteraUserController);
+billeteraURoutes.post("/createBilleteraU", controler_1.createBilleteraUserController);
+billeteraURoutes.post("/validOtp", controler_1.validateOtpController);
+billeteraURoutes.get("/validOtp/:id", controler_1.createOtpController);
+exports.default = billeteraURoutes;
