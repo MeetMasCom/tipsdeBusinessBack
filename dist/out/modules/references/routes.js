@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var controler_1 = require("./controler");
+var referencesRoute = (0, express_1.Router)();
+referencesRoute.get("/getAllReferences", controler_1.getAllReferencesController);
+referencesRoute.get("/getMyReferences", controler_1.getMyReferencesController);
+referencesRoute.get("/referencesByIdCourse", controler_1.getByIdCourseReferencesController);
+referencesRoute.post("/referencesRegister", controler_1.createReferenceController);
+referencesRoute.get("/referencesByIdTips", controler_1.getByIdTipReferencesController);
+referencesRoute.post("/referencesRegisterTips", controler_1.createReferenceTipsController);
+exports.default = referencesRoute;

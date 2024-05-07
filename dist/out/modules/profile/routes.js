@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var profileRoutes = (0, express_1.Router)();
+var controler_1 = require("./controler");
+profileRoutes.post("/createProfile", controler_1.createProfileController);
+profileRoutes.get("/getAllProfile", controler_1.getAllProfileController);
+profileRoutes.post("/addProfile/:id", controler_1.addProfileController);
+profileRoutes.get("/profileById/:id", controler_1.getProfileByIdController);
+profileRoutes.get("/profileUser/:id", controler_1.getUserProfileIdController);
+profileRoutes.post("/addSocialN/:id", controler_1.addSocialNController);
+profileRoutes.post("/addFollowers/:id", controler_1.addFollowersController);
+profileRoutes.post("/addFollowings/:id", controler_1.addFollowingsController);
+exports.default = profileRoutes;

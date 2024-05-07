@@ -46,7 +46,6 @@ import cuponRoutes from "./modules/cupon/routes";
 import cuponUserRoutes from "./modules/cuponUser/routes";
 import audiolibroRoutes from "./modules/audiolibro/routes";
 import path from "path";
-import stripeRoutes from "./modules/stripe/routes";
 
 class MainServer {
   private app!: express.Application;
@@ -146,7 +145,7 @@ class MainServer {
     this.app.use(this.apiPaths.colaborador, colaboradorRoutes);
     this.app.use(this.apiPaths.cupon, cuponRoutes);
     this.app.use(this.apiPaths.cuponUser, cuponUserRoutes);
-    this.app.use(this.apiPaths.stripe, stripeRoutes);
+    
     this.app.use(this.apiPaths.audiolibro, audiolibroRoutes);
     this.app.get("/api", (req, res) => {
       return res.json({

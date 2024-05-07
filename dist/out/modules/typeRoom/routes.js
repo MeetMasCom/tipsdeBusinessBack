@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var controler_1 = require("./controler");
+var typeRoomRoutes = (0, express_1.Router)();
+typeRoomRoutes.get("/", controler_1.getAllTypeController);
+typeRoomRoutes.get("/getById/:id", controler_1.getByIdController);
+typeRoomRoutes.get("/getTypeHotelId/:id", controler_1.getByIdHotelController);
+typeRoomRoutes.post("/typeRoomRegister", controler_1.createTypeRoomController);
+exports.default = typeRoomRoutes;

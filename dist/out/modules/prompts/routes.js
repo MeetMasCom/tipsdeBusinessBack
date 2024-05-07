@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var controler_1 = require("./controler");
+var promptsRoutes = (0, express_1.Router)();
+promptsRoutes.route("/addPrompts").post(controler_1.createPromptsController);
+promptsRoutes.route("/getPromptsById/:id").get(controler_1.getPromptsByIdController);
+promptsRoutes.route("/getMyPrompts/:id").get(controler_1.getMyPromptsController);
+promptsRoutes.route("/getAllPrompts").get(controler_1.getAllPromptsController);
+promptsRoutes.route("/updatePrompt/:id").post(controler_1.updatePromptController);
+promptsRoutes.route("/addPricePrompts").post(controler_1.addPromptsPriceController);
+promptsRoutes.route("/getPricePrompts").get(controler_1.getPricePromptsController);
+promptsRoutes.route("/updatePricePrompt/:id").post(controler_1.updatePromptPriceController);
+promptsRoutes.route("/buyPrompts").post(controler_1.buyPromptController);
+promptsRoutes.route("/getPromptsByUser/:id").get(controler_1.getPromptsByUserController);
+exports.default = promptsRoutes;
