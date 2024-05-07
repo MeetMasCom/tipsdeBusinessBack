@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import * as dotenv from "dotenv";
+=======
+>>>>>>> main
 import { UserStateI, UserTypeI } from "../interfaces/user.interface";
 dotenv.config();
 
