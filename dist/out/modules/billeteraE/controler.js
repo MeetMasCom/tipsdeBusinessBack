@@ -8,107 +8,179 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateBilleteraEmpresaEstado = exports.getByIdUserBilleteraController = exports.getByIdBilleteraController = exports.getAllBilleteraController = exports.createBilleteraController = void 0;
-const responseHelper_1 = require("../../helpers/responseHelper");
-const service_1 = require("./service");
-const createBilleteraController = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const newBilletera = req.body;
-        const billeteraService = new service_1.BilleteraService();
-        return (0, responseHelper_1.serviceResponse)({
-            data: yield billeteraService.save(newBilletera),
-            res: resp,
-            req: req,
-        });
-    }
-    catch (error) {
-        return (0, responseHelper_1.serviceResponse)({
-            message: error.message,
-            res: resp,
-            statusCode: 400,
-            req: req,
-        });
-    }
-});
+var responseHelper_1 = require("../../helpers/responseHelper");
+var service_1 = require("./service");
+var createBilleteraController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var newBilletera, billeteraService, _a, error_1;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                newBilletera = req.body;
+                billeteraService = new service_1.BilleteraService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, billeteraService.save(newBilletera)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_1 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_1.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
 exports.createBilleteraController = createBilleteraController;
-const getAllBilleteraController = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const billeteraService = new service_1.BilleteraService();
-        return (0, responseHelper_1.serviceResponse)({
-            data: yield billeteraService.getAll(),
-            res: resp,
-            req: req,
-        });
-    }
-    catch (error) {
-        return (0, responseHelper_1.serviceResponse)({
-            message: error.message,
-            res: resp,
-            statusCode: 400,
-            req: req,
-        });
-    }
-});
+var getAllBilleteraController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var billeteraService, _a, error_2;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                billeteraService = new service_1.BilleteraService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, billeteraService.getAll()];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_2 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_2.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
 exports.getAllBilleteraController = getAllBilleteraController;
-const getByIdBilleteraController = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const id = req.params.id;
-        const billeteraService = new service_1.BilleteraService();
-        return (0, responseHelper_1.serviceResponse)({
-            data: yield billeteraService.getById(id),
-            res: resp,
-            req: req,
-        });
-    }
-    catch (error) {
-        return (0, responseHelper_1.serviceResponse)({
-            message: error.message,
-            res: resp,
-            statusCode: 400,
-            req: req,
-        });
-    }
-});
+var getByIdBilleteraController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var id, billeteraService, _a, error_3;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                id = req.params.id;
+                billeteraService = new service_1.BilleteraService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, billeteraService.getById(id)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_3 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_3.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
 exports.getByIdBilleteraController = getByIdBilleteraController;
-const getByIdUserBilleteraController = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const id = req.params.id;
-        const billeteraService = new service_1.BilleteraService();
-        return (0, responseHelper_1.serviceResponse)({
-            data: yield billeteraService.getByIdUser(id),
-            res: resp,
-            req: req,
-        });
-    }
-    catch (error) {
-        return (0, responseHelper_1.serviceResponse)({
-            message: error.message,
-            res: resp,
-            statusCode: 400,
-            req: req,
-        });
-    }
-});
+var getByIdUserBilleteraController = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var id, billeteraService, _a, error_4;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                id = req.params.id;
+                billeteraService = new service_1.BilleteraService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, billeteraService.getByIdUser(id)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_4 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_4.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
 exports.getByIdUserBilleteraController = getByIdUserBilleteraController;
-const updateBilleteraEmpresaEstado = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const id = req.params.id;
-        const payload = req.body;
-        const billeteraService = new service_1.BilleteraService();
-        return (0, responseHelper_1.serviceResponse)({
-            data: yield billeteraService.update(id, payload),
-            res: resp,
-            req: req,
-        });
-    }
-    catch (error) {
-        return (0, responseHelper_1.serviceResponse)({
-            message: error.message,
-            res: resp,
-            statusCode: 400,
-            req: req,
-        });
-    }
-});
+var updateBilleteraEmpresaEstado = function (req, resp) { return __awaiter(void 0, void 0, void 0, function () {
+    var id, payload, billeteraService, _a, error_5;
+    var _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _c.trys.push([0, 2, , 3]);
+                id = req.params.id;
+                payload = req.body;
+                billeteraService = new service_1.BilleteraService();
+                _a = responseHelper_1.serviceResponse;
+                _b = {};
+                return [4 /*yield*/, billeteraService.update(id, payload)];
+            case 1: return [2 /*return*/, _a.apply(void 0, [(_b.data = _c.sent(),
+                        _b.res = resp,
+                        _b.req = req,
+                        _b)])];
+            case 2:
+                error_5 = _c.sent();
+                return [2 /*return*/, (0, responseHelper_1.serviceResponse)({
+                        message: error_5.message,
+                        res: resp,
+                        statusCode: 400,
+                        req: req,
+                    })];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); };
 exports.updateBilleteraEmpresaEstado = updateBilleteraEmpresaEstado;

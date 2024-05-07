@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.resetPassword = exports.recoverPassword = exports.recoverUsername = exports.otpUserValidation = exports.loginUserValidation = exports.updateUserMatchValidation = exports.updateUserAddressValidation = exports.updateUserBasicValidation = exports.createUserValidation = exports.getUserValidateValidation = exports.getUserValidation = void 0;
-const express_validation_1 = require("express-validation");
-const validations_1 = require("../../constants/validations");
+var express_validation_1 = require("express-validation");
+var validations_1 = require("../../constants/validations");
 exports.getUserValidation = {
     params: express_validation_1.Joi.object({
         id: (0, validations_1.validString)("id", 255),

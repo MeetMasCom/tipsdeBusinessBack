@@ -16,13 +16,13 @@ export interface BalanceUserAllI {
 
 export interface RechargeI {
     id?: string;
-    dir?: string;
-    file?: string;
-    hash?: string;
+    dir: string;
+    file: string;
+    hash: string;
     amount: number;
     detail: string;
     remark?: string;
-    walletId?: string;
+    walletId: string;
     userId: string;
     status: number;
     user?: string;

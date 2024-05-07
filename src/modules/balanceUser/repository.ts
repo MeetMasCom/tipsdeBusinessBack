@@ -33,7 +33,7 @@ export class BalanceUserRepository {
     }
   }
 
-  async getById(id: string | Types.ObjectId) {
+  async getById(id: string) {
     try {
       const cnxMongo = await connectionMongo();
       const balanceUserModel = await balanceUserModelMongo(cnxMongo);

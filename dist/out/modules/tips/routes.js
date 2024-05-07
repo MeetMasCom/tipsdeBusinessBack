@@ -1,9 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const tipsRoutes = (0, express_1.Router)();
-const multer_1 = __importDefault(require("../../libs/multer"));
-const controler_1 = require("./controler");
 var express_1 = require("express");
 var tipsRoutes = (0, express_1.Router)();
 var controler_1 = require("./controler");

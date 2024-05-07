@@ -25,7 +25,6 @@ export class JwtHelper {
    */
   validate(token: string): any | null {
     try {
-      console.log(jwt.verify(token, KEY_JWT));
       return jwt.verify(token, KEY_JWT) as any;
     } catch (error) {
       return null;
@@ -39,7 +38,6 @@ export const validateJwtHeader = (
   next: NextFunction
 ) => {
   const authHeader = req.headers["authorization"];
-  console.log(authHeader);
   const objServiceResponse: ServiceResponseI = {
     res,
     req: req,

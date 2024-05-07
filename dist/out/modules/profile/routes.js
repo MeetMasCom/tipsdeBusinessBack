@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const profileRoutes = (0, express_1.Router)();
-const controler_1 = require("./controler");
+var express_1 = require("express");
+var profileRoutes = (0, express_1.Router)();
+var controler_1 = require("./controler");
 profileRoutes.post("/createProfile", controler_1.createProfileController);
 profileRoutes.get("/getAllProfile", controler_1.getAllProfileController);
 profileRoutes.post("/addProfile/:id", controler_1.addProfileController);

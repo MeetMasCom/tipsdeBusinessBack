@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const controler_1 = require("./controler");
-const billeteraRoutes = (0, express_1.Router)();
+var express_1 = require("express");
+var controler_1 = require("./controler");
+var billeteraRoutes = (0, express_1.Router)();
 billeteraRoutes.get("/", controler_1.getAllBilleteraController);
 billeteraRoutes.get("/getByIdBilletera/:id", controler_1.getByIdBilleteraController);
 billeteraRoutes.get("/getByIdUserBilletera/:id", controler_1.getByIdUserBilleteraController);

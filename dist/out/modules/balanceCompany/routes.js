@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const controler_1 = require("./controler");
-const balanceCompanyRoutes = (0, express_1.Router)();
+var express_1 = require("express");
+var controler_1 = require("./controler");
+var balanceCompanyRoutes = (0, express_1.Router)();
 balanceCompanyRoutes.get("/", [], controler_1.getAllController);
 balanceCompanyRoutes.get("/rechargs", [], controler_1.getAllRechargsController);
 // validateJwtHeader

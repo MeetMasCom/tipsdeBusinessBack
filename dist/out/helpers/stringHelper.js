@@ -1,15 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.StringHelper = void 0;
-class StringHelper {
-    hideEmail(email) {
-        const data = email.split("@");
+var StringHelper = /** @class */ (function () {
+    function StringHelper() {
+    }
+    StringHelper.prototype.hideEmail = function (email) {
+        var data = email.split("@");
         return data[0] + "@" + "xxxxx";
-    }
-    generateRandomSixDigitNumber() {
-        const min = 100000;
-        const max = 999999;
+    };
+    StringHelper.prototype.generateRandomSixDigitNumber = function () {
+        var min = 100000;
+        var max = 999999;
         return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-}
+    };
+    return StringHelper;
+}());
 exports.StringHelper = StringHelper;

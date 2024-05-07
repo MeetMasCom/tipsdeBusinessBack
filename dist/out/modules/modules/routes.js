@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const moduleRoutes = (0, express_1.Router)();
-const controler_1 = require("./controler");
+var express_1 = require("express");
+var moduleRoutes = (0, express_1.Router)();
+var controler_1 = require("./controler");
 moduleRoutes.post("/createModule", controler_1.createModuleController);
 moduleRoutes.get("/getModuleByCourse/:id", controler_1.getModuleByIdCourseController);
 moduleRoutes.get("/getModuleById/:id", controler_1.getModuleByIdController);

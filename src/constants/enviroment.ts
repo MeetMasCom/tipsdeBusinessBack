@@ -1,7 +1,6 @@
+import * as dotenv from "dotenv";
 import { UserStateI, UserTypeI } from "../interfaces/user.interface";
-import { default as defineEnvironment} from '../../dotenv-environment-file';
-
-defineEnvironment();
+dotenv.config();
 
 export const HOST: string = process.env.HOST || "0.0.0.0";
 export const PORT: string = process.env.PORT || "8000";

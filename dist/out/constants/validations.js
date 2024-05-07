@@ -1,269 +1,319 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.validUrl = exports.customValidDecimal10Ent4DecYMin = exports.customValidDecimal10Ent4Dec = exports.valid10Enteros4Decimales = exports.validFechaNull = exports.validFechaNoNull = exports.validMes = exports.validAnio = exports.validCheck = exports.validNumeroNull = exports.validOpcionesNumeros = exports.validOpciones = exports.validArrayNumber = exports.validArray = exports.customValidDecimal12Ent2Dec = exports.valid12Enteros2Decimales = exports.validObjectEmpty = exports.validTextoEmpty = exports.validEmail = exports.validFechaHasta = exports.validFechaDesde = exports.validNumeroEmpty = exports.validNumero = exports.validStringEmpty = exports.validStringNoMaxLength = exports.validStringNoRequired = exports.validString = void 0;
-const express_validation_1 = require("express-validation");
-const validString = (propiedad, maximoCaracteres) => express_validation_1.Joi.string()
-    .required()
-    .min(1)
-    .max(maximoCaracteres)
-    .messages({
-    "any.required": `"${propiedad}" es requerido`,
-    "string.empty": `"${propiedad}" es requerido`,
-    "string.base": `"${propiedad}" debe ser texto'`,
-    "string.min": `"${propiedad}" debe estar en el rango de 1 a ${maximoCaracteres} caracteres`,
-    "string.max": `"${propiedad}" debe estar en el rango de 1 a ${maximoCaracteres} caracteres`,
-});
+var express_validation_1 = require("express-validation");
+var validString = function (propiedad, maximoCaracteres) {
+    return express_validation_1.Joi.string()
+        .required()
+        .min(1)
+        .max(maximoCaracteres)
+        .messages({
+        "any.required": "\"".concat(propiedad, "\" es requerido"),
+        "string.empty": "\"".concat(propiedad, "\" es requerido"),
+        "string.base": "\"".concat(propiedad, "\" debe ser texto'"),
+        "string.min": "\"".concat(propiedad, "\" debe estar en el rango de 1 a ").concat(maximoCaracteres, " caracteres"),
+        "string.max": "\"".concat(propiedad, "\" debe estar en el rango de 1 a ").concat(maximoCaracteres, " caracteres"),
+    });
+};
 exports.validString = validString;
-const validStringNoRequired = (propiedad, maximoCaracteres) => express_validation_1.Joi.string()
-    .min(1)
-    .max(maximoCaracteres)
-    .messages({
-    "any.required": `"${propiedad}" es requerido`,
-    "string.empty": `"${propiedad}" es requerido`,
-    "string.base": `"${propiedad}" debe ser texto'`,
-    "string.min": `"${propiedad}" debe estar en el rango de 1 a ${maximoCaracteres} caracteres`,
-    "string.max": `"${propiedad}" debe estar en el rango de 1 a ${maximoCaracteres} caracteres`,
-});
+var validStringNoRequired = function (propiedad, maximoCaracteres) {
+    return express_validation_1.Joi.string()
+        .min(1)
+        .max(maximoCaracteres)
+        .messages({
+        "any.required": "\"".concat(propiedad, "\" es requerido"),
+        "string.empty": "\"".concat(propiedad, "\" es requerido"),
+        "string.base": "\"".concat(propiedad, "\" debe ser texto'"),
+        "string.min": "\"".concat(propiedad, "\" debe estar en el rango de 1 a ").concat(maximoCaracteres, " caracteres"),
+        "string.max": "\"".concat(propiedad, "\" debe estar en el rango de 1 a ").concat(maximoCaracteres, " caracteres"),
+    });
+};
 exports.validStringNoRequired = validStringNoRequired;
-const validStringNoMaxLength = (propiedad) => express_validation_1.Joi.string()
-    .min(1)
-    .messages({
-    "any.required": `"${propiedad}" es requerido`,
-    "string.empty": `"${propiedad}" es requerido`,
-    "string.base": `"${propiedad}" debe ser texto'`,
-});
+var validStringNoMaxLength = function (propiedad) {
+    return express_validation_1.Joi.string()
+        .min(1)
+        .messages({
+        "any.required": "\"".concat(propiedad, "\" es requerido"),
+        "string.empty": "\"".concat(propiedad, "\" es requerido"),
+        "string.base": "\"".concat(propiedad, "\" debe ser texto'"),
+    });
+};
 exports.validStringNoMaxLength = validStringNoMaxLength;
-const validStringEmpty = (propiedad, maximoCaracteres) => express_validation_1.Joi.string()
-    .min(1)
-    .max(maximoCaracteres)
-    .allow("")
-    .messages({
-    "any.required": `"${propiedad}" es requerido`,
-    "string.empty": `"${propiedad}" es requerido`,
-    "string.base": `"${propiedad}" debe ser texto'`,
-    "string.min": `"${propiedad}" debe estar en el rango de 1 a ${maximoCaracteres} caracteres`,
-    "string.max": `"${propiedad}" debe estar en el rango de 1 a ${maximoCaracteres} caracteres`,
-});
+var validStringEmpty = function (propiedad, maximoCaracteres) {
+    return express_validation_1.Joi.string()
+        .min(1)
+        .max(maximoCaracteres)
+        .allow("")
+        .messages({
+        "any.required": "\"".concat(propiedad, "\" es requerido"),
+        "string.empty": "\"".concat(propiedad, "\" es requerido"),
+        "string.base": "\"".concat(propiedad, "\" debe ser texto'"),
+        "string.min": "\"".concat(propiedad, "\" debe estar en el rango de 1 a ").concat(maximoCaracteres, " caracteres"),
+        "string.max": "\"".concat(propiedad, "\" debe estar en el rango de 1 a ").concat(maximoCaracteres, " caracteres"),
+    });
+};
 exports.validStringEmpty = validStringEmpty;
-const validNumero = (propiedad) => express_validation_1.Joi.number()
-    .required()
-    .integer()
-    .min(0)
-    .messages({
-    "any.required": `"${propiedad}" es requerida`,
-    "number.base": `"${propiedad}" debe ser número`,
-});
+var validNumero = function (propiedad) {
+    return express_validation_1.Joi.number()
+        .required()
+        .integer()
+        .min(0)
+        .messages({
+        "any.required": "\"".concat(propiedad, "\" es requerida"),
+        "number.base": "\"".concat(propiedad, "\" debe ser n\u00FAmero"),
+    });
+};
 exports.validNumero = validNumero;
-const validNumeroEmpty = (nombrePropiedad) => express_validation_1.Joi.number()
-    .integer()
-    .min(0)
-    .max(99999999999)
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "number.base": `"${nombrePropiedad}" debe ser número`,
-    "number.min": `"${nombrePropiedad}" debe ser mayor a 0`,
-    "number.max": `"${nombrePropiedad}" debe ser menor o igual a 99999999999`,
-});
+var validNumeroEmpty = function (nombrePropiedad) {
+    return express_validation_1.Joi.number()
+        .integer()
+        .min(0)
+        .max(99999999999)
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "number.base": "\"".concat(nombrePropiedad, "\" debe ser n\u00FAmero"),
+        "number.min": "\"".concat(nombrePropiedad, "\" debe ser mayor a 0"),
+        "number.max": "\"".concat(nombrePropiedad, "\" debe ser menor o igual a 99999999999"),
+    });
+};
 exports.validNumeroEmpty = validNumeroEmpty;
-const validFechaDesde = (nombrePropiedad) => express_validation_1.Joi.date()
-    .required()
-    .empty()
-    .iso()
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "date.empty": `"${nombrePropiedad}" debe ser válido`,
-    "date.base": `"${nombrePropiedad}" debe ser fecha`,
-    "date.format": `"${nombrePropiedad}" debe ser válido (YYYY-MM-DD)`,
-});
+var validFechaDesde = function (nombrePropiedad) {
+    return express_validation_1.Joi.date()
+        .required()
+        .empty()
+        .iso()
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "date.empty": "\"".concat(nombrePropiedad, "\" debe ser v\u00E1lido"),
+        "date.base": "\"".concat(nombrePropiedad, "\" debe ser fecha"),
+        "date.format": "\"".concat(nombrePropiedad, "\" debe ser v\u00E1lido (YYYY-MM-DD)"),
+    });
+};
 exports.validFechaDesde = validFechaDesde;
-const validFechaHasta = (nombrePropiedad, nombrePropiedadFechaDesde) => express_validation_1.Joi.date()
-    .required()
-    .empty()
-    .iso()
-    .min(express_validation_1.Joi.ref(nombrePropiedadFechaDesde))
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "date.empty": `"${nombrePropiedad}" debe ser válido`,
-    "date.base": `"${nombrePropiedad}" debe ser fecha`,
-    "date.format": `"${nombrePropiedadFechaDesde}" debe ser válido (YYYY-MM-DD)`,
-    "date.min": `"${nombrePropiedad}" debe ser mayor o igual a "${nombrePropiedadFechaDesde}"`,
-});
+var validFechaHasta = function (nombrePropiedad, nombrePropiedadFechaDesde) {
+    return express_validation_1.Joi.date()
+        .required()
+        .empty()
+        .iso()
+        .min(express_validation_1.Joi.ref(nombrePropiedadFechaDesde))
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "date.empty": "\"".concat(nombrePropiedad, "\" debe ser v\u00E1lido"),
+        "date.base": "\"".concat(nombrePropiedad, "\" debe ser fecha"),
+        "date.format": "\"".concat(nombrePropiedadFechaDesde, "\" debe ser v\u00E1lido (YYYY-MM-DD)"),
+        "date.min": "\"".concat(nombrePropiedad, "\" debe ser mayor o igual a \"").concat(nombrePropiedadFechaDesde, "\""),
+    });
+};
 exports.validFechaHasta = validFechaHasta;
-const validEmail = (propiedad) => express_validation_1.Joi.string()
-    .required()
-    .email()
-    .messages({
-    "any.required": `"${propiedad}" es requerido`,
-    "string.empty": `"${propiedad}" es requerido`,
-    "string.base": `"${propiedad}" debe contener @ y el .'`,
-});
+var validEmail = function (propiedad) {
+    return express_validation_1.Joi.string()
+        .required()
+        .email()
+        .messages({
+        "any.required": "\"".concat(propiedad, "\" es requerido"),
+        "string.empty": "\"".concat(propiedad, "\" es requerido"),
+        "string.base": "\"".concat(propiedad, "\" debe contener @ y el .'"),
+    });
+};
 exports.validEmail = validEmail;
-const validTextoEmpty = (nombrePropiedad, maxCaracteres) => express_validation_1.Joi.string()
-    .required()
-    .regex(/^([a-zA-ZáÁéÉíÍóÓúÚñÑ0-9]+[\s.,;:\-_'#$%&()[\]]*)+$/i)
-    .max(maxCaracteres)
-    .allow("")
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "string.base": `"${nombrePropiedad}" debe ser texto`,
-    "string.max": `"${nombrePropiedad}" debe ingresar máximo ${maxCaracteres} caracteres`,
-});
+var validTextoEmpty = function (nombrePropiedad, maxCaracteres) {
+    return express_validation_1.Joi.string()
+        .required()
+        .regex(/^([a-zA-ZáÁéÉíÍóÓúÚñÑ0-9]+[\s.,;:\-_'#$%&()[\]]*)+$/i)
+        .max(maxCaracteres)
+        .allow("")
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "string.base": "\"".concat(nombrePropiedad, "\" debe ser texto"),
+        "string.max": "\"".concat(nombrePropiedad, "\" debe ingresar m\u00E1ximo ").concat(maxCaracteres, " caracteres"),
+    });
+};
 exports.validTextoEmpty = validTextoEmpty;
-const validObjectEmpty = (nombrePropiedad, obj) => express_validation_1.Joi.object(obj)
-    .required()
-    .allow(null)
-    .messages({
-    "any:required": `"${nombrePropiedad}" es requerido`,
-    "object.base": `"${nombrePropiedad}" debe ser un objeto`,
-});
+var validObjectEmpty = function (nombrePropiedad, obj) {
+    return express_validation_1.Joi.object(obj)
+        .required()
+        .allow(null)
+        .messages({
+        "any:required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "object.base": "\"".concat(nombrePropiedad, "\" debe ser un objeto"),
+    });
+};
 exports.validObjectEmpty = validObjectEmpty;
-const valid12Enteros2Decimales = (valor, helper) => {
-    const regEx = /^(\d{1,12})([.]\d{1,2})?$/i;
+var valid12Enteros2Decimales = function (valor, helper) {
+    var regEx = /^(\d{1,12})([.]\d{1,2})?$/i;
     if (!regEx.test(valor))
         return helper.error("decimal.invalid");
     return valor;
 };
 exports.valid12Enteros2Decimales = valid12Enteros2Decimales;
-const customValidDecimal12Ent2Dec = (nombrePropiedad) => express_validation_1.Joi.number()
-    .required()
-    .custom(exports.valid12Enteros2Decimales)
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "number.base": `"${nombrePropiedad}" debe ser número`,
-    "decimal.invalid": `"${nombrePropiedad}" debe ingresar máximo 12 enteros y 2 decimales`,
-});
+var customValidDecimal12Ent2Dec = function (nombrePropiedad) {
+    return express_validation_1.Joi.number()
+        .required()
+        .custom(exports.valid12Enteros2Decimales)
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "number.base": "\"".concat(nombrePropiedad, "\" debe ser n\u00FAmero"),
+        "decimal.invalid": "\"".concat(nombrePropiedad, "\" debe ingresar m\u00E1ximo 12 enteros y 2 decimales"),
+    });
+};
 exports.customValidDecimal12Ent2Dec = customValidDecimal12Ent2Dec;
-const validArray = (nombrePropiedad, obj) => express_validation_1.Joi.array()
-    .required()
-    .items(express_validation_1.Joi.object(obj))
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "array.base": `"${nombrePropiedad}" debe ser un array`,
-});
+var validArray = function (nombrePropiedad, obj) {
+    return express_validation_1.Joi.array()
+        .required()
+        .items(express_validation_1.Joi.object(obj))
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "array.base": "\"".concat(nombrePropiedad, "\" debe ser un array"),
+    });
+};
 exports.validArray = validArray;
-const validArrayNumber = (nombrePropiedad) => express_validation_1.Joi.array()
-    .required()
-    .items(express_validation_1.Joi.number())
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "array.base": `"${nombrePropiedad}" debe ser un array`,
-});
+var validArrayNumber = function (nombrePropiedad) {
+    return express_validation_1.Joi.array()
+        .required()
+        .items(express_validation_1.Joi.number())
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "array.base": "\"".concat(nombrePropiedad, "\" debe ser un array"),
+    });
+};
 exports.validArrayNumber = validArrayNumber;
-const validOpciones = (nombrePropiedad, opciones, leyendaDeOpciones) => express_validation_1.Joi.string()
-    .required()
-    .valid(...opciones)
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "any.only": `"${nombrePropiedad}" debe estar entre: ${leyendaDeOpciones}`,
-});
+var validOpciones = function (nombrePropiedad, opciones, leyendaDeOpciones) {
+    var _a;
+    return (_a = express_validation_1.Joi.string()
+        .required())
+        .valid.apply(_a, opciones).messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "any.only": "\"".concat(nombrePropiedad, "\" debe estar entre: ").concat(leyendaDeOpciones),
+    });
+};
 exports.validOpciones = validOpciones;
-const validOpcionesNumeros = (nombrePropiedad, opciones, leyendaDeOpciones) => express_validation_1.Joi.number()
-    .required()
-    .valid(...opciones)
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "any.only": `"${nombrePropiedad}" debe estar entre: ${leyendaDeOpciones}`,
-});
+var validOpcionesNumeros = function (nombrePropiedad, opciones, leyendaDeOpciones) {
+    var _a;
+    return (_a = express_validation_1.Joi.number()
+        .required())
+        .valid.apply(_a, opciones).messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "any.only": "\"".concat(nombrePropiedad, "\" debe estar entre: ").concat(leyendaDeOpciones),
+    });
+};
 exports.validOpcionesNumeros = validOpcionesNumeros;
-const validNumeroNull = (nombrePropiedad) => express_validation_1.Joi.number()
-    .integer()
-    .min(0)
-    .max(99999999999)
-    .allow(null)
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "number.base": `"${nombrePropiedad}" debe ser número`,
-    "number.min": `"${nombrePropiedad}" debe ser mayor a 0`,
-    "number.max": `"${nombrePropiedad}" debe ser menor o igual a 99999999999`,
-});
+var validNumeroNull = function (nombrePropiedad) {
+    return express_validation_1.Joi.number()
+        .integer()
+        .min(0)
+        .max(99999999999)
+        .allow(null)
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "number.base": "\"".concat(nombrePropiedad, "\" debe ser n\u00FAmero"),
+        "number.min": "\"".concat(nombrePropiedad, "\" debe ser mayor a 0"),
+        "number.max": "\"".concat(nombrePropiedad, "\" debe ser menor o igual a 99999999999"),
+    });
+};
 exports.validNumeroNull = validNumeroNull;
-const validCheck = (nombrePropiedad) => express_validation_1.Joi.number()
-    .valid(0, 1)
-    .required()
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "number.base": `"${nombrePropiedad}" debe ser número`,
-    "any.only": `"${nombrePropiedad}" debe estar entre 0 o 1`,
-});
+var validCheck = function (nombrePropiedad) {
+    return express_validation_1.Joi.number()
+        .valid(0, 1)
+        .required()
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "number.base": "\"".concat(nombrePropiedad, "\" debe ser n\u00FAmero"),
+        "any.only": "\"".concat(nombrePropiedad, "\" debe estar entre 0 o 1"),
+    });
+};
 exports.validCheck = validCheck;
-const validAnio = (nombrePropiedad) => express_validation_1.Joi.number()
-    .required()
-    .integer()
-    .min(1920)
-    .max(9999)
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "number.base": `"${nombrePropiedad}" debe ser número`,
-    "number.min": `"${nombrePropiedad}" debe ser mayor o igual a 1920`,
-    "number.max": `"${nombrePropiedad}" debe ser menor o igual a 9999`,
-});
+var validAnio = function (nombrePropiedad) {
+    return express_validation_1.Joi.number()
+        .required()
+        .integer()
+        .min(1920)
+        .max(9999)
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "number.base": "\"".concat(nombrePropiedad, "\" debe ser n\u00FAmero"),
+        "number.min": "\"".concat(nombrePropiedad, "\" debe ser mayor o igual a 1920"),
+        "number.max": "\"".concat(nombrePropiedad, "\" debe ser menor o igual a 9999"),
+    });
+};
 exports.validAnio = validAnio;
-const validMes = (nombrePropiedad) => express_validation_1.Joi.number()
-    .valid(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
-    .required()
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "number.base": `"${nombrePropiedad}" debe ser númerico`,
-    "any.only": `"${nombrePropiedad}" debe estar en el rango de 1 - 12`,
-});
+var validMes = function (nombrePropiedad) {
+    return express_validation_1.Joi.number()
+        .valid(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
+        .required()
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "number.base": "\"".concat(nombrePropiedad, "\" debe ser n\u00FAmerico"),
+        "any.only": "\"".concat(nombrePropiedad, "\" debe estar en el rango de 1 - 12"),
+    });
+};
 exports.validMes = validMes;
-const validFechaNoNull = (nombrePropiedad) => express_validation_1.Joi.date()
-    .required()
-    .iso()
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "date.base": `"${nombrePropiedad}" debe ser fecha`,
-    "date.format": `"${nombrePropiedad}" debe ser válido (YYYY-MM-DD)`,
-});
+var validFechaNoNull = function (nombrePropiedad) {
+    return express_validation_1.Joi.date()
+        .required()
+        .iso()
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "date.base": "\"".concat(nombrePropiedad, "\" debe ser fecha"),
+        "date.format": "\"".concat(nombrePropiedad, "\" debe ser v\u00E1lido (YYYY-MM-DD)"),
+    });
+};
 exports.validFechaNoNull = validFechaNoNull;
-const validFechaNull = (nombrePropiedad) => express_validation_1.Joi.date()
-    .required()
-    .iso()
-    .allow(null)
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "date.base": `"${nombrePropiedad}" debe ser fecha`,
-    "date.format": `"${nombrePropiedad}" debe ser válido (YYYY-MM-DD)`,
-});
+var validFechaNull = function (nombrePropiedad) {
+    return express_validation_1.Joi.date()
+        .required()
+        .iso()
+        .allow(null)
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "date.base": "\"".concat(nombrePropiedad, "\" debe ser fecha"),
+        "date.format": "\"".concat(nombrePropiedad, "\" debe ser v\u00E1lido (YYYY-MM-DD)"),
+    });
+};
 exports.validFechaNull = validFechaNull;
-const valid10Enteros4Decimales = (valor, helper) => {
-    const regEx = /^(\d{1,10})([.]\d{1,4})?$/i;
+var valid10Enteros4Decimales = function (valor, helper) {
+    var regEx = /^(\d{1,10})([.]\d{1,4})?$/i;
     if (!regEx.test(valor))
         return helper.error("decimal.invalid");
     return valor;
 };
 exports.valid10Enteros4Decimales = valid10Enteros4Decimales;
-const customValidDecimal10Ent4Dec = (nombrePropiedad) => express_validation_1.Joi.number()
-    .required()
-    .custom(exports.valid10Enteros4Decimales)
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "number.base": `"${nombrePropiedad}" debe ser número`,
-    "decimal.invalid": `"${nombrePropiedad}" debe ingresar máximo 10 enteros y 4 decimales`,
-});
+var customValidDecimal10Ent4Dec = function (nombrePropiedad) {
+    return express_validation_1.Joi.number()
+        .required()
+        .custom(exports.valid10Enteros4Decimales)
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "number.base": "\"".concat(nombrePropiedad, "\" debe ser n\u00FAmero"),
+        "decimal.invalid": "\"".concat(nombrePropiedad, "\" debe ingresar m\u00E1ximo 10 enteros y 4 decimales"),
+    });
+};
 exports.customValidDecimal10Ent4Dec = customValidDecimal10Ent4Dec;
-const customValidDecimal10Ent4DecYMin = (nombrePropiedad, nombrePropiedadMin) => express_validation_1.Joi.number()
-    .required()
-    .custom(exports.valid10Enteros4Decimales)
-    .min(express_validation_1.Joi.ref(nombrePropiedadMin))
-    .messages({
-    "any.required": `"${nombrePropiedad}" es requerido`,
-    "number.base": `"${nombrePropiedad}" debe ser número`,
-    "decimal.invalid": `"${nombrePropiedad}" debe ingresar máximo 10 enteros y 4 decimales`,
-    "number.min": `"${nombrePropiedad}" debe ser mayor o igual a "${nombrePropiedadMin}"`,
-});
+var customValidDecimal10Ent4DecYMin = function (nombrePropiedad, nombrePropiedadMin) {
+    return express_validation_1.Joi.number()
+        .required()
+        .custom(exports.valid10Enteros4Decimales)
+        .min(express_validation_1.Joi.ref(nombrePropiedadMin))
+        .messages({
+        "any.required": "\"".concat(nombrePropiedad, "\" es requerido"),
+        "number.base": "\"".concat(nombrePropiedad, "\" debe ser n\u00FAmero"),
+        "decimal.invalid": "\"".concat(nombrePropiedad, "\" debe ingresar m\u00E1ximo 10 enteros y 4 decimales"),
+        "number.min": "\"".concat(nombrePropiedad, "\" debe ser mayor o igual a \"").concat(nombrePropiedadMin, "\""),
+    });
+};
 exports.customValidDecimal10Ent4DecYMin = customValidDecimal10Ent4DecYMin;
-const validUrl = (propiedad, maximoCaracteres) => express_validation_1.Joi.string()
-    .uri()
-    .required()
-    .min(1)
-    .max(maximoCaracteres)
-    .messages({
-    "any.required": `"${propiedad}" es requerido`,
-    "string.empty": `"${propiedad}" es requerido`,
-    "string.base": `"${propiedad}" debe ser url válida'`,
-    "string.uri": `"${propiedad}" debe ser una url válida'`,
-    "string.min": `"${propiedad}" debe estar en el rango de 1 a ${maximoCaracteres} caracteres`,
-    "string.max": `"${propiedad}" debe estar en el rango de 1 a ${maximoCaracteres} caracteres`,
-});
+var validUrl = function (propiedad, maximoCaracteres) {
+    return express_validation_1.Joi.string()
+        .uri()
+        .required()
+        .min(1)
+        .max(maximoCaracteres)
+        .messages({
+        "any.required": "\"".concat(propiedad, "\" es requerido"),
+        "string.empty": "\"".concat(propiedad, "\" es requerido"),
+        "string.base": "\"".concat(propiedad, "\" debe ser url v\u00E1lida'"),
+        "string.uri": "\"".concat(propiedad, "\" debe ser una url v\u00E1lida'"),
+        "string.min": "\"".concat(propiedad, "\" debe estar en el rango de 1 a ").concat(maximoCaracteres, " caracteres"),
+        "string.max": "\"".concat(propiedad, "\" debe estar en el rango de 1 a ").concat(maximoCaracteres, " caracteres"),
+    });
+};
 exports.validUrl = validUrl;
