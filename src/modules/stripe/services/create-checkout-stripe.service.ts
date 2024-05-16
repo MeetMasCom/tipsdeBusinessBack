@@ -1,4 +1,5 @@
 import Stripe from "stripe";
+import { format } from "../../../helpers/stripe/formatPriceHelper";
 import { UserRepository } from "../../user/repository";
 import { StripeCreateCheckoutApi } from "../api/create-checkout.api";
 
@@ -16,7 +17,7 @@ export class CreateCheckoutStripeService {
         paymentMode: Stripe.Checkout.SessionCreateParams.Mode = 'payment'
     ) {
         
-        let formattedPrice = parseInt(price.replace(/[\.,]/i, "")); 
+        let formattedPrice = format(price); 
         let user:any = await this.userRepository.getByEmailOrUserName("", userName);
 
         let params = {

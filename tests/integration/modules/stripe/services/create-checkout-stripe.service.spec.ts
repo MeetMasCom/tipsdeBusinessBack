@@ -43,6 +43,36 @@ describe('Testing stripe integration service', () => {
 
         expect(result.url).not.toBeNull();
         expect(result.metadata.user_id).toBe("64e81a9f891ebb36280e330b");
+        expect(result.amount_total).toBe(100);  
+        
+        result = await createCheckoutStripeService.execute(
+            "52.3",
+            "tipsdebusiness"
+        );
+
+        expect(result.url).not.toBeNull();
+        expect(result.metadata.user_id).toBe("64e81a9f891ebb36280e330b");
+        expect(result.amount_total).toBe(5230); 
+
+        result = await createCheckoutStripeService.execute(
+            "30",
+            "tipsdebusiness"
+        );
+
+        expect(result.url).not.toBeNull();
+        expect(result.metadata.user_id).toBe("64e81a9f891ebb36280e330b");
+        expect(result.amount_total).toBe(3000); 
+
+        result = await createCheckoutStripeService.execute(
+            "308,25",
+            "tipsdebusiness"
+        );
+
+        console.log(result);
+
+        expect(result.url).not.toBeNull();
+        expect(result.metadata.user_id).toBe("64e81a9f891ebb36280e330b");
+        expect(result.amount_total).toBe(30825);
 
     }, 60000);
     
